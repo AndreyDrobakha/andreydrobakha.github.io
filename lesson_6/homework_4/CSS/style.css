@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	color: #c2c2c2;
+}
+body {
+	margin: 20px 50px 20px 50px;
+}
+main {
+	width: 100%; 
+	height: 100%;
+	font-family: "Arial", sans-serif;
+	display: inline-block;
+	margin-top: 30px}
+
+li {list-style-type: none}
+.search-field {
+	margin: 5px;
+	height: 100px
+
+}
+input[type="search"] {
+	height: 100%; 
+	width: 90%;
+	margin: 0px;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	font-size: 100px;
+	color: #ec5a62
+}
+input[type="submit"] {
+	height: 100%; 
+	width: 9%;
+	margin: 0px;
+	border: none;
+	background: url('https://api.icons8.com/download/4419d1ec1dca6b200e6fb61ddefbe620131d2b66/iOS7/PNG/512/Very_Basic/search-512.png');
+	-webkit-appearance: none;
+	background-size: 100% 100%;
+	background-position: center;
+}
+::-webkit-input-placeholder {
+	color: #c2c2c2;
+	font-weight: bold
+}
+	
+.groups {
+	padding-left: 10px;
+}
+.terms {
+	padding-left: 0px;
+}
+
+.title {
+	display: inline-block;
+	width: 32%;
+	vertical-align: top;
+	font-weight: bold;
+	font-size: 20px
+}
+.names {
+	font-size: 8px;
+	padding: 0px;
+	padding-left: 0px;
+	margin-bottom: 2px;
+	background: rgba(118,117,128,0.1);
+	width: 100% 
+}
+img, a {display: inline-block;
+		vertical-align: middle;
+
+}
+img {
+	padding: 10px
+ }
+.names:hover{
+		background: rgba(118,117,128,0.2)
+}
+.first_image {
+	border-radius: 50%
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #ec5a62;
+}

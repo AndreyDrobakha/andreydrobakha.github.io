@@ -1,0 +1,15 @@
+*{transition: all .1s ease-in}
+body {width: 960px; margin: 0 auto;}
+main {background: #3B3F45;}
+header, footer {color: #EB7E7F;
+                background: #4A4F56;
+                text-align: center}
+div {color: #F9F9F3; 
+	  background: #88839E
+	  }
+span {color: #C0C5D2;}
+span:before {content: "("}
+span:after {content: ")";}
+div, footer {width: 70%; margin: auto;}
+li {list-style-type: none;}
+ul {padding-left: 10px}

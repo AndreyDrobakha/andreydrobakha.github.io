@@ -1,0 +1,16 @@
+h1 {text-align: center;
+font-size: 26px;
+margin: 20px 40px 20px 40px;}
+.first-section {position: center;}
+main {position: right;}
+.photo {display: inline-block;
+	    width: 200px;
+		float: left;
+		margin: 5px;
+		margin-top: 20px;}
+p {margin: 10px; 
+	padding: 0px 20px 0px 20px;
+    text-align: justify;}
+.sidebar {background: yellow;
+          width: 100px;
+          height: 300px}

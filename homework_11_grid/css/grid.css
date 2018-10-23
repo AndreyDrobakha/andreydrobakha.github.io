@@ -1,0 +1,39 @@
+.ba-container {
+	max-width: 1200px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.ba-row {
+	margin: 0 -15px 30px;
+	clear: both;
+}
+
+.ba-row:last-child {
+	margin-bottom: 0;
+}
+
+.ba-row::before,
+.ba-row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 0 15px;
+}
+
+.ba-col-1 {
+	width: calc(100%/6);
+}
+
+.ba-col-2 {
+	width: calc(100%/6*2);
+}
+
+.ba-col-3 {
+	width: calc(100%/6*3);
+}
+

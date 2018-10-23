@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "Miso";
+	src: url("../fonts/miso/miso.otf");
+}
+
+@font-face {
+	font-family: "Miso-bold";
+	src: url("../fonts/miso/miso-bold.ttf");
+}
+
+@font-face {
+	font-family: "Miso-light";
+	src: url("../fonts/miso/miso-light.ttf");
+}
+
+body {
+	background: #282828;
+}
+.main {
+	background-color: #FDDE7E;
+	max-width: 1200px;
+	height: 600px;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main__block,
+.main__block--big {
+	width: 30%;
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 3px;
+}
+
+.main__block {
+	height: 75%;
+}
+
+.main__block--big {
+	height: 85%;
+}
+
+.main__price {
+	font-family: "Miso-bold", sans-serif;
+	font-size: 70px;
+	color: #02995B; 
+}
+
+.main__price,
+.main__color,
+.main__description {
+	margin: 0 auto;
+}
+
+.main__smoke {
+	margin-bottom: 5px;
+}
+.main__cups {
+	width: 136px;
+	height: 77px;
+	position: relative;
+	margin-left: 20px;
+}
+
+.main__bean {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(30%, -50%);
+}
+
+.cup1 {
+	background-image: url("../img/cup1.png");
+}
+
+.cup2 {
+	background-image: url("../img/cup2.png");
+}
+
+.cup3 {
+	background-image: url("../img/cup3.png");
+}
+
+.main__color,
+.main__description {
+	font-family: "Miso-light", sans-serif;
+}
+
+.main__color {
+	font-size: 50px;
+}
+
+.main__description {
+	font-size: 20px;
+}
+
+.main__price-until {
+	display: block;
+}

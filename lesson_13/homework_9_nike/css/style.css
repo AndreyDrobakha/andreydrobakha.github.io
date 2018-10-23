@@ -1,0 +1,219 @@
+@font-face {
+	font-family: "Museo";
+	src: url("../font/MuseoSansRounded-100.otf");
+}
+
+* {
+	box-sizing: border-box;
+	color:  #E7E7E7;
+	font-family: "Museo", sans-serif;
+	font-weight: 100;
+}
+
+body {
+	background: #282828;
+}
+
+.container {
+	margin: 2% auto 2%;
+	width: 800px;
+	height: 600px;
+	background-image: url("../img/main bg.jpg");
+	position: relative;
+}
+
+.main {
+	width: 685px;
+	height: 390px;
+	vertical-align: middle;
+	margin: 0 auto;
+	background: #152335;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-left: 21px;
+}
+
+.main__section-1 {
+	width: 64%;
+	float: left;
+	padding-top: 24px;
+}
+
+.section-1__img {
+	width: 100%;
+	height: 240px;
+}
+
+.logo {
+	display: inline-block;
+	min-width: 65px;
+	min-height: 35px;
+}
+
+.img {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	position: relative;
+}
+
+.img__shoe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.switch {
+	margin: 0 auto;
+	padding-left: 0;
+	text-align: center;
+}
+
+.switch__color {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+}
+
+.switch__link {
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 1.5px solid #152335;
+}
+
+.switch--active,
+.switch__link:hover {
+	border: 1px solid #8C9299;
+	border-radius: 50%
+}
+
+.switch__link--1 {
+	background-color: #293550;
+}
+
+.switch__link--2 {
+	background: #fff;
+	border-radius: 50%
+}
+
+.switch__link--3 {
+	background-color: #F34B41;
+	border-radius: 50%
+}
+
+.switch__link--4 {
+	background-color: #24E7EE;
+	border-radius: 50%
+}
+
+.main__section-2 {
+	width: 35%;
+	float: right;
+	padding-top: 80px;
+}
+
+.title {
+	margin: 0 auto 17px;
+	font-size: 24px;
+}
+
+.text {
+	margin: 0 auto 25px;
+}
+
+.stars {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0 auto 25px;
+
+}
+
+.stars__list {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+}
+
+.stars__links {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/Vector Smart Object copy 4.png");
+}
+
+.stars__links--active,
+.stars__links:hover {
+	background-image: url("../img/Group 1.png");
+}
+
+.select__items {
+	margin: 0 auto 30px;
+}
+
+.select__size,
+.select__qty {
+	display: inline-block;
+	width: 69px;
+	height: 32px;
+	background-color: #152335;
+	padding: 5px 5px 5px 7px;
+	-webkit-appearance: none;
+	font-size: 14px;
+	
+	border: 1px solid #575d66;
+}
+
+.select__size:hover,
+.select__qty:hover,
+.submit:hover {
+	cursor: pointer;
+	background-color: #2A3545;
+}
+
+
+.select__label,
+.qty__label {
+	position: relative;
+}
+
+.select__label:after,
+.qty__label:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid transparent;
+    border-left-color: #fff;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 20%;
+    z-index: 0;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.select__label:after {
+	right: 10px;
+}
+
+.qty__label:after {
+	right: 6.5px;
+}
+
+.submit {
+	display: block;
+	width: 184px;
+	height: 40px;
+	background-color: #152335;
+	border: 1px solid #575d66;
+}
+
+.select__option {
+
+}
