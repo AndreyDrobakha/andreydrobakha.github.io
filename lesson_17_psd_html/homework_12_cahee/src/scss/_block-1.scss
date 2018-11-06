@@ -1,0 +1,55 @@
+.block-1 {
+	background-image: url($img_path + 'strawberry.jpg');
+	min-height: 1000px;
+	position: relative;
+	
+	&__container {
+		min-height: 1000px;
+		display: flex;
+		align-items: center;
+	}
+
+}
+
+.section-1 {
+	position: relative;
+	font-family: $main_font;
+
+	&__title {
+		font-size: 60px;
+		font-weight: $heavy;
+		margin:0 0 30px;	
+	}
+
+	&__content {
+		font-size: $text_md;
+		font-weight: $regular;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+
+	&__submit {
+		font-size: $text_lg;
+		font-weight: $light;
+		text-transform: uppercase;
+		padding: 17px 20px;
+		color: $secondary_color;
+		background-color: #ff6033;
+		box-shadow: 0 3px 5px #9a9a9c;
+	}
+
+	&__col-8 {
+		height: 1px;
+	}
+
+	&__scroll {
+		position: absolute;
+		display: block;
+		top: 90%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 25px;
+		height: 40px;
+		cursor: pointer;
+	}	
+}

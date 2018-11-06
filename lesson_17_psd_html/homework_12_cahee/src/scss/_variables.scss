@@ -1,0 +1,28 @@
+$dark-color: #262626;
+$white-color: #fff;
+
+$main_color: $dark-color;
+$secondary_color: $white-color;
+
+$main_font: "Raleway", sans-serif;
+$second-font: "Pacifico", cursive;
+$third-font: "Myriad Pro", sans-serif;
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+$heavy: 900;
+
+
+$text-mg: 90px;
+$text_lg: 20px;
+$text_md: 17px;
+$text_sm: 15px;
+
+$img_path: "../img/";
+
+$z-index: (
+	content: 1,
+	body: 2,
+	navbar: 3,
+)

@@ -1,0 +1,90 @@
+.block-7 {
+	min-height: 865px;
+	background-image: url($img_path + "nature-bg.jpg");
+	position: relative;
+	
+	&__container {
+		padding-top: 100px;
+		color: $main_color;
+	}
+}
+
+.section-7 {
+	font-family: $main_font;
+
+	&__col-4,
+	&__col-2 {
+		height: 1px;
+	}
+
+	&__header {
+		text-align: center;
+	}
+
+	&__title {
+		margin: 0 auto 45px;
+	}
+
+	&__content {
+		font-size: $text_md;
+		font-weight: $light;
+		line-height: 1.5;
+		margin-bottom: 45px;
+	}
+
+	&__form,
+	&__contacts {
+		max-width: 515px;
+		width: 100%;
+	}	
+	
+	&__form {
+		padding-right: 0;
+	}
+
+	&__col-2 {
+		margin-right: -30px;
+	}
+
+	&__input {
+		width: 100%;
+		color: $secondary_color;
+		position: relative;
+		background: rgba(126, 224, 224, .7);
+		padding: 18px;
+		outline: none;
+		border: none;
+		font-weight: $bold;	
+	}
+
+	&__input:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	&__input:last-child {
+		resize: none;
+	}
+
+	
+	&__input:hover,
+	&__input:focus {
+		background: linear-gradient(to right, 
+			rgba(#355b82, 1) 0%, 
+			rgba(#355b82, 1) 1%,
+			rgba(0, 196, 196, 1) 1%, 
+			rgba(0, 196, 196, 1) 100%);
+	}
+
+	&__text {
+		font-family: $third-font;
+		line-height: 1.6;
+	}
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { 
+	color: #fff;
+	font-weight: $light;
+	font-size: $text_sm;
+
+}

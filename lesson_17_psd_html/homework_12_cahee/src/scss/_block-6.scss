@@ -1,0 +1,110 @@
+.block-6 {
+	min-height: 865px;
+	background-color: #b07cf7;
+	position: relative;
+	
+	&__container {
+		padding-top: 95px;
+		color: $secondary_color;
+	}
+
+	&__button {
+		width: 200px;
+		background-color: #f72b3b;
+		box-shadow: 0 1px 2px 1px #6d4d99;
+		position: absolute;
+		bottom: 80px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.section-6 {
+	font-family: $main_font;
+
+	&__col-3 {
+		height: 1px;
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: $text-mg;
+		margin: 0 auto 40px;
+	}
+
+	&__content {
+		font-size: $text_md;
+		line-height: 1.6;
+		margin-bottom: 45px;
+	}
+
+	&__menu {
+		min-height: 310px;
+		color: $secondary_color;
+		position: relative;
+
+		&--img-1 {
+			background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
+				rgba(#fbfbf7, .1) 40%), url($img_path + "20nov.png");
+		}
+
+		&--img-2 {
+			background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
+				rgba(#fbfbf7, .1) 40%), url($img_path + "14nov.png");
+		}
+
+		&--img-3 {
+			background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
+				rgba(#fbfbf7, .1) 40%), 
+			url($img_path + "10nov.png");
+		}
+
+		&--img-1,
+		&--img-2,
+		&--img-3 {
+			background-repeat: no-repeat;
+			// background-size: 370px 310px;
+		}
+	}
+	
+	&__date {
+		position: absolute;
+		top: 30px;
+		left: 45px;
+		display: inline-block;
+		padding: 7px;
+		background: rgba(74, 80, 91, .7);
+		border-radius: 5px;
+	}	
+
+	&__number {
+		font-weight: $bold;
+		font-size: 32px;
+		margin: 0;
+		line-height: .7;
+	}
+
+	&__month {
+		font-weight: $heavy;
+		font-size: 21px;
+	}
+
+	&__description {
+		font-family: $third-font;
+		position: absolute;
+		bottom: 25px;
+		left: 20px;
+	}
+
+	&__descript {
+		font-size: $text_lg; 
+		margin-bottom: 22px;
+	}
+
+	&__author {
+		font-size: $text_sm;
+	}
+}

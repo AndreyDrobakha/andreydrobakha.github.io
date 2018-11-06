@@ -33,8 +33,7 @@ gulp.task('img', () => {
 
 gulp.task('watch', () => {
  gulp.watch('src/scss/**/*.scss', ['sass']),
- gulp.watch('src/index.html',['html']),
- gulp.watch('src/img/**/*.*',['img'])
+ gulp.watch('src/index.html',['html'])
 });
 
 gulp.task('connect', function() {

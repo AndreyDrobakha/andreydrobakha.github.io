@@ -1,0 +1,87 @@
+.sect {
+	max-width: 1200px;
+	margin: auto;
+	border: 3px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+}
+
+@each $section, $color in $sections {
+	.#{$section} {
+		background-color: $color;
+	}
+}
+
+// @for $i from 1 through 6 {
+//   .section_#{$i} { font-size: 2rem * $i; }
+// }
+
+.section_1 {
+	@extend .sect;
+	background-color: black;
+	
+	.btn {
+		@include button(#ff6033);
+		font-size: 1.5 rem;
+	}
+}
+
+.section_2 { 
+	@extend .sect;
+	
+	.btn {
+		@include button(#eb2c3f);
+	}
+}
+.section_3 { 
+	@extend .sect;
+	
+	.btn {
+		@include button(#ff8b10);
+	}
+}
+.section_4 { 
+	@extend .sect;
+	
+	.btn {
+		@include button(#5585a2);
+	}
+}
+.section_5 { 
+	@extend .sect;
+	
+	.btn {
+		@include button(#96b92c);
+	}
+}
+.section_6 { 
+	@extend .sect;
+	
+	.btn {
+		@include button(#f72b3b);
+	}
+}
+
+// $type: matador;
+
+
+// section {
+// 	@if $type == ocean {
+// 		border-color: blue!important;
+// 		} @else if $type == matador {
+// 			color: red!important;
+// 			} @else if $type == monster {
+// 				color: green!important;
+// 				} @else {
+// 					color: black!important;
+// 				}
+// 			}
+
+// $i: 3;
+
+// @while $i > 0 {
+//   .section_#{$i} { font-size: .5rem * $i; }
+//   $i: $i - 1;
+// }

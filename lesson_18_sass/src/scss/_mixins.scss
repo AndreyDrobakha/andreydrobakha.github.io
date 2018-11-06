@@ -1,0 +1,16 @@
+@mixin button($bg-color, $color: #fff) {
+	width: 100%;
+	max-width: 200px;
+	padding: 20px 0;
+	border: none;
+	box-shadow: 0 0 5px 3px rgba(#000, .1);
+	background-color: $bg-color;
+	color: $color;
+	cursor: pointer;
+	font-family: "Arial";
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: lighten($bg-color, 10%)
+	}
+}

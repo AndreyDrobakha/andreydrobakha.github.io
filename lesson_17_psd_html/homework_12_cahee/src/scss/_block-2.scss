@@ -1,0 +1,41 @@
+.block-2 {
+	background-color: #00BDBC;
+	min-height: 700px;
+	background-image: url($img_path + "plate.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+}
+
+.section-2 {
+	
+	&__plate {
+		display: block;
+		margin-left: -30px;
+	}
+
+	&__text--float {
+		float: right;
+		padding-top: 175px;
+		font-family: $main_font;
+	}
+
+	&__text > * {
+		color: $secondary_color;
+		
+	}
+	
+	&__title {
+		font-size: $text-mg;
+		font-weight: $bold;
+		margin: 0 0 30px -30px;
+		text-align: left;
+		
+	}
+
+	&__content {
+		font-size: $text_md;
+		font-weight: $light;
+		line-height: 1.5em;
+		margin-left: -30px;
+	}
+}

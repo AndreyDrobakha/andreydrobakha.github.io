@@ -1,0 +1,49 @@
+.main-header {
+	max-width: 1500px;
+	width: 100%;
+	background: rgba(249, 248, 251, .5);
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	z-index: map-get($z-index, navbar);
+	
+	&-row {
+		display: flex;
+		align-items: center;
+
+		.logo__text {
+			font-family: $second-font;
+			font-size: 50px;
+			line-height: 2em;
+			color: $main_color;
+
+			&:hover {
+				color: red;
+			}
+		}
+
+		.menu-list {
+			display: flex;
+			justify-content: space-between;
+			font-family: $main_font;
+
+
+			&__link {
+				display: block;
+				border: 2px solid transparent;
+			}
+
+			&__link:hover,
+			&__link--active {
+				border-top-color: red;
+			}
+
+			&__text {
+				font-weight: bold;
+				text-transform: uppercase; 
+				line-height: 2em;
+				color: $main_color;
+			}
+		}
+	}
+}

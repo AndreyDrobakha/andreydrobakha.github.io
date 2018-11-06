@@ -1,0 +1,125 @@
+.sect, .section_1, .section_2, .section_3, .section_4, .section_5, .section_6 {
+  max-width: 1200px;
+  margin: auto;
+  border: 3px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100px; }
+
+.section_1 {
+  background-color: #f9f8fb; }
+
+.section_2 {
+  background-color: #00b1b1; }
+
+.section_3 {
+  background-color: #70bfff; }
+
+.section_4 {
+  background-color: #ffe92f; }
+
+.section_5 {
+  background-color: #ffffff; }
+
+.section_6 {
+  background-color: #b07cf7; }
+
+.section_1 {
+  background-color: black; }
+  .section_1 .btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 20px 0;
+    border: none;
+    -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    background-color: #ff6033;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Arial";
+    text-transform: uppercase;
+    font-size: 1.5 rem; }
+    .section_1 .btn:hover {
+      background-color: #ff8866; }
+
+.section_2 .btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px 0;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background-color: #eb2c3f;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Arial";
+  text-transform: uppercase; }
+  .section_2 .btn:hover {
+    background-color: #ef5b69; }
+
+.section_3 .btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px 0;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background-color: #ff8b10;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Arial";
+  text-transform: uppercase; }
+  .section_3 .btn:hover {
+    background-color: #ffa443; }
+
+.section_4 .btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px 0;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background-color: #5585a2;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Arial";
+  text-transform: uppercase; }
+  .section_4 .btn:hover {
+    background-color: #749db6; }
+
+.section_5 .btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px 0;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background-color: #96b92c;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Arial";
+  text-transform: uppercase; }
+  .section_5 .btn:hover {
+    background-color: #b0d345; }
+
+.section_6 .btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px 0;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background-color: #f72b3b;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Arial";
+  text-transform: uppercase; }
+  .section_6 .btn:hover {
+    background-color: #f95c68; }

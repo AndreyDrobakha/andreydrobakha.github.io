@@ -1,0 +1,198 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.row {
+  clear: both;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row::before, .row::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  padding: 0 15px;
+  min-height: 1px; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100vh; }
+
+body {
+  font-size: 100%;
+  font-family: "Raleway", sans-serif;
+  color: #fff; }
+
+ul > li > a {
+  display: block;
+  text-decoration: none; }
+
+.row-faic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  margin: 0; }
+
+h3 {
+  margin: 0; }
+
+h4 {
+  margin: 0; }
+
+h5 {
+  margin: 0; }
+
+h6 {
+  margin: 0; }
+
+.arrow__link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px; }
+  .arrow__link:hover {
+    color: #ef4836; }
+  .arrow__link .fa-arrow-right {
+    margin-left: .5rem; }
+
+.main-header {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(2, 24, 51, 0.9))), url("../img/header-bg.jpg");
+  background-image: linear-gradient(to top, black 0%, rgba(2, 24, 51, 0.9) 100%), url("../img/header-bg.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-color: #010307;
+  padding-top: 80px;
+  position: relative; }
+  .main-header::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    min-height: 16vh;
+    background-color: red;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
+    background-image: linear-gradient(to top, black 0%, transparent 100%); }
+  .main-header__title {
+    margin: -10px 0 20px; }
+    .main-header__title > * {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 48px;
+      line-height: 1.4; }
+  .main-header__description {
+    line-height: 2;
+    margin-bottom: 30px; }
+  .main-header__img-wrap {
+    position: relative;
+    padding-top: 112%;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1); }
+  .main-header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .main-header__img-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: block;
+    border: 10px solid #aaa;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    cursor: pointer; }
+    .main-header__img-play .fa-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #ef4836; }
+
+.logo__link {
+  display: inline-block;
+  font-size: 0; }
+
+.logo__img {
+  max-width: 100%; }
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.navigation__item {
+  list-style: none; }
+
+.navigation__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .navigation__link--active, .navigation__link:hover {
+    color: #ef4836; }
