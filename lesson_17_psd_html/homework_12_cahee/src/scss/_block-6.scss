@@ -17,10 +17,10 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
-}
 
-.section-6 {
-	font-family: $main_font;
+	&__section {
+		font-family: $main_font;
+	}
 
 	&__col-3 {
 		height: 1px;
@@ -46,30 +46,66 @@
 		color: $secondary_color;
 		position: relative;
 
-		&--img-1 {
-			background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
-				rgba(#fbfbf7, .1) 40%), url($img_path + "20nov.png");
-		}
+		// &--img-1 {
+		// 	background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
+		// 		rgba(#fbfbf7, .1) 40%), url($img_path + "20nov.png");
+		// }
 
-		&--img-2 {
-			background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
-				rgba(#fbfbf7, .1) 40%), url($img_path + "14nov.png");
-		}
+		// &--img-2 {
+		// 	background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
+		// 		rgba(#fbfbf7, .1) 40%), url($img_path + "14nov.png");
+		// }
 
-		&--img-3 {
-			background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
-				rgba(#fbfbf7, .1) 40%), 
-			url($img_path + "10nov.png");
-		}
+		// &--img-3 {
+		// 	background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
+		// 		rgba(#fbfbf7, .1) 40%), 
+		// 	url($img_path + "10nov.png");
+		// }
 
-		&--img-1,
-		&--img-2,
-		&--img-3 {
-			background-repeat: no-repeat;
-			// background-size: 370px 310px;
-		}
+		// &--img-1,
+		// &--img-2,
+		// &--img-3 {
+		// 	background-repeat: no-repeat;
+		// 	// background-size: 370px 310px;
+		// }
 	}
 	
+	&__img {
+		position: absolute;
+		z-index: map-get($z-index, img);
+		// background-image: linear-gradient(to top, rgba(#1a1a1a, .9) 0%, 
+		// rgba(#fbfbf7, .1) 40%);
+		// opacity: .5;
+
+		// &::after {
+		// 	background: linear-gradient(to top, 
+		// 		rgba(#1a1a1a, .9) 0%, 
+		// 		rgba(#fbfbf7, .1) 40%);
+		// 	background-size: cover;
+		// 	z-index: 2;
+		// 	opacity: .5;
+		// } 
+	}
+
+
+	&__gradient {
+		position: absolute;
+		z-index: map-get($z-index, gradient);
+		top: 101%;
+		left: 4.9%;
+		transform: translateY(-100%);
+		// background-image: url($img_path + "20nov.png");
+		opacity: .4;
+		height: 100.5%;
+		width: 92.5%
+	}
+
+
+
+	&__gradient-1 {
+		left: 6%;
+		top: 102%;
+	}
 	&__date {
 		position: absolute;
 		top: 30px;
@@ -78,6 +114,8 @@
 		padding: 7px;
 		background: rgba(74, 80, 91, .7);
 		border-radius: 5px;
+		z-index: map-get($z-index, content);
+		font-family: $main-font;
 	}	
 
 	&__number {
@@ -85,18 +123,23 @@
 		font-size: 32px;
 		margin: 0;
 		line-height: .7;
+		display: block;
 	}
 
 	&__month {
 		font-weight: $heavy;
 		font-size: 21px;
+		z-index: map-get($z-index, content);
+		display: block;
 	}
 
 	&__description {
 		font-family: $third-font;
 		position: absolute;
 		bottom: 25px;
-		left: 20px;
+		left: 45px;
+		z-index: map-get($z-index, content);
+
 	}
 
 	&__descript {
@@ -108,3 +151,4 @@
 		font-size: $text_sm;
 	}
 }
+

@@ -4,38 +4,38 @@
 	background-image: url($img_path + "plate.png");
 	background-repeat: no-repeat;
 	background-position: 0 50%;
-}
 
-.section-2 {
-	
-	&__plate {
-		display: block;
-		margin-left: -30px;
+	&__container {
+		min-height: 700px;
+		display: flex;
+		align-items: center;
 	}
 
-	&__text--float {
-		float: right;
-		padding-top: 175px;
-		font-family: $main_font;
+	&__section {
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	&__text > * {
 		color: $secondary_color;
-		
+		padding-left: 70px;
+		font-family: $main-font;
 	}
 	
 	&__title {
-		font-size: $text-mg;
-		font-weight: $bold;
-		margin: 0 0 30px -30px;
 		text-align: left;
-		
+		margin-bottom: 10px;
 	}
 
 	&__content {
 		font-size: $text_md;
 		font-weight: $light;
 		line-height: 1.5em;
-		margin-left: -30px;
+
+		&--content-1 {
+			margin-bottom: 10px;
+		}
 	}
 }
+
+

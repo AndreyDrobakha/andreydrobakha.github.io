@@ -23,16 +23,16 @@
 		line-height: 1.7;
 	}
 
-	&__logo {
+	&__logo-link {
 		display: block;
 		font-family: $second-font;
 		font-size: 25px;
 		color: #afafaf;
 		text-align: center;
-	}
 
-	&__logo:hover {
-		color: red;
+		&:hover {
+			color: red;
+		}
 	}
 
 	&__love {
@@ -40,9 +40,11 @@
 		font-size: $text_sm;
 		text-align: right;
 		padding-right: 15px;
+
+		&-link {
+			color: red;
+		}
 	}
 }
 
-.love {
-	color: red;
-}
+

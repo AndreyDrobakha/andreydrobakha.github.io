@@ -5,14 +5,14 @@
 	background-repeat: no-repeat;
 	background-position: 79% 50%;
 	display: flex;
-}
-
-.section-3 {
-	font-family: $main_font;
-	display: flex;
-	align-items: center;
-	height: 100%;
-
+	
+	&__section {
+		font-family: $main_font;
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+	
 	&__col {
 		display: flex;
 	}
@@ -22,20 +22,20 @@
 		max-width: 400px;
 		width: 100%;
 	}
-	
+
 	&__items {
 		margin: 0 0 20px 0;
 		width: 100%;
 		box-shadow: 0 5px 5px #45769e;
 		position: relative;
-	}
 
-	&__items:last-child {
-		margin-bottom: 0;
-	}
+		&:last-child {
+			margin-bottom: 0;
+		}
 
-	&__items:hover {
-		opacity: .7;
+		&:hover {
+			opacity: .7;
+		}
 	}
 
 	&__button {
@@ -48,6 +48,7 @@
 		font-weight: $bold;
 		font-size: $text_lg;
 		text-transform: capitalize;
+		text-align: center;
 		border: none;
 		line-height: 1;
 		cursor: pointer;
@@ -67,10 +68,6 @@
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		cursor: pointer;
-	}
-
-	&__service {
-		text-align: center;
 	}
 
 	&__title {
@@ -102,3 +99,4 @@
 		background-image: url($img_path + 'carrot.svg');
 	}
 }
+

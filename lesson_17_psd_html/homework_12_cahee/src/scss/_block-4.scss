@@ -2,17 +2,18 @@
 	background-color: #ffe92f;
 	min-height: 1536px;
 	position: relative;
-}
 
-.container-4 {
-	position: relative;
-}
+	&__container {
+		position: relative;
+	}
 
-.section-4 {
-	padding-top: 35px;
-	font-family: $main_font;
-	text-align: center;
-	
+	&__section {
+		padding-top: 35px;
+		font-family: $main_font;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
 	&__title {
 		margin-bottom: 30px;
 	}
@@ -20,63 +21,68 @@
 	&__content {
 		font-size: $text_md; 
 		font-weight: $light;
-		margin-bottom: 40px;
 		line-height: 1.7;
-	}
-}
-
-.section-4__img {
+	}	
 	
-	&__1,
-	&__2-3 {
-		height: 550px;
-		overflow: hidden;
-		margin-bottom: 30px;
-	}
-	&__2,
-	&__3 {
-		height: 260px;
-		margin-bottom: 30px;
-	}
-	&__4-5 {
-		height: 400px;
-		overflow: hidden;
+	&__button {
+		position: absolute;
+		bottom: 90px;
+		left: 50%;
+		transform: translate(-50%, -100%);
+		width: 200px;
+		padding: 18px 0 18px;
+		text-align: center;
+		background-color: #5585a2;
+		box-shadow: 0 1px 2px 1px #9e901d;
 	}
 
-	&__capture {
-		border-style: none;
-		max-width: 100%;
-		height: 100%;
+	&__img {
 
+		&--i1,
+		&--i2-3,
+		&--i4-5 {
+			position: relative;
+		}
+		
+		&--i2,
+		&--i3 {
+			position: absolute;
+			height: 260px;
+			margin-bottom: 30px;
+		}
+
+		&--i2 {
+			padding-bottom: 6px;
+		}
+
+		&--i3 {
+			top: 280px;
+			padding-top: 6px;
+		}
+		
+		&--i1,
+		&--i2-3 {
+			height: 550px;
+			overflow: hidden;
+			margin-bottom: 30px;
+		}
+		
+		&--i4-5 {
+			height: 400px;
+			overflow: hidden;
+		}
+
+		&--capture {
+			border-style: none;
+			max-width: 100%;
+			height: 100%;
+		}
 	}
-}
-
-.section-4__img__1 {
-	position: relative;
 }
 
 .capture-1 {
 	position: absolute;
 	top:-3px;
-}
-
-.section-4__img__2-3 {
-	position: relative;
-}
-
-.section-4__img__2 {
-	position: absolute;
-	padding-bottom: 6px;
-}
-
-.section-4__img__3 {
-	position: absolute;
-	top: 280px;
-	padding-top: 6px;
-}
-
-.section-4__img__4-5 {
-	position: relative;
 }
 
 .capture-4 {
@@ -89,14 +95,3 @@
 	padding-left: 12px;
 }
 
-.section-4__button {
-	position: absolute;
-	bottom: 90px;
-	left: 50%;
-	transform: translate(-50%, -100%);
-	width: 200px;
-	padding: 18px 0 18px;
-	text-align: center;
-	background-color: #5585a2;
-	box-shadow: 0 1px 2px 1px #9e901d;
-}

@@ -22,7 +22,8 @@ $text_sm: 15px;
 $img_path: "../img/";
 
 $z-index: (
-	content: 1,
-	body: 2,
-	navbar: 3,
+	img: 1,
+	gradient: 2,
+	content: 3,
+	navbar: 4,
 )

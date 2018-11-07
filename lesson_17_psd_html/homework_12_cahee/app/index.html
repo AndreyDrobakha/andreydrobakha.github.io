@@ -11,44 +11,44 @@
 </head>
 <body>
 	<div class="main">
-		<header class="main-header navbar">
+		<header class="main-header">
 			<div class="container">
-				<div class="main-header-row row">
+				<div class="main-header__row row">
 					<div class="main-header__logo col-6">
-						<a href="" class="logo__link">
-							<span class="logo__text">Cahee</span>
+						<a href="" class="main-header__logo-link">
+							Cahee
 						</a>
 					</div>
 					<nav class="main-header__menu col-6">
-						<ul class="menu-list">
-							<li class="menu-list__items">
-								<a href="" class="menu-list__link menu-list__link--active">
-									<p class="menu-list__text">home</p>
+						<ul class="main-header__list">
+							<li class="main-header__items">
+								<a href="" class="main-header__list-link main-header__list-link--active">
+									<p class="main-header__text">home</p>
 								</a>
 							</li>
-							<li class="menu-list__items">
-								<a href="" class="menu-list__link">
-									<p class="menu-list__text">about</p>
+							<li class="main-header__items">
+								<a href="" class="main-header__list-link">
+									<p class="main-header__text">about</p>
 								</a>
 							</li>
-							<li class="menu-list__items">
-								<a href="" class="menu-list__link">
-									<p class="menu-list__text">services</p>
+							<li class="main-header__items">
+								<a href="" class="main-header__list-link">
+									<p class="main-header__text">services</p>
 								</a>
 							</li>
-							<li class="menu-list__items">
-								<a href="" class="menu-list__link">
-									<p class="menu-list__text">gallery</p>
+							<li class="main-header__items">
+								<a href="" class="main-header__list-link">
+									<p class="main-header__text">gallery</p>
 								</a>
 							</li>
-							<li class="menu-list__items">
-								<a href="" class="menu-list__link">
-									<p class="menu-list__text">blog</p>
+							<li class="main-header__items">
+								<a href="" class="main-header__list-link">
+									<p class="main-header__text">blog</p>
 								</a>
 							</li>
-							<li class="menu-list__items">
-								<a href="" class="menu-list__link">
-									<p class="menu-list__text">contact</p>
+							<li class="main-header__items">
+								<a href="" class="main-header__list-link">
+									<p class="main-header__text">contact</p>
 								</a>
 							</li>
 						</ul>
@@ -58,25 +58,24 @@
 		</header>
 		<div class="block-1">
 			<div class="block-1__container container">
-				<div class="section-1 row">
-					<div class="section-1__col-4 col-4">
-						<h2 class="section-1__title">Fresh Life</h2>
-						<p class="section-1__content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-						<button type="submit" class="button section-1__submit">get free now</button>
-					</div>
-					<div class="section-1__col-8 col-8">
+				<div class="block-1__section row">
+					<div class="block-1__col-4 col-4">
+						<h2 class="block-1__title">Fresh Life</h2>
+						<p class="block-1__content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<button type="submit" class="button block-1__submit">get free now</button>
 					</div>
 				</div>
 			</div>
-			<a href="#about us" class="section-1__scroll"><img class="scroll" src="img/scroll.svg" alt="scroll"></a>
+			<a href="#about us" class="block-1__scroll"><img class="scroll" src="img/scroll.svg" alt="scroll"></a>
 		</div>
 		<!-- /.block-1 -->
 		<div class="block-2" id="about us">
-			<div class="container">
-				<div class="section-2 row">
-					<div class="section-2__text section-2__text--float col-5">
-						<h1 class="section-2__title">about us</h1>
-						<p class="section-2__content">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.<br>
+			<div class="block-2__container container">
+				<div class="block-2__section row">
+					<div class="block-2__text col-6">
+						<h1 class="block-2__title">about us</h1>
+						<p class="block-2__content block-2__content--content-1">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+						<p class="block-2__content block-2__content--content-2">
 						Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
 					</div>
 				</div>
@@ -84,122 +83,127 @@
 		</div>
 		<!-- /.block-2 -->
 		<div class="block-3">
-			<div class="container block-3__container">
-				<div class="section-3 row">
-					<div class="section-3__col col-6">
-						<ul class="section-3__list">
-							<li id="item1" class="section-3__items">
-								<a class="section-3__button section-3__button--basket"><p class="section-3__service">online shopping</p></a>
+			<div class="block-3__container container">
+				<div class="block-3__section row">
+					<div class="block-3__col col-6">
+						<ul class="block-3__list">
+							<li id="item1" class="block-3__items">
+								<a class="block-3__button block-3__button--basket">online shopping</a>
 							</li>
-							<li id="item2" class="section-3__items">
-								<a class="section-3__button section-3__button--hand"><p class="section-3__service">Quality product</p></a>
+							<li id="item2" class="block-3__items">
+								<a class="block-3__button block-3__button--hand">Quality product</a>
 							</li>
-							<li id="item3" class="section-3__items">
-								<a class="section-3__button section-3__button--earth"><p class="section-3__service">domestic & international delivery</p></a>
+							<li id="item3" class="block-3__items">
+								<a class="block-3__button block-3__button--earth">domestic & international delivery</a>
 							</li>
-							<li id="item4" class="section-3__items">
-								<a class="section-3__button section-3__button--carrot"><p class="section-3__service">well organized</p></a>
+							<li id="item4" class="block-3__items">
+								<a class="block-3__button block-3__button--carrot">well organized</a>
 							</li>
 						</ul>
 					</div>
-					<div class="section-3__title col-6">
-						<h1 class="section-3__text">our services</h1>
+					<div class="block-3__title col-6">
+						<h1 class="block-3__text">our services</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- /.block-3 -->
 		<div class="block-4">
-			<div class="container container-4">
-				<div class="section-4">
-					<h1 class="section-4__title">Gallery</h1>
-					<div class="section-4__content">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			<div class="block-4__container container">
+				<div class="block-4__section">
+					<h1 class="block-4__title">Gallery</h1>
+					<div class="block-4__content">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 				</div>
-				<div class="section-4__img row">
-					<div class="section-4__img__1 col-8">
-						<img src="img/apricot.png" alt="img-1" class="section-4__img__capture capture-1">
+				<div class="block-4__img row">
+					<div class="block-4__img--i1 col-8">
+						<img src="img/apricot.png" alt="img-1" class="block-4__img--capture capture-1">
 					</div>
-					<div class="section-4__img__2-3 col-4">
-						<div class="section-4__img__2">
-							<img src="img/currant.png" alt="img-2" class="section-4__img__capture">
+					<div class="block-4__img--i2-3 col-4">
+						<div class="block-4__img--i2">
+							<img src="img/currant.png" alt="img-2" class="block-4__img--capture">
 						</div>
-						<div class="section-4__img__3">
-							<img src="img/mulberry.png" alt="img-3" class="section-4__img__capture">
+						<div class="block-4__img--i3">
+							<img src="img/mulberry.png" alt="img-3" class="block-4__img--capture">
 						</div>
 					</div>
-					<div class="section-4__img row">
-						<div class="section-4__img__4-5 col-6">
-							<img src="img/glass.png" alt="img-4" class="section-4__img__capture capture-4">
+					<div class="block-4__img row">
+						<div class="block-4__img--i4-5 col-6">
+							<img src="img/glass.png" alt="img-4" class="block-4__img--capture capture-4">
 						</div>
-						<div class="section-4__img__4-5 col-6">
-							<img src="img/pepper.png" alt="img-5" class="section-4__img__capture capture-5">
+						<div class="block-4__img--i4-5 col-6">
+							<img src="img/pepper.png" alt="img-5" class="block-4__img--capture capture-5">
 						</div>
 					</div>
 				</div>
 			</div>
-			<button type="submit" class="button section-4__button">view more</button>
+			<button type="submit" class="button block-4__button">view more</button>
 		</div>
 		<!-- /.block-4 -->
 		<div class="block-5">
-			<div class="container block-5__container">
-				<div class="section_5 row">
-					<div class="section_5__col-8 col-8">
-						<h2 class="section-5__title">subscribe to us</h2>
-						<p class="section-5__content">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-						<form action="" class="section-5__form">
+			<div class="block-5__container container">
+				<div class="block-5__section row">
+					<div class="block-5__col-8 col-8">
+						<h2 class="block-5__title">subscribe to us</h2>
+						<p class="block-5__content">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<form action="" class="block-5__form">
 							<div class="col-9">
-								<input type="text" placeholder="Your email adress..." class="section-5__input">
+								<input type="text" placeholder="Your email adress..." class="block-5__input">
 							</div>
 							<div class="col-3">
-								<button class="section-5__button button">subscribe</button>
+								<button class="block-5__button button">subscribe</button>
 							</div>
 						</form>
 					</div>
-					<div class="section-5 col-4"></div>
 				</div>
 			</div>
 		</div>
 		<!-- /.block-5 -->
 		<div class="block-6">
 			<div class="block-6__container container">
-				<div class="section-6 row">
-					<div class="section-6__col-3 col-3"></div>
-					<div class="section-6__text col-6">
-						<h1 class="section-6__title">Blog</h1>
-						<p class="section-6__content">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+				<div class="block-6__section row">
+					<div class="block-6__col-3 col-3"></div>
+					<div class="block-6__text col-6">
+						<h1 class="block-6__title">Blog</h1>
+						<p class="block-6__content">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 					</div>
-					<div class="section-6__col-3 col-3"></div>
+					<div class="block-6__col-3 col-3"></div>
 				</div>
 				<div class="section-6 row">
-					<div class="section-6__menu section-6__menu--img-1 col-4">
-						<div class="section-6__date">
-							<h3 class="section-6__number">20</h3>				
-							<h4 class="section-6__month">nov</h4>
+					<div class="block-6__menu block-6__menu--img-1 col-4">
+						<div class="block-6__date">
+							<span class="block-6__number content">20</span>				
+							<span class="block-6__month content">nov</span>
 						</div>
-						<div class="section-6__description">
-							<p class="section-6__descript">Green Smoothies: Too Much of a Good <br> Thing?</p>
-							<p class="section-6__author">By Auskteez - 2 hours ago</p>
+						<div class="block-6__description">
+							<h3 class="block-6__descript">Green Smoothies: Too Much of a Good Thing?</h3>
+							<span class="block-6__author">By Auskteez - 2 hours ago</span>
 						</div>
+						<img src="img/20nov.png" alt="20 nov" class= "block-6__img">
+						<img src="img/gradient.png" alt="20 nov" class= "block-6__gradient block-6__gradient-1">
 					</div>
-					<div class="section-6__menu section-6__menu--img-2 col-4">
-						<div class="section-6__date">
-							<h3 class="section-6__number">14</h3>				
-							<h4 class="section-6__month">nov</h4>
+					<div class="block-6__menu block-6__menu--img-2 col-4">
+						<div class="block-6__date">
+							<span class="block-6__number">14</span>	
+							<span class="block-6__month">nov</span>
 						</div>
-						<div class="section-6__description">
-							<p class="section-6__descript">Growing Food and a “Thirst” for <br> Innovation</p>
-							<p class="section-6__author">By Auskteez - 3 hours ago</p>
+						<div class="block-6__description">
+							<h3 class="block-6__descript">Growing Food and a “Thirst” for Innovation</h3>
+							<span class="block-6__author">By Auskteez - 3 hours ago</span>
 						</div>
+						<img src="img/14nov.png" alt="14 nov" class= "block-6__img">
+						<img src="img/gradient.png" alt="20 nov" class= "block-6__gradient">
 					</div>
-					<div class="section-6__menu section-6__menu--img-3 col-4">
-						<div class="section-6__date">
-							<h3 class="section-6__number">10</h3>				
-							<h4 class="section-6__month">nov</h4>
+					<div class="block-6__menu block-6__menu--img-3 col-4">
+						<div class="block-6__date">
+							<span class="block-6__number">10</span>	
+							<span class="block-6__month">nov</span>
 						</div>
-						<div class="section-6__description">
-							<p class="section-6__descript">Pesticides & Food: What You Need to <br> Know</p>
-							<p class="section-6__author">By Auskteez - 6 hours ago</p>
+						<div class="block-6__description">
+							<h3 class="block-6__descript">Pesticides & Food: What You Need to Know</h3>
+							<span class="block-6__author">By Auskteez - 6 hours ago</span>
 						</div>
+						<img src="img/10nov.png" alt="10 nov" class= "block-6__img">
+						<img src="img/gradient.png" alt="20 nov" class= "block-6__gradient">
 					</div>
 				</div>
 			</div>
@@ -208,47 +212,54 @@
 		<!-- /.block-6 -->
 		<div class="block-7">
 			<div class="block-7__container container">
-				<div class="section-7 row">
-					<div class="section-7__col-4 col-4"></div>
-					<div class="section-7__header col-4">
-						<h1 class="section-7__title">Contact</h1>
-						<p class="section-7__content">For new projects, ideas, business or anything
+				<div class="block-7__section row">
+					<div class="block-7__col-4 col-4"></div>
+					<div class="block-7__header col-4">
+						<h1 class="block-7__title">Contact</h1>
+						<p class="block-7__content">For new projects, ideas, business or anything
 						you'd like to discuss, contact with me!</p>
 					</div>
-					<div class="section-7__col-4 col-4"></div>
+					<div class="block-7__col-4 col-4"></div>
 				</div>
 				<div class="section-7 row">
-					<div class="section-7__form col-5">
-						<input class="section-7__input" type="text" placeholder="Your name...">
-						<input class="section-7__input" type="text" placeholder="Your email...">
-						<input class="section-7__input" type="text" placeholder="Your phone number...">
-						<textarea class="section-7__input" rows="5" placeholder="Your message..."></textarea> 
-					</div>
-					<div class="section-7__col-2 col-2"></div>
-					<div class="section-7__contacts col-5">
-						<p class="section-7__text"><strong>ADDRESS</strong><br> 
-							123 City name, Street, City, Country<br><br>
-							<strong>EMAIL</strong><br>
-							cahee@domain.com<br><br>
-							<strong>PHONE</strong><br>
-						+012 345 6789</p>
+					<div class="block-7__form-area col-6">
+						<form action="" class="block-7__form"><input class="block-7__input" type="text" placeholder="Your name...">
+							<input class="block-7__input" type="text" placeholder="Your email...">
+							<input class="block-7__input" type="text" placeholder="Your phone number...">
+							<textarea class="block-7__input" rows="5" placeholder="Your message..."></textarea> </form>
+						</div>
+						<div class="block-7__contacts col-6">
+							<ul class="block-7__list">
+								<li class="block-7__items">
+									<span class="block-7__label">ADDRESS</span>
+									<span class="block-7__field">123 City name, Street, City, Country</span>
+								</li>
+								<li class="block-7__items">
+									<span class="block-7__label">EMAIL</span>
+									<span class="block-7__field">cahee@domain.com</span>
+								</li>
+								<li class="block-7__items">
+									<span class="block-7__label">PHONE</span>
+									<span class="block-7__field">+012 345 6789</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- /.block-7 -->
+			<footer class="main-footer container">
+				<div class="main-footer row">
+					<div class="main-footer__col-5 col-5">
+						<p class="main-footer__rights">© 2015 Company. All right reserved.</p>
+					</div>
+					<div class="main-footer__col-2 col-2"><a href="" class="main-footer__logo-link">Cahee</a></div>
+					<div class="main-footer__col-5 main-footer__col-5--love col-5">
+						<p class="main-footer__love">Made with <span class="main-footer__love-link">love</span> by Auskteez</p>
+					</div>
+				</div>
+			</footer>
+			<!-- /.footer -->
 		</div>
-		<!-- /.block-7 -->
-		<footer class="main-footer container">
-			<div class="main-footer row">
-				<div class="main-footer__col-5 col-5">
-					<p class="main-footer__rights">© 2015 Company. All right reserved.</p>
-				</div>
-				<div class="main-footer__col-2 col-2"><a href="" class="main-footer__logo-link"><span class="main-footer__logo">Cahee</span></a></div>
-				<div class="main-footer__col-5 main-footer__col-5--love col-5">
-					<p class="main-footer__love">Made with <span class="love">love</span> by Auskteez</p>
-				</div>
-			</div>
-		</footer>
-		<!-- /.footer -->
-	</div>
-</body>
-</html>
+	</body>
+	</html>

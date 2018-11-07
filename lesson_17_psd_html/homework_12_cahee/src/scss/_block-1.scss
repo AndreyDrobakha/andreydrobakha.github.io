@@ -1,19 +1,19 @@
 .block-1 {
 	background-image: url($img_path + 'strawberry.jpg');
+	background-size: 100% 100%;
 	min-height: 1000px;
 	position: relative;
 	
 	&__container {
-		min-height: 1000px;
+		min-height: 100vh;
 		display: flex;
 		align-items: center;
 	}
 
-}
-
-.section-1 {
-	position: relative;
-	font-family: $main_font;
+	&__section {
+		position: relative;
+		font-family: $main_font;
+	}
 
 	&__title {
 		font-size: 60px;
@@ -38,10 +38,6 @@
 		box-shadow: 0 3px 5px #9a9a9c;
 	}
 
-	&__col-8 {
-		height: 1px;
-	}
-
 	&__scroll {
 		position: absolute;
 		display: block;
@@ -53,3 +49,5 @@
 		cursor: pointer;
 	}	
 }
+
+
