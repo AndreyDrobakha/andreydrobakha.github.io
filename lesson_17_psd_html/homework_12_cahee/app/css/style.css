@@ -74,9 +74,6 @@ html, body {
   width: 100%;
   margin: 0 auto; }
 
-.main-header {
-  display: none; }
-
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -144,7 +141,7 @@ h1 {
 
 .block-1 {
   background-image: url("../img/strawberry.jpg");
-  background-size: 100% 100%;
+  background-size: 100%;
   min-height: 1000px;
   position: relative; }
   .block-1__container {
