@@ -17,8 +17,9 @@
 		left: 0;
 		right: 0;
 		min-height: 16vh;
-		background-color: red;
-		background-image: linear-gradient(to top, rgba(#000, 1) 0%, transparent 100%), 
+		// background-color: red;
+		background-image: linear-gradient(to top, 
+			rgba(#000, 1) 0%, transparent 100%), 
 	}
 
 	&__title {

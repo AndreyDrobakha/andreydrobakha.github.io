@@ -1,7 +1,9 @@
 .block-1 {
 	background-image: url($img_path + 'strawberry.jpg');
-	background-size: 100% 100%;
-	min-height: 1000px;
+	background-position: 50% 45%;
+	// background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 	position: relative;
 	
 	&__container {

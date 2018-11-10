@@ -29,16 +29,16 @@
 		font-family: $main_font;
 	}
 
+	&__list-link:hover,
+	&__list-link--active {
+		border-top-color: red;
+	}
+	
 	&__list-link {
 		display: block;
 		width: 100%;
 		height: 100%;
 		border: 2px solid transparent;
-
-		&:hover,
-		&--active {
-			border-top-color: red;
-		}
 	}
 
 	&__text {

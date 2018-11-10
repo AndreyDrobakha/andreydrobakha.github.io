@@ -20,6 +20,7 @@
 
 	&__header {
 		text-align: center;
+		margin-bottom: 45px;
 	}
 
 	&__title {
@@ -30,7 +31,6 @@
 		font-size: $text_md;
 		font-weight: $light;
 		line-height: 1.5;
-		margin-bottom: 45px;
 	}
 
 	&__form {

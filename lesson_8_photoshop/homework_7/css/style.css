@@ -95,7 +95,7 @@ body {
 	cursor: pointer;
 	color: red;
 	text-decoration: underline;
-	transition: all .5s ease;
+	transition: all .3s ease;
 }
 
 
@@ -308,7 +308,7 @@ h1 {
 .picture:hover:after, 
 .picture:hover .descript {
 	opacity: 1;
-	transition: all .5s ease;
+	transition: all .3s ease;
 }
 
 /* #SECTION3 */
