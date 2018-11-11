@@ -369,7 +369,7 @@ $pad-screen: 1024px;
 .main-footer {
 	.col-6 {
 		@media (max-width: $pad-screen) {
-			width: 50%;
+			width: 100%;
 			margin-bottom: 2em;
 		}
 	}

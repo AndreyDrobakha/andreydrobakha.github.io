@@ -37,6 +37,11 @@
 		padding: 17px 20px;
 		color: $secondary_color;
 		background-color: #ff6033;
+		background: linear-gradient(135deg, 
+			rgba(0, 0,0,1) 0%, 
+			rgba(0,0,0,1) 50%, 
+			rgba(255, 255, 255, 1) 50%, 
+			rgba(255,255,255,1) 100%);
 		box-shadow: 0 3px 5px #9a9a9c;
 	}
 

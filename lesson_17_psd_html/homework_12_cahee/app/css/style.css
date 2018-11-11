@@ -173,6 +173,7 @@ h1 {
     padding: 17px 20px;
     color: #fff;
     background-color: #ff6033;
+    background: linear-gradient(135deg, black 0%, black 50%, white 50%, white 100%);
     -webkit-box-shadow: 0 3px 5px #9a9a9c;
     box-shadow: 0 3px 5px #9a9a9c; }
   .block-1__scroll {

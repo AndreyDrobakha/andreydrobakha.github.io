@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
 @font-face {
- font-family: "Aleo", sans-serif;
- src: url("../fonts/aleo-regular-webfont.eot"),
-        url("../fonts/aleo-regular-webfont.woff"),
-        url("../fonts/aleo-regular-webfont.woff2"),
-        url("../fonts/aleo-regular-webfont.ttf"),
-        url("../fonts/aleo-regular-webfont.svg");
+ font-family: "Aleo";
+ src: url("../fonts/aleo/aleo-regular-webfont.eot"),
+        url("../fonts/aleo/aleo-regular-webfont.woff"),
+        url("../fonts/aleo/aleo-regular-webfont.woff2"),
+        url("../fonts/aleo/aleo-regular-webfont.ttf"),
+        url("../fonts/aleo/aleo-regular-webfont.svg");
+}
+
+@font-face {
+ font-family: "Myriad Pro";
+ src: url("../fonts/myriad_pro/8143.otf")
 }
 
 $white-color: #fff;
@@ -18,10 +23,12 @@ $dark-grey-color: #232323;
 $main-color: $white-color;
 $secondary-color: $light-color;
 
-$main-font: 'Aleo', sans-serif;
+$main-font: "Aleo", sans-serif;
 $secondary-font: 'Josefin Sans', sans-serif;
+$third-font: "Myriad Pro", sans-serif;
 
 $font-size: 16px;
+$font-small: 14px;
 
 $img-path: '../img/';
 

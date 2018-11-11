@@ -1,0 +1,43 @@
+.block-house-2 {
+	min-height: 100vh;
+	background-image: url($img_path + 'rocks.jpg');
+	background-size: cover; 
+
+	&__col-6 {
+		min-height: 100vh;
+		padding-top: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	&__content {
+		min-height: 370px;
+		background-color: rgba(#292423, .7);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	&__country,
+	&__city {
+		font-family: $secondary-font;
+		font-size: 20px;
+	}
+
+	&__city {
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-family: $third-font;
+		line-height: 1.6;
+		// font-size: $font-size;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

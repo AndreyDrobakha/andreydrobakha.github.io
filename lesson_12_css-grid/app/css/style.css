@@ -359,5 +359,5 @@ form input[type="submit"] {
 
 @media (max-width: 1024px) {
   .main-footer .col-6 {
-    width: 50%;
+    width: 100%;
     margin-bottom: 2em; } }
