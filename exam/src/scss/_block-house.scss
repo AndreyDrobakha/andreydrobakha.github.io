@@ -10,6 +10,7 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+		font-family: $secondary-font;
 	}
 
 	&__content {
@@ -21,20 +22,8 @@
 		padding:0 20px;
 	}
 
-	&__country,
-	&__city {
-		font-family: $secondary-font;
+	&__country {
 		font-size: 20px;
-	}
-
-	&__city {
-		text-transform: uppercase;
-	}
-
-	&__text {
-		font-family: $third-font;
-		line-height: 1.6;
-		// font-size: $font-size;
 	}
 
 	&__button {

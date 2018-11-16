@@ -19,20 +19,9 @@
 		justify-content: space-around;
 	}
 
-	&__country,
-	&__city {
+	&__country {
 		font-family: $secondary-font;
 		font-size: 20px;
-	}
-
-	&__city {
-		text-transform: uppercase;
-	}
-
-	&__text {
-		font-family: $third-font;
-		line-height: 1.6;
-		// font-size: $font-size;
 	}
 
 	&__button {

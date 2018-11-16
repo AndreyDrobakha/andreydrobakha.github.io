@@ -17,8 +17,8 @@
 	}
 
 	&__title {
-		width: 310px;
-
+		max-width: 310px;
+		width: 100%;
 		font-family: $secondary-font;
 		text-align: justify;
 
@@ -92,6 +92,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+
+		&-link {
+			text-align: center;
+		}
 
 		&-text {
 			display: block;

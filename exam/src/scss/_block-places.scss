@@ -1,5 +1,5 @@
 .block-places {
-	min-height: 100vh;
+	// min-height: 100vh;
 	background-image: url($img_path + 'choose-bg.jpg');
 	background-size: cover; 
 
@@ -16,17 +16,22 @@
 	}
 
 	&__text {
-		font-family: $third-font;
-		line-height: 1.6;
 		margin-bottom: 50px;
+		letter-spacing: .1rem;
 	}
 
-	&__text1 {
-		margin-bottom: 30px;
-	}
+	// &__text1 {
+	// 	margin-bottom: 30px;
+	// }
 
 	&__img {
 		padding-left: 65px;
+
+		$pad-screen: 1110px;
+
+		@media (max-width: $pad-screen) {
+			padding-left: 0;
+		}
 	}
 
 	&__wrap1,

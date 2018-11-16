@@ -1,7 +1,6 @@
 .block-menu {
-	min-height: 80px;
+	// min-height: 80px;
 	background-color: #5474fd;
-	text-transform: uppercase;
 
 	&__col-6 {
 		min-height: 80px;
@@ -10,15 +9,6 @@
 		align-items: center;
 		// justify-content: center;
 		// flex-direction: column;
-	}
-
-	&__logo {
-		display: block;
-		font-family: $secondary-font;
-		font-weight: bold;
-		font-size: 24px;
-		letter-spacing: .1em;
-
 	}
 
 	&__nav {
@@ -34,12 +24,6 @@
 
 	&__items {
 		font-size: $font-small;
-		// font-family: $main-font;
-	}
-
-	&__logo:hover,
-	&__items-link:hover {
-		color: red;
-		opacity: .7;
+		text-transform: uppercase;
 	}
 }
