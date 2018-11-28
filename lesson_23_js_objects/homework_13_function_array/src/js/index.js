@@ -1,3 +1,26 @@
+;(function(){
+	'use strict'
+
+
+	const map = (fn, arr) => {
+		const resArr = [];
+		for(let i = 0; i < arr.length; i++){
+			resArr.push(fn(arr[i]))
+		}
+		return resArr
+	}
+
+	const radiuses = [1, 3, 5, 7, 9];
+
+	function getSquareRound (radius) { 
+		const pi = 3.14;
+		return Math.round(pi * radius ** 2); 
+	} // ищем площадь круга
+
+console.log(map(getSquareRound, radiuses));
+console.log(radiuses);
+
+})();
 
 
 
@@ -57,25 +80,6 @@
 // let reachest = showReachest(salaries);
 
 // console.log(reachest);
-
-
-const map = (fn, arr) => {
-	const resArr = [];
-	for(let i = 0; i < arr.length; i++){
-		resArr.push(fn(arr[i]))
-	}
-	return resArr
-}
-
-const arr = [1, 3, 5, 7, 9];
-
-function squareRound(radius) { 
-const pi = 3.14;
-return Math.round(pi * radius ** 2); 
-} // ищем площадь круга
-console.log(map(squareRound, arr));
-console.log(arr);
-
 // console.log(map(squareRound, [])); // []
 // const arr = [];
 

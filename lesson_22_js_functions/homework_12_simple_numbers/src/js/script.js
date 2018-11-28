@@ -1,6 +1,6 @@
 ;(function(){
 	'use strict'
-   
+ 
 
     const add = () => {
         const adder = document.createElement('div');
@@ -62,18 +62,20 @@
             }*/
             
             function simpleNumber (number1, number2) {
+                
                 bet: for (let j = number1; j < number2; j++) {
                     for (let i = 2; i < j; i++)
                         if (j % i == 0) {
                             continue bet;
                         }
+                        
                         // result = simpleNumber(number1, number2);
-                         return [j];
+                        return [j];
                       //  return j;
                        // alert(j);
-                    }
-                }
-                    res.innerText = simpleNumber(number1, number2);
+                   }
+               }
+               res.innerText = simpleNumber(number1, number2);
                 // res.innerText = result;
             }
         }
@@ -135,7 +137,7 @@
 getSimpleNumber();*/
 
  /*document.onload = () => {
-        'use strict';*/
+    'use strict';*/
 
      /*   let number1 = prompt("Задайте начальное чило промежутка");
         if (!(isNumeric(number1))){
