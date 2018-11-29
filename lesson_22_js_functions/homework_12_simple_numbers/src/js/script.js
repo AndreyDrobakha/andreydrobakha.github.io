@@ -1,6 +1,6 @@
 ;(function(){
 	'use strict'
- 
+
 
     const add = () => {
         const adder = document.createElement('div');
@@ -49,38 +49,61 @@
         adder.appendChild(res);
         document.body.appendChild(adder);
 
-        form.onsubmit = (e) => {
-            e.preventDefault();
+        // /*/*form.onsubmit = (e) => {
+        //     e.preventDefault();
 
-            let number1 = input_1.value;
-            let number2 = input_2.value;
-            // let result
+        //     let number1 = input_1.value;
+        //     let number2 = input_2.value;
+        //     let result = [];
 
-            /*if(!(isNumeric(number_1) && isNumeric(number_2))){
-                res.innerText = 'Ошибка! Введенные значения должны быть цифрами!';
-                return;
-            }*/
-            
-            function simpleNumber (number1, number2) {
-                
-                bet: for (let j = number1; j < number2; j++) {
-                    for (let i = 2; i < j; i++)
-                        if (j % i == 0) {
-                            continue bet;
-                        }
-                        
-                        // result = simpleNumber(number1, number2);
-                        return [j];
-                      //  return j;
-                       // alert(j);
-                   }
-               }
-               res.innerText = simpleNumber(number1, number2);
-                // res.innerText = result;
+        //     /*if(!(isNumeric(number_1) && isNumeric(number_2))){
+        //         res.innerText = 'Ошибка! Введенные значения должны быть цифрами!';
+        //         return;
+        //     }*/
+
+        //     function simpleNumber (number1, number2) {
+
+        //         bet: for (let j = number1; j < number2; j++) {
+        //             for (let i = 2; i < j; i++) {
+        //                 if (j % i === 0) {
+        //                     continue bet;
+        //                 }
+
+        //                 result.push(j);
+        //                 return result;
+        //                 // result = simpleNumber();
+        //                 // return [j];
+        //                 //  return j;
+        //                 // alert(j);
+        //             }
+        //         }
+        //     }
+        //   // res.innerText = simpleNumber(number1, number2);
+        //   res.innerText = result;*/*/
+        function simpleNumber (number1, number2) {
+            let arr = [];
+            bet: for (let j = number1; j < number2; j++) {
+                for (let i = 2; i < j; i++){
+                    if (j % i === 0) {
+                        continue bet;
+                    }
+                    if(arr.indexOf(j) < 0){
+                        arr.push(j);
+                    }
+                }
             }
+            return arr.join(', ');
         }
 
-        add();
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            let number1 = +input_1.value;
+            let number2 = +input_2.value;
+            res.innerText = simpleNumber(number1, number2);
+        }
+    }
+
+add();
     /*const getSimpleNumber = () => {
     const field = document.createElement('div');
     field.style.border = '2px solid black';
