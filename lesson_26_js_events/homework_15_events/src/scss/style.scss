@@ -1,0 +1,26 @@
+#view,
+#area {
+  height: 150px;
+  width: 400px;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 50px auto;
+}
+
+#view {
+  /* padding + border = 3px */
+
+  padding: 2px;
+  border: 1px solid black;
+}
+
+#area {
+  border: 3px groove blue;
+  padding: 0px;
+  display: none;
+}
+
+/*+ no-beautify */
+#area:focus {
+  outline: none; /* убирает рамку при фокусе */
+}
