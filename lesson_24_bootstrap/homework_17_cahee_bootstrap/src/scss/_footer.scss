@@ -1,0 +1,50 @@
+.main-footer {
+	min-height: 90px;
+	color: #afafaf;
+
+	&__col-5,
+	&__col-2 {
+		min-height: 90px;
+		display: flex;
+		align-items: center;
+	}
+	
+	&__col-2 {
+		justify-content: center;
+	}
+	
+	&__col-5--love {
+		justify-content: right;
+	}
+
+	&__rights,
+	&__love {
+		font-family: $third-font;
+		line-height: 1.7;
+	}
+
+	&__logo-link {
+		display: block;
+		font-family: $second-font;
+		font-size: 25px;
+		color: #afafaf;
+		text-align: center;
+
+		&:hover {
+			color: red;
+		}
+	}
+
+	&__love {
+		width: 100%;
+		font-size: $text_sm;
+		text-align: right;
+		padding-right: 15px;
+
+		&-link {
+			color: red;
+		}
+	}
+}
+
+

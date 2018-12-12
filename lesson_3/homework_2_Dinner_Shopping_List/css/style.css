@@ -1,0 +1,126 @@
+/*MAP
+#COMMON
+#HEADER
+#BODY
+#FOOTER
+*/
+
+/* #COMMON*/
+* {
+	transition: all .1s ease-in;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background: #3B3F45;
+	border: 20px solid #fff;
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+
+/* #HEADER */
+header {
+	padding: 15px 0 15px;
+}
+
+header, footer {
+	color: #EB7E7F;
+	background: #4A4F56;
+	text-align: center;
+}
+
+h1 {
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+
+
+/* #BODY */
+
+div {
+	width: 70%; 
+	height: 100%;
+	margin: auto;
+	padding-top: 30px;
+}
+ul {
+	color: #F9F9F3; 
+	background: #88839E;
+	margin-bottom: 30px;
+}
+
+li {
+	border: 2px solid;
+	border-color: #88839E;
+}
+span {
+	color: #fff;
+}
+
+.explain {
+	font-size: 14px;
+	color: #C0C5D2;
+	vertical-align: top;
+	line-height: 1.2;
+}
+
+.explain:before {
+	content: "(";
+	vertical-align: top;
+	line-height: 1.2;
+}
+
+.explain:after {
+	content: ")";
+	vertical-align: top;
+	line-height: 1.2;
+}
+
+
+li, footer {
+	list-style-type: none;
+	padding: 15px;
+	vertical-align: middle;
+}
+
+li:nth-child(odd){
+    background: #88839E;
+    border-color:  #88839E;
+}
+
+li:nth-child(even){
+    background: #7A7593;
+    border-color:  #7A7593;
+}
+
+li:hover {
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+	background: #625E77;
+}
+
+li:active {
+	background: pink;
+}
+
+[type = "checkbox"] {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+[type = "checkbox"]:checked + span {
+	text-decoration: line-through;
+}
+
+label {
+	cursor: pointer;
+	display: block;
+}
+
+/* #FOOTER */

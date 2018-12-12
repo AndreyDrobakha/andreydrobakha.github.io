@@ -1,0 +1,52 @@
+.block-2 {
+	background-color: #00BDBC;
+	min-height: 700px;
+	background-image: url($img_path + "plate.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+
+	&__container {
+		min-height: 700px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__section {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	// &__col-7 {
+	// 	height: 1px;
+	// 	margin-right: -30px;
+	// }
+
+	&__text {
+		padding-left: 70px;
+		// float: right;
+		// max-width: 530px;
+		// width: 100%
+	}
+
+	&__text > * {
+		color: $secondary_color;
+		font-family: $main-font;
+	}
+	
+	&__title {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	&__content {
+		font-size: $text_md;
+		font-weight: $light;
+		line-height: 1.5em;
+
+		&--content-1 {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+

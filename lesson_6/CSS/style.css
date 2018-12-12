@@ -64,13 +64,14 @@ body {
 
 .dinner_list label{
 	cursor: pointer;
-	display: block
-
+	display: block;
 }
+
 .dinner_list li:nth-child(odd){
     background: #88839E;
-    border-color:  #88839E
+    border-color:  #88839E;
 }
+
 .dinner_list li:nth-child(even){
     background: #7A7593;
     border-color:  #7A7593;

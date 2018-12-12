@@ -1,0 +1,60 @@
+.block-1 {
+	background-image: url($img_path + 'strawberry.jpg');
+	background-position: 50% 45%;
+	// background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+	
+	&__container {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+
+	&__section {
+		position: relative;
+		font-family: $main_font;
+	}
+
+	&__title {
+		font-size: 60px;
+		font-weight: $heavy;
+		margin:0 0 30px;	
+	}
+
+	&__content {
+		font-size: $text_md;
+		font-weight: $regular;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+
+	&__submit {
+		font-size: $text_lg;
+		font-weight: $light;
+		text-transform: uppercase;
+		padding: 17px 20px;
+		color: $secondary_color;
+		background-color: #ff6033;
+		// background: linear-gradient(135deg, 
+		// 	rgba(0, 0,0,1) 0%, 
+		// 	rgba(0,0,0,1) 50%, 
+		// 	rgba(255, 255, 255, 1) 50%, 
+		// 	rgba(255,255,255,1) 100%);
+		box-shadow: 0 3px 5px #9a9a9c;
+	}
+
+	&__scroll {
+		position: absolute;
+		display: block;
+		top: 90%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 25px;
+		height: 40px;
+		cursor: pointer;
+	}	
+}
+
+

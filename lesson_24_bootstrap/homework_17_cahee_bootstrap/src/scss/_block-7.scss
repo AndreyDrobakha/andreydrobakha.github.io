@@ -1,0 +1,103 @@
+.block-7 {
+	min-height: 865px;
+	background-image: url($img_path + "nature-bg.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	
+	&__container {
+		padding-top: 100px;
+		color: $main_color;
+	}
+
+	&__section {
+		font-family: $main_font;
+	}
+
+	&__col-4 {
+		height: 1px;
+	}
+
+	&__header {
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	&__title {
+		margin: 0 auto 45px;
+	}
+
+	&__content {
+		font-size: $text_md;
+		font-weight: $light;
+		line-height: 1.5;
+	}
+
+	&__form {
+		padding-right: 70px;
+	}
+
+	&__contacts {
+		padding-left: 70px;
+	}	
+
+	&__input {
+		width: 100%;
+		color: $secondary_color;
+		position: relative;
+		background: rgba(126, 224, 224, .7);
+		padding: 18px;
+		outline: none;
+		border: none;
+		font-weight: $bold;
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+
+		&:last-child {
+			resize: none;
+		}
+
+		&:hover,
+		&:focus {
+			background: linear-gradient(to right, 
+				rgba(#355b82, 1) 0%, 
+				rgba(#355b82, 1) 1%,
+				rgba(0, 196, 196, 1) 1%, 
+				rgba(0, 196, 196, 1) 100%);
+		}	
+	}
+
+	&__list {
+		font-family: $third-font;
+		line-height: 1.6;
+	}
+	
+	&__items:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	&__label,
+	&__field {
+		display: block;
+	}
+
+	&__label {
+		font-weight: $bold;
+	}
+
+	&__field {
+		font-weight: $light;
+	}
+}
+
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { 
+	color: #fff;
+	font-weight: $light;
+	font-size: $text_sm;
+	font-family: $main-font;
+}
