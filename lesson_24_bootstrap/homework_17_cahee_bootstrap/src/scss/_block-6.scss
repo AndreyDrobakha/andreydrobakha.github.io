@@ -22,9 +22,9 @@
 		font-family: $main_font;
 	}
 
-	&__col-3 {
-		height: 1px;
-	}
+	// &__col-3 {
+	// 	height: 1px;
+	// }
 
 	&__text {
 		text-align: center;
@@ -83,7 +83,6 @@
 			opacity: 0;
 			z-index: 1;
 		}
-
 	}
 	
 	&__img {
@@ -201,7 +200,7 @@
 		font-family: $third-font;
 		position: absolute;
 		padding-right: 30px;
-		top: 210px;
+		top: 190px;
 		left: 20px;
 		z-index: map-get($z-index, content);
 

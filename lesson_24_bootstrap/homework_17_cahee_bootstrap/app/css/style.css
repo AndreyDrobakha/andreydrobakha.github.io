@@ -18,6 +18,9 @@ html, body {
   width: 100%;
   margin: 0 auto; }
 
+.main-header {
+  display: none; }
+
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -412,8 +415,6 @@ p {
     transform: translateX(-50%); }
   .block-6__section {
     font-family: "Raleway", sans-serif; }
-  .block-6__col-3 {
-    height: 1px; }
   .block-6__text {
     text-align: center;
     margin-bottom: 45px; }
@@ -481,7 +482,7 @@ p {
     font-family: "Myriad Pro", sans-serif;
     position: absolute;
     padding-right: 30px;
-    top: 210px;
+    top: 190px;
     left: 20px;
     z-index: 3; }
   .block-6__descript {
