@@ -1,15 +1,13 @@
 .block-1 {
 	background-image: url($img_path + 'strawberry.jpg');
 	background-position: 50% 45%;
-	// background-size: cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100vh;
 	position: relative;
 	
 	&__container {
 		min-height: 100vh;
-		display: flex;
-		align-items: center;
 	}
 
 	&__section {

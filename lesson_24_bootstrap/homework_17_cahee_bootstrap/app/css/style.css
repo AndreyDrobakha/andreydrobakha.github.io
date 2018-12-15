@@ -48,6 +48,9 @@ a:hover {
 p {
   margin-bottom: 0; }
 
+.container {
+  max-width: 1200px; }
+
 .main-header {
   width: 100%;
   background: rgba(249, 248, 251, 0.5);
@@ -56,12 +59,6 @@ p {
   padding: 0;
   z-index: 4; }
   .main-header__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     min-height: 100px; }
   .main-header__logo-link {
     display: inline-block;
@@ -71,46 +68,29 @@ p {
     .main-header__logo-link:hover {
       color: red; }
   .main-header__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     font-family: "Raleway", sans-serif;
     margin-bottom: 0; }
   .main-header__list-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     min-height: 50px;
-    border: 2px solid transparent; }
-    .main-header__list-link:hover, .main-header__list-link--active {
-      border-top-color: red; }
-  .main-header__text {
+    border: 2px solid transparent;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: #262626;
     margin-bottom: 0; }
+    .main-header__list-link:hover, .main-header__list-link--active {
+      border-top-color: red;
+      color: #262626; }
 
 .block-1 {
   background-image: url("../img/strawberry.jpg");
   background-position: 50% 45%;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   position: relative; }
   .block-1__container {
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    min-height: 100vh; }
   .block-1__section {
     position: relative;
     font-family: "Raleway", sans-serif; }
@@ -304,7 +284,6 @@ p {
     -webkit-box-shadow: 0 1px 2px 1px #9e901d;
     box-shadow: 0 1px 2px 1px #9e901d; }
   .block-4__container-img {
-    max-width: 1170px;
     line-height: 1; }
   .block-4__img {
     display: -webkit-box;

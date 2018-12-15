@@ -12,6 +12,7 @@ a {
 
 	&:hover {
 		text-decoration: none;
+		color: $pink-color;
 	}
 }
 
@@ -75,7 +76,7 @@ ul {
 	transform: translateY(-76%);
 
 	& * {
-		font-size: 91px;
+		font-size: rem(91px);
 		font-weight: 900;
 		text-transform: uppercase;
 		line-height: 1;

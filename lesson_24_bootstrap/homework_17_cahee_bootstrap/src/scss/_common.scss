@@ -15,7 +15,6 @@ html, body {
 }
 
 .main {
-	// min-width: 1500px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -54,4 +53,8 @@ a:hover {
 
 p {
 	margin-bottom: 0;
+}
+
+.container {
+	max-width: 1200px;
 }

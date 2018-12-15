@@ -13,8 +13,8 @@
 	margin-bottom: 0;
 }
 
-.ba-row::before,
-.ba-row::after {
+.ba-row:before,
+.ba-row:after {
 	content: "";
 	display: table;
 	clear: both;

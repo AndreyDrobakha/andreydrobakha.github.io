@@ -7,8 +7,6 @@
 	z-index: map-get($z-index, navbar);
 	
 	&__row {
-		display: flex;
-		align-items: center;
 		min-height: 100px;
 	}
 	
@@ -24,30 +22,23 @@
 	}
 
 	&__list {
-		display: flex;
-		justify-content: space-between;
 		font-family: $main_font;
 		margin-bottom: 0;
-		// min-height: 50px;
 	}
 	
 	&__list-link {
-		display: flex;
-		align-items: center;
 		min-height: 50px;
 		border: 2px solid transparent;
-
-		&:hover,
-		&--active {
-			border-top-color: red;
-		}
-	}
-
-	&__text {
 		font-family: $main_font;
 		font-weight: $bold;
 		text-transform: uppercase; 
 		color: $main_color;
 		margin-bottom: 0;
+
+		&:hover,
+		&--active {
+			border-top-color: red;
+			color: $main_color;
+		}
 	}
 }
