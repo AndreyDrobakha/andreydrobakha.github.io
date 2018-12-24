@@ -5,7 +5,6 @@ body {
 	background-color: $dark-color;
 }
 
-
 a {
 	color: $white-color;
 	text-decoration: none;
@@ -17,29 +16,30 @@ a {
 }
 
 ul {
-	margin: 0;
 	padding: 0;
-	
+	margin: 0;
+
 	li {
 		list-style: none;
 
 		a {
 			display: block;
 		}
-	}
+	} 
+}
+
+section {
+	position: relative;
+	z-index: 1;
 }
 
 .arrow-link {
-	font-weight: bold;
-	letter-spacing: 1px;
 	font-size: rem(18px);
+	letter-spacing: 1px;
+	font-weight: bold;
 
 	&::after {
-		content: ''; //arrow here
-	}
-
-	&:hover {
-		color: $pink-color;
+		content: '';
 	}
 }
 
@@ -70,7 +70,7 @@ ul {
 	}
 }
 
-.sec-title {
+.section-title {
 	position: absolute;
 	top: 0;
 	transform: translateY(-76%);
@@ -81,10 +81,123 @@ ul {
 		text-transform: uppercase;
 		line-height: 1;
 		opacity: 0.05;
-		margin: 0; 
+		margin: 0;
 	}
 }
 
+
 .section__height {
 	min-height: 470px;
+}
+
+.menu-wrapper {
+	display: flex;
+	$size: 20px;
+	width: $size;
+	height: $size;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.mobile-menu {
+	$size: 20px;
+	width: $size;
+	height: 2px;
+	background-color: $white-color;
+	position: relative;
+	display: block;
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		width: $size;
+		height: 2px;
+		background-color: $white-color;
+		position: absolute;
+		transform-origin: center;
+	}
+
+	$distance: 6px;
+
+	&::before {
+		top: -$distance;
+	}
+
+	&::after {
+		top: $distance;
+	}
+
+	&.opened {
+		background-color: transparent;
+
+		&::before,
+		&::after {
+			top: 0;
+		}
+
+		&::after {
+			transform: rotate(45deg)
+		}
+
+		&::before {
+			transform: rotate(-45deg)
+		}
+	}
+
+
+	@media all and (min-width: 992px) {
+		display: none;
+	}
+
+
+
+	&.opened {
+
+	}
+}
+
+.form {
+	padding: 100px 0;
+	form {
+		input,
+		textarea {
+			display: block;
+		}
+	}
+}
+
+
+.navbar-toggler {
+	&[aria-expanded="true"]{
+		.fa-bars {
+			display: none;
+		}
+		.fa-times {
+			display: block;
+		}	
+	}	
+
+	&[aria-expanded="false"]	{
+		.fa-bars {
+			display: block;
+		}
+		.fa-times {
+			display: none;
+		}
+	}
+
+	.navbar-toggler-icon {
+		font-size: 2rem;
+		color: $white-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+.f100 {
+	flex: 100%;
 }

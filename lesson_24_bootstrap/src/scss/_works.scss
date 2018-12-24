@@ -21,9 +21,8 @@
 			opacity: .5;
 			font-size: rem(14px);
 			letter-spacing: 1px;
-
 			&:hover,
-			&.active {
+			&.active{
 				color: $white-color;
 				opacity: 1;
 			}
@@ -38,24 +37,22 @@
 		$margin-size: 7px;
 		display: flex;
 		margin-bottom: $margin-size;
-
-		&:last-child {
+		&:last-child{
 			margin-bottom: 0;
 		}
-
 		&__item {
 			flex-grow: 2;
 			position: relative;
 			padding-top: 20%;
 			margin-right: $margin-size;
-			
-			&:last-child {
+
+			&:last-child{
 				margin-right: 0;
 			}
 
 			&.large {
 				flex-grow: 3;
-			}
+			}			
 		}
 
 		&__link {
@@ -64,9 +61,10 @@
 
 		&__img {
 			position: absolute;
+			top:0;
 			object-fit: cover;
-			height: 100%;
 			width: 100%;
+			height: 100%;
 		}
 	}
 }

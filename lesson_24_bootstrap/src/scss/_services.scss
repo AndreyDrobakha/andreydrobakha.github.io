@@ -4,8 +4,9 @@
 	&__content {
 		position: relative;
 	}
-	
+
 	.grid-item {
+
 
 		&__title {
 			margin-bottom: 30px;
@@ -17,9 +18,10 @@
 				font-size: rem(24px);
 				font-weight: 300;
 				letter-spacing: 2px;
-			}	
+			}
+
 		}
-		
+
 		&__icon {
 			margin-right: 1rem;
 		}
@@ -33,33 +35,3 @@
 		}
 	}
 }
-
-
-/* %icon-service {
-	font-family: 'et-line';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	display:inline-block;
-}
-
-.icon-focus {
-	& * {
-		&::before {
-			content: "\e01b";
-		}
-	}
-}
-
-.icon-camera {
-	& * {
-		&::before {
-			content: "\e012";
-		}
-	}
-} */

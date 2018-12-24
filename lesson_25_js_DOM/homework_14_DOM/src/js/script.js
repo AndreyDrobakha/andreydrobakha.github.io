@@ -1,61 +1,61 @@
 ;(function(){
-    'use strict';
+  'use strict';
 
-    const playList = [
-    {
-        author: "led zeppelin",
-        song: "stairway to heaven",
-        duration: "2:03"
-    },
-    {
-        author: "queen",
-        song: "bohemian rhapsody",
-        duration: "2:30"
-    },
-    {
-        author: "lynyrd skynyrd",
-        song: "free bird",
-        duration: "1:56"
-    },
-    {
-        author: "deep purple",
-        song: "smoke on the water",
-        duration: "3:03"
-    },
-    {
-        author: "jimi hendrix",
-        song: "all along the watchtower",
-        duration: "2:53"
-    },
-    {
-        author: "AC/DC",
-        song: "back in black",
-        duration: "2:43"
-    },
-    {
-        author: "queen",
-        song: "we will rock you",
-        duration: "2:13"            
-    },
-    {
-        author: "metallica",
-        song: "enter sandman",
-        duration: "3:03"            
-    }
-    ];
+  const playList = [
+  {
+    author: "led zeppelin",
+    song: "stairway to heaven",
+    duration: "2:03"
+  },
+  {
+    author: "queen",
+    song: "bohemian rhapsody",
+    duration: "2:30"
+  },
+  {
+    author: "lynyrd skynyrd",
+    song: "free bird",
+    duration: "1:56"
+  },
+  {
+    author: "deep purple",
+    song: "smoke on the water",
+    duration: "3:03"
+  },
+  {
+    author: "jimi hendrix",
+    song: "all along the watchtower",
+    duration: "2:53"
+  },
+  {
+    author: "AC/DC",
+    song: "back in black",
+    duration: "2:43"
+  },
+  {
+    author: "queen",
+    song: "we will rock you",
+    duration: "2:13"            
+  },
+  {
+    author: "metallica",
+    song: "enter sandman",
+    duration: "3:03"            
+  }
+  ];
 
-    const body = document.body;
-    document.body.style.background = 'grey';
-    const container = document.createElement('div');
-    const div = document.createElement('div');
-    const h3 = document.createElement('h3');
-    const ul = document.createElement('ul');
+  const body = document.body;
+  document.body.style.background = 'grey';
+  const container = document.createElement('div');
+  const div = document.createElement('div');
+  const h3 = document.createElement('h3');
+  const ul = document.createElement('ul');
    // const li;
 
    h3.innerText = 'Playlist';
 
    body.style.fontFamily = 'Roboto, sans-serif';
-   body.style.background = '#003056 url(../img/816831.jpg) 50%/cover';
+   body.style.background = '#003056 url(img/816831.jpg) 50%/cover';
    body.style.color = '#574d72';
 
    container.style.padding = '50px 20px';
@@ -91,13 +91,13 @@
     const song = document.createElement('div');
     const img = document.createElement('img');
     const styleElem = document.createElement('style');
-    img.src = 'img/heart1.svg'
+    img.src = 'img/heart.svg'
 
     li.style.borderTop = '1px solid #e4e2e2';
-    li.style.paddingTop = '10px';
-    li.style.marginTop = '10px';
+    li.style.paddingTop = '12px';
+    li.style.paddingBottom = '12px';
     divLiTop.style.fontSize = '80%';
-    divLiTop.style.marginBottom = '5px';
+    divLiTop.style.marginBottom = '10px';
     divLiTop.style.color = '#a4a3a9';
     spanDuration.style.paddingRight = '10px';
     spanDuration.style.marginRight = '8px';
@@ -111,7 +111,6 @@
     img.style.float = 'right';
     img.style.marginTop = '10px';
     img.style.cursor = 'pointer';
-    img.style.fill = '#ed5e75';
 
     ul.appendChild(li);
     li.appendChild(img);
@@ -121,19 +120,20 @@
     divLiTop.appendChild(spanAuthor);
     spanAuthor.appendChild(styleElem);
 
-    song.innerText = playList[i].song;
+    const string = playList[i].song;
+    const newWord = string.split('').map((el, idx) => {
+     return idx === 0 ? el.toUpperCase() : el
+    }).join('');
+
+
+    song.innerText = newWord;
     spanDuration.innerText = playList[i].duration;
-    spanAuthor.innerText = playList[i].author;
-   // spanAuthor.innerHTML = "spanAuthor:first-letter {text-transform: uppercase;}"
-   styleElem.innerHTML = "spanAuthor:firstLetter {textTransform: uppercase;}";
+    const string1 = playList[i].author;
+    const newWord1 = string1.split('').map((el, idx) => {
+     return idx === 0 ? el.toUpperCase() : el
+    }).join('');
+    
+    spanAuthor.innerText = newWord1;  
 
-} 
-    /*var styleElem = document.head.appendChild(document.createElement("style"));
-
-styleElem.innerHTML = "#theDiv:before {background: black;}";*/
-     
-      /* display: inline-block;
-    padding-right: 10px;
-    margin-right: 6px;
-    border-right: 1px solid rgba(164, 163, 169, 0.6);*/
-})();
+  } 
+  })();

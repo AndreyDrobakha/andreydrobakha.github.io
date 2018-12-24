@@ -1,42 +1,41 @@
 .first-screen {
-	$paddingTop: 80px;
+	position: relative;
 	background-image:
-	linear-gradient(to top, $dark-color 0%, /* $black-color 10%, */ rgba($top-gradient-color, .9) 100%), 
-    url($img-path + "header-bg.jpg");
+	linear-gradient(to top, $dark-color 0%, rgba($top-gradient-color, .9) 100%), 
+	url($img-path + "header-bg.jpg");
+
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-size: cover; 
+	background-size: cover;
 	min-height: 100vh;
-	padding-top: $paddingTop;
-	position: relative;
+	z-index: 2;
 
-	/* &::after {
-		content: "";
-		position: absolute;
-		bottom: 30px;
-		left: 0;
-		right: 0;
-		min-height: 16vh;
-		// background-color: red;
-		background-image: linear-gradient(to top, 
-			rgba(#000, 1) 0%, transparent 100%), 
-	}
-	 */
+	padding-top: 40px;
+
+	$paddingTop: 80px;	
+	@include min992 {
+		padding-top: $paddingTop;
+	}	
+
 	&__container {
 		position: relative;
 		z-index: 2;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		min-height: calc(100vh - #{$paddingTop});
+		@include min992 {
+			min-height: calc(100vh - #{$paddingTop});
+		}
+		
 	}
 
 	&__image {
 		
+
 		&-link {
 			position: relative;
 			display: inline-block;
-			max-width: 70%;
+			max-width: 70%;			
 
 			@media screen and (min-width: 1367px) {
 				max-width: 100%;
@@ -44,16 +43,15 @@
 
 			.fa-play {
 				@include centered;
-				color: $pink-color;
 				z-index: 1;
-				font-size: rem(24px);
+				color: $pink-color;
+				font-size: rem(24px)
 			}
 
 			&::after {
-				$size: 90px; 
-				content: "";
-				position: absolute;
-				display: block;
+				$size: 90px;
+				content: '';
+				display: block;				
 				width: $size;
 				height: $size;
 				border: 10px solid $border-color;
@@ -65,7 +63,8 @@
 
 		img {
 			max-width: 100%;
-		} 
+		}		
+		
 	}
 
 	&__title {
@@ -83,6 +82,7 @@
 		&::before {
 			@include decor($font-size);
 		}
+
 	}
 
 	&__text {
@@ -90,33 +90,93 @@
 		max-width: 90%;
 		line-height: 2;
 		color: $light-color;
+		letter-spacing: 1px;
 		margin-bottom: rem(30px);
 	}
-}
 
-
-.navigation {
-
-	&__list {
-		padding: 0;
-		margin: 0;
+	.navigation {
+		width: 100%;
 		display: flex;
-		justify-content: space-between;
-	}
+		align-items: center;
+		justify-content: flex-end;
 
-	&__item {
+		&__list {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			flex: 100%;
 
-	}
+			@include min992 {
+				align-items: center;
+			}
 
-	&__link {
-		text-transform: uppercase;
-		font-weight: bold;
-		font-size: rem(14px);
+			&.open {
+				display: flex;
 
+				.navigation__item {
+					margin-bottom: .5rem;
+				}
+			}
+		}
 
-		&:hover {
-			color: $pink-color;
+		&__item {
+			&.active {
+				.navigation__link {
+					color: $pink-color;	
+				}
+			}
+		}
+
+		&__link {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: rem(14px);
+
+			&:hover {
+				color: $pink-color;
+			}
 		}
 	}
 
+
+	.navbar-collapse {
+		position: absolute;
+		top: 0;
+		transform: translateY(25%);
+
+		@include min992 {
+			position: initial;
+			transform: translateY(0);
+		}
+
+		& > * {
+			opacity: 0;
+			@include min992 {
+				opacity: 1;
+			}
+		}
+
+		&.show {
+
+			& > * {
+				opacity: 1;
+			}
+		}
+	}
 }
+
+
+
+.navigation {
+  @include z-index(navbar); // 1
+}
+
+// .fixed {
+// 	position: fixed;
+// 	width: 100%;
+// 	left: 0;
+// 	top: 0;
+// 	z-index: 1500000;
+// }
+
+

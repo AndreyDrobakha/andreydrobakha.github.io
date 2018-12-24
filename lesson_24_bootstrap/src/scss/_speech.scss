@@ -1,18 +1,18 @@
 .speech {
 	padding-top: rem(290px);
+	padding-bottom: rem(45px);
 
-	.section__title {
+	.section-title {
 		z-index: -1;
 	}
 
 	&__content {
-		background: $pink-color;
+		background-color: $pink-color;
 		position: relative;
 	}
 
 	&__height {
 		min-height: 445px;
-
 	}
 
 	&__img {
@@ -29,20 +29,21 @@
 		&::before {
 			@include decor(16px);
 			width: 90px;
-		}
+		}		
+	}
+
+	.quotes {
+		font-size: 150px;
+		font-weight: 900;
+		position: absolute;
+		color: #da3e2d;
+		z-index: -1;
+		line-height: .6;
+		transform: translateX(-35%);
 	}
 
 	&__author {
 		text-transform: capitalize;
 		font-weight: bold;
 	}
-}
-
-.quotes {
-	min-height: 150px;
-	font-size: 150px;
-	font-weight: 900;
-	color: #da3e2d;
-	position: absolute;
-	z-index: -1;
 }

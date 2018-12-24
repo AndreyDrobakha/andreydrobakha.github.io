@@ -8,27 +8,76 @@
 }
 
 @mixin centered {
-    position: absolute;        
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;		
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 @function rem($target, $context: $base-size) {
-  @if $target == 0 { 
-  	@return 0;
-   } @return $target / $context + 0rem;
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0rem;
 }
 
-@mixin decor($font-size, $line-height: 1.2) {
-	content: "";
+
+@mixin decor($font-size, $line-height: 1.2){
+	content: '';
 	display: block;
 	width: 90px;
 	border-top: 1px solid $white-color;
 	position: absolute;
 	transform: translate(-150%, $font-size * $line-height / 2);
 
-	@media screen and (min-height: 1367px) {
+	@media screen and (min-height: 1367px){
 		transform: translate(-180%, $font-size * $line-height / 2);
 	}
+}
+
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+}
+
+
+@mixin min992 {
+	@media all and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin min768 {
+	@media all and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin min576 {
+	@media all and (min-width: 576px) {
+		@content;
+	}
+}
+
+
+$z-index: (
+	content: 2,
+	navbar: 150000
+);
+
+@function z-index-func($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index-func($key);
 }
