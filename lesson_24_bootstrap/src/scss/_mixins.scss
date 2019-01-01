@@ -21,8 +21,9 @@
 
 
 @mixin decor($font-size, $line-height: 1.2){
+	display: none;
 	content: '';
-	display: block;
+	z-index: 1;
 	width: 90px;
 	border-top: 1px solid $white-color;
 	position: absolute;
@@ -31,8 +32,11 @@
 	@media screen and (min-height: 1367px){
 		transform: translate(-180%, $font-size * $line-height / 2);
 	}
-}
 
+	@include min992 {
+		display: block;
+	}
+}
 
 @mixin placeholder {
 	&::-webkit-input-placeholder {
@@ -49,9 +53,26 @@
 	}
 }
 
+@mixin min1367 {
+	@media all and (min-width: 1367px) {
+		@content;
+	}
+}
+
+@mixin max1366 {
+	@media all and (max-width: 1366px) {
+		@content;
+	}
+}
 
 @mixin min992 {
 	@media all and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin max991 {
+	@media all and (max-width: 991px) {
 		@content;
 	}
 }
@@ -62,12 +83,23 @@
 	}
 }
 
+@mixin max767 {
+	@media all and (max-width: 767px) {
+		@content;
+	}
+}
+
 @mixin min576 {
 	@media all and (min-width: 576px) {
 		@content;
 	}
 }
 
+@mixin max575 {
+	@media all and (max-width: 575px) {
+		@content;
+	}
+}
 
 $z-index: (
 	content: 2,

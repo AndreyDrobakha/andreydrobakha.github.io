@@ -32,7 +32,7 @@
   background-color: #b07cf7; }
 
 .section_1 {
-  background-color: black; }
+  background-color: grey; }
   .section_1 .btn {
     width: 100%;
     max-width: 200px;
@@ -45,7 +45,7 @@
     cursor: pointer;
     font-family: "Arial";
     text-transform: uppercase;
-    font-size: 1.5 rem; }
+    font-size: 1.5rem; }
     .section_1 .btn:hover {
       background-color: #ff8866; }
 
@@ -123,3 +123,15 @@
   text-transform: uppercase; }
   .section_6 .btn:hover {
     background-color: #f95c68; }
+
+section {
+  border-color: blue !important; }
+
+.section_3 {
+  font-size: 1.5rem; }
+
+.section_2 {
+  font-size: 1rem; }
+
+.section_1 {
+  font-size: 0.5rem; }

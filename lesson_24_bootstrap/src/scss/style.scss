@@ -14,14 +14,19 @@
 /////////////// REMOVE BEFORE PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 @media all and (max-width: 319px) {
+
 	* {
 		display: none!important;	
 	}
 }
 
-// .first-screen,
-.about,
-.services,
+.bad {
+	font-size: 2rem;
+}
+
+.first-screen,
+// .about,
+// .services,
 .works,
 .speech,
 .partners,

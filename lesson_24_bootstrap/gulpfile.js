@@ -1,6 +1,6 @@
 'use strict';
 
-const   gulp = require('gulp'),
+const gulp = require('gulp'),
 autoprefixer = require('gulp-autoprefixer'),
 notify = require('gulp-notify'),
 sass = require('gulp-sass'),
@@ -38,7 +38,7 @@ gulp.task('js', () => {
  .pipe(babel({
             presets: ['@babel/env']
         }).on('error', notify.onError("JS-babel-Error: <%= error.message %>")))
- .pipe(uglify().on('error', notify.onError("JS-uglify-Error: <%= error.message %>")))
+ // .pipe(uglify().on('error', notify.onError("JS-uglify-Error: <%= error.message %>")))
  .pipe(sourcemaps.write())
  .pipe(gulp.dest('app/js'))
  .pipe(browserSync.stream());

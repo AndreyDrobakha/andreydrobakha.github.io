@@ -1,0 +1,117 @@
+/*MAP
+#COMMON
+#HEADER
+#BODY
+#FOOTER
+*/
+
+
+
+
+/*COMMON*/
+* {
+	box-sizing: border-box;
+	transition: all .1s ease-in;
+	margin: 0px;
+}
+
+html, body {
+	width: 100%; 
+	height: 100%
+}
+body {
+	margin: 0px;
+	background: #3B3F45;
+	color: white;
+	border: 20px solid white;
+}
+/*HEADER*/
+.bg_gray {
+	background: #4A4F56
+}
+.main_header > h1 {
+	margin: 0;
+}
+.main_header {
+	text-align: center;
+	padding: 16px;
+}
+.upper {
+	text-transform: uppercase
+}
+.main_header h1 {
+	text-transform: capitalize;
+}
+.main_header p {
+	font-size: 20px;
+}
+.pink {
+	color: #eb7e7f
+}
+/*BODY*/
+.container {
+	max-width: 960px;
+	margin:0 auto;
+	padding-top: 40px
+}
+.dinner_list {
+	padding: 30px 0;
+	list-style: none
+}
+.dinner_list li {
+	padding: 10px;
+	border: 2px solid
+	}
+
+.dinner_list label{
+	cursor: pointer;
+	display: block;
+}
+
+.dinner_list li:nth-child(odd){
+    background: #88839E;
+    border-color:  #88839E;
+}
+
+.dinner_list li:nth-child(even){
+    background: #7A7593;
+    border-color:  #7A7593;
+}
+.dinner_list li:hover {
+	border-color: #fff;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	background: #625E77;
+}
+.dinner_list li:active {
+	background: pink
+}
+
+.dinner_list li input[type="checkbox"] {
+	margin-right: 10px
+}
+
+.dinner_list label span.bracket:before {
+	content: "(";
+	
+}
+.dinner_list label span.bracket:after {
+	content: ")"
+}
+.dinner_list label span span {
+	font-size: 16px
+}
+.fs20 {
+	font-size: 20px
+}
+.dinner_list li input[type="checkbox"]:checked + span {
+	text-decoration: line-through;
+}
+/*FOOTER*/
+.main_footer {
+	padding: 20px;
+}
+.main_footer p {
+	text-align: center;
+	font-size: 25px;
+}
