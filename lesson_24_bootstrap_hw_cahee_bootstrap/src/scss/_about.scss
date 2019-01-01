@@ -2,7 +2,7 @@
 	padding-top: 20%;
 
 	@include min576 {
-		padding-top: rem(150px);	
+		padding-top: rem(150px);		
 	}
 
 	@include min992 {
@@ -16,12 +16,12 @@
 
 
 	&__content {
-		background: url($img-path + 'about-bg.jpg') no-repeat;
 		background-size: cover;
 		position: relative;
-		padding: 0px;
+		padding: 15px;
 
 		@include min768 {
+			background: url($img-path + 'about-bg.jpg') no-repeat;
 			padding: 0;			
 		}
 
@@ -34,7 +34,6 @@
 
 	&__img {
 		box-shadow: 0 0 10px 0 rgba($black-color, .3);
-		// max-width: 100%;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
@@ -49,7 +48,7 @@
 		@include min992 {
 			transform: translate(15px, -25%);
 			height: initial;
-			object-fit: initial;
+			object-fit: initial;			
 		}
 	}
 
@@ -58,19 +57,19 @@
 	&__text-content {
 
 		@include min768 {
-			padding-left: 65px;	
+			padding-left: 65px; 	
 		}
-		
-		@include min992 {	
-			padding-right: 65px; 	
+
+		@include min992 {
+			padding-right: 65px;
 		}
 	}
 
 	&__text {
 		$line-height: 2;
 		line-height: $line-height;
-		margin-bottom: rem(16px);
 		font-weight: 200;
+		margin-bottom: rem(16px);
 
 		@include min768 {
 			margin-bottom: rem(30px);
