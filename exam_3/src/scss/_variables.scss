@@ -1,0 +1,53 @@
+$img-path: '../img/';
+
+$body-color: #ebebeb;
+$violet-color: #9f9acf;
+$blue-color: #2364bb;
+$dark-color: #665f60;
+$white-color: #ffffff;
+$light-color: #fefefb;
+$black-color: #000000;
+$grey-color: #7d7a7c;
+$light-grey-color: #dbdbdb;
+$light-violet-color: #b6b2d7;
+
+
+
+@font-face {
+ font-family: "Proxima Nova semi-bold";
+ src: url("../fonts/ProximaNova-Semibold.ttf")
+}
+
+@font-face {
+ font-family: "Proxima Nova bold";
+ src: url("../fonts/ProximaNova-Bold.ttf")
+}
+
+@font-face {
+ font-family: "PTSans regular";
+ src: url("../fonts/PTS55F.ttf")
+}
+
+@font-face {
+ font-family: "PTSans italic";
+ src: url("../fonts/PTS56F.ttf")
+}
+
+@font-face {
+ font-family: "PTSans bold";
+ src: url("../fonts/PTS75F.ttf")
+}
+
+// @font-face {
+//  font-family: "PTSans bold";
+//  src: url("../fonts/HelveticaLTStd-Bold.otf")
+// }
+
+$main-font: "Proxima Nova semi-bold", sans-serif;
+$secondary-font: "Proxima Nova bold", sans-serif;
+$third-font: "PTSans italic", sans-serif;
+$fourth-font: "PTSans regular", sans-serif;
+$fifth-font: "PTSans bold", sans-serif;
+
+$base-size: 16px;
+

@@ -1,0 +1,17 @@
+.main-header {
+	font-family: $secondary-font;
+	
+	&__logo {
+		font-size: rem(34px);
+		font-weight: bold;
+		
+		text-transform: capitalize;
+	}
+
+	&__nav {
+		font-size: rem(14px);
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+}

@@ -1,0 +1,45 @@
+.about {
+	min-height: 100vh;
+	height: 100%;
+
+	&__container {
+		min-height: 556px;
+	}
+
+	&__img-wrapper {
+		position: relative;
+		margin-left: -15px;
+		width: 380px;
+		padding-top: 158%;
+		line-height: 0;
+	}
+
+	&__description {
+		position: absolute;
+		top: 75px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		text-align: center;
+	}
+
+	&__logo {
+		margin-bottom: 40px;
+	}
+
+	&__img {
+		@include overlay;
+	}
+
+	&__text {
+		font-family: $fourth-font;
+		color: $dark-color;
+		font-size: rem(20px);
+		line-height: 1;
+		margin-bottom: 90px;
+	}
+
+	&__col-7 {
+		padding: rem(70px) 0 rem(100px);
+	}
+}

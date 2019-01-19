@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+@import 'common';
+@import 'first-screen';
+@import 'about';
+@import 'services';
+@import 'works';
+@import 'team';
+@import 'partners';
+@import 'contact';
+@import 'footer';
+
+
+/////////////// REMOVE BEFORE PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@media all and (max-width: 319px) {
+
+	* {
+		display: none!important;	
+	}
+}
+.first-screen,
+// .about,
+.services,
+// .works,
+// .speech,
+// .partners,
+// .contact,
+// .footer 
+{
+	display: none!important;
+}

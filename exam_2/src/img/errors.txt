@@ -1,0 +1,4 @@
+[2019-01-01 10:17:38] layer "Easy to ride, care free surfing craft that's fun for everyone, ": Expected end of input but "," found.
+[2019-01-01 10:17:38] layer "A large group of surfers invaded the coast of La Jolla Shores, ": Expected end of input but "," found.
+[2019-01-01 10:17:38] layer "@ian.walsh": Unsupported extension: walsh
+[2019-01-01 10:35:33] layer "Phototeam3.jpg": Duplicate path: Phototeam3.jpg

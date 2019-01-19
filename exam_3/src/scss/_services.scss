@@ -1,0 +1,93 @@
+.services {
+	position: relative;
+	min-height: 100vh;
+
+	// &__container {
+	// 	min-height: 800px;
+	// 	height: 100%;	
+	// }
+
+	&__row {
+
+		& > * {
+			margin-left: -15px;
+		}
+	}
+
+	&__col {
+		min-height: 400px;
+	}
+
+	&__title {
+		min-height: 350px;
+		width: 100%;
+		// margin-left: -15px;
+	}
+	
+	&__links {
+		color: $dark-color;
+		text-align: center;
+		padding-bottom: 30px;
+
+		&--link-3,
+		&--link-4 {
+			padding-bottom: 60px;
+		}
+	}
+	
+	&__items-title {
+		font-family: $fifth-font;
+		font-size: rem(24px);
+		text-transform: uppercase;
+	}
+	
+	&__items-text {
+		font-family: $third-font;
+		font-size: rem(18px);
+		line-height: 1.2;
+	}
+
+	.grey {
+		background-color: $light-grey-color;
+	}
+	
+
+	&__logo {
+		margin-bottom: rem(28px);
+	}
+
+	&__text {
+		text-align: center;
+		font-family: $third-font;
+		font-size: rem(18px);
+
+		&-bold {
+			font-family: $fifth-font;
+		}
+	}
+
+	&__col-4 {
+		position: relative;
+		background-image: url($img-path + 'phone_on_table2.jpg');
+		background-position: -87% 0;
+		min-width: 410px;
+		width: 100%;
+
+		& > * {
+			z-index: 2;
+			width: 100%;
+			// margin-left: -15px;
+			// position: absolute;
+		}
+
+		&::after {
+			content: "";
+			@include overlay;
+			background-color: rgba($violet-color, .5);
+		}
+	}
+}
+
+.mb-28 {
+	margin-bottom: 28px;
+}

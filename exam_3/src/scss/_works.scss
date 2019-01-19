@@ -1,0 +1,42 @@
+.works {
+	position: relative;
+	min-height: 100vh;
+	height: 100%;
+	background-image: url($img-path + 'glasses2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	// &__container {
+	// 	min-height: 800px;
+	// }
+
+	&__col {
+		min-height: 800px;
+	}
+
+	&__col > * {
+		z-index: 2;
+	}
+	
+	&::before {
+		content: "";
+		@include overlay;
+		background-color: rgba($light-violet-color, .95);
+	}
+
+	&__items {
+		display: inline-block;
+	}
+
+	&__links:hover {
+		background-image: url($img-path + 'circle_filled.svg');
+		background-repeat: no-repeat;
+		background-position: 0 60%;
+	}
+
+	&__button {
+		color: $body-color;
+		border: 1px solid $body-color;
+		background: transparent;
+	}
+}

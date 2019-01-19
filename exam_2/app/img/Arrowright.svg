@@ -1,0 +1,30 @@
+<svg id="Arrowright.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="100" viewBox="0 0 101 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #e6e6e6;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #02f;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="0.5" y="0.5" width="100" height="99" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood result="flood" flood-opacity="0.16"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #fff; filter: url(#filter)">
+    <circle id="Circle" class="cls-1" cx="49.84" cy="49.5" r="25" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Circle" style="stroke: #e6e6e6; filter: none; fill: none"/>
+  <path id="Arrow" class="cls-2" d="M1505.5,2630.24l5.14-5.24-5.2-5.31h0a1,1,0,0,1,.7-1.69,0.959,0.959,0,0,1,.68.28h0l5.88,6h0a1.029,1.029,0,0,1,.3.72h0a1.011,1.011,0,0,1-.3.72h0l-5.88,6h0a0.977,0.977,0,0,1-.68.28,0.992,0.992,0,0,1-.98-1A1.041,1.041,0,0,1,1505.5,2630.24Zm-7.52-4.24h12.41a1,1,0,0,0,0-2h-12.41A1,1,0,0,0,1497.98,2626Z" transform="translate(-1455.5 -2575.5)"/>
+</svg>

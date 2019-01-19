@@ -1,0 +1,96 @@
+.team {
+	
+	@include min768 {
+		min-height: 100vh;
+	}
+	
+	&__container {
+		min-height: 800px;
+	}
+
+	&__title {
+		color: $dark-color;
+	}
+
+	&__col {
+		min-height: 125px;
+	}
+	
+	&__col > * {
+		text-align: center;
+	}
+	
+	&__people {
+		min-height: 285px;
+		position: relative;
+		background-color: $light-color;
+		background-size: 100% 100%;
+	}
+
+	&__wrap {
+		position: relative;
+		width: 100%;
+		padding-top: 43%;
+		// background-color: red;
+	}
+
+	// &__img-wrap-people {
+	// 	position: absolute;
+	// 	width: 260px;
+	// 	padding-top: 72%;
+	// 	top: 0;
+	// 	left: 50%;
+	// 	bottom: 0;
+	// 	right: 0;
+	// 	transform: translate(-50%, -50%);
+	// } 
+
+
+	&__photo {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		bottom: 0;
+		right: 0;
+		transform: translate( -50%, -50%);	
+	}
+	
+	&__about {
+		padding-bottom: 45px;
+
+		& > * {
+			display: block;
+			font-size: rem(24px);
+		}
+	}
+
+	// &__name,
+	// &__occupation {
+		
+	// }
+
+	&__name {
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		color: $violet-color;
+		margin-bottom: 25px;
+	}
+
+	&__position {
+		font-family: $third-font;
+		color: $dark-color;
+		text-transform: capitalize;
+	}
+
+	// &__social-list {
+	// 	min-height: 70px;
+	// }
+
+	&__footer {
+		background-color: $violet-color;
+		// position: absolute;
+		// bottom: 0px;
+		min-height: 70px;
+	}
+
+} 

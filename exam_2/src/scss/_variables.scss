@@ -1,0 +1,37 @@
+$img-path: '../img/';
+
+
+$black-color: #000000;
+$dark-color: #282828;
+$pink-color: #ef4836;
+$blue-color: #2364bb;
+$white-color: #ffffff;
+$black-color: #000000;
+$light-color: #fcfcfc;
+$grey-color: #aaaaaa;
+$border-color: #ababab;
+$top-gradient-color: #021833;
+$contact-bg-color: #131313;
+$form-color: #525252;
+$form-hover: #2866bd;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400i|Raleway:400,600,700|Roboto+Condensed:700');
+
+@font-face {
+ font-family: "HelveticaBold";
+ src: url("../fonts/HelveticaLTStd-Bold.otf")
+}
+
+@font-face {
+ font-family: "HelveticaLRoman";
+ src: url("../fonts/HelveticaLTStd-Roman.otf")
+}
+
+$main-font: "Raleway", sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$third-font: 'Playfair Display', sans-serif;
+$fourth-font: 'Roboto Condensed', sans-serif;
+$fifth-font: 'HelveticaLBold', sans-serif;
+$sixth-font: 'HelveticaLRoman', sans-serif;
+
+$base-size: 16px;

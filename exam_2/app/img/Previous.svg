@@ -1,0 +1,16 @@
+<svg id="Previous.svg" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2d800;
+      }
+
+      .cls-2 {
+        fill: #f7f7f7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Button" class="cls-1" width="38" height="38"/>
+  <path id="Arrow_left" data-name="Arrow left" class="cls-2" d="M1455.5,510.241L1450.36,505l5.2-5.308h0a1.014,1.014,0,0,0,.28-0.695,0.991,0.991,0,0,0-.98-1,0.948,0.948,0,0,0-.68.281h0l-5.88,6h0a1.027,1.027,0,0,0-.3.719v0a1.027,1.027,0,0,0,.3.72h0l5.88,6v0a0.967,0.967,0,0,0,.68.278,0.99,0.99,0,0,0,.98-1A1.038,1.038,0,0,0,1455.5,510.241Zm7.52-4.241h-12.41a1,1,0,0,1,0-2h12.41A1,1,0,0,1,1463.02,506Z" transform="translate(-1437 -486)"/>
+</svg>
