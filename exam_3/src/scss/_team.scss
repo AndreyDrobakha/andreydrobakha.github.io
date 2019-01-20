@@ -5,7 +5,11 @@
 	}
 	
 	&__container {
-		min-height: 800px;
+		min-height: 100vh;
+	}
+	
+	&-grow {
+		flex-grow: .15;
 	}
 
 	&__title {
@@ -31,20 +35,7 @@
 		position: relative;
 		width: 100%;
 		padding-top: 43%;
-		// background-color: red;
 	}
-
-	// &__img-wrap-people {
-	// 	position: absolute;
-	// 	width: 260px;
-	// 	padding-top: 72%;
-	// 	top: 0;
-	// 	left: 50%;
-	// 	bottom: 0;
-	// 	right: 0;
-	// 	transform: translate(-50%, -50%);
-	// } 
-
 
 	&__photo {
 		position: absolute;
@@ -64,11 +55,6 @@
 		}
 	}
 
-	// &__name,
-	// &__occupation {
-		
-	// }
-
 	&__name {
 		font-family: $secondary-font;
 		text-transform: uppercase;
@@ -82,10 +68,6 @@
 		text-transform: capitalize;
 	}
 
-	// &__social-list {
-	// 	min-height: 70px;
-	// }
-
 	&__footer {
 		background-color: $violet-color;
 		// position: absolute;
@@ -93,4 +75,25 @@
 		min-height: 70px;
 	}
 
+	
+	&__social-items {
+		display: inline-block;
+
+		&:not(:last-child) {
+			margin-right: 23px;
+		}
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+	
+	.first {
+		margin-right: 12px;
+	}
+
+	&__social-link {
+		width: 32px;
+		height: 32px;
+	}
 } 

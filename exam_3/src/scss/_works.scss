@@ -1,20 +1,19 @@
 .works {
 	position: relative;
-	min-height: 100vh;
-	height: 100%;
 	background-image: url($img-path + 'glasses2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	// &__container {
-	// 	min-height: 800px;
-	// }
 
 	&__col {
-		min-height: 800px;
+		min-height: 100vh;
+
+		& > * {
+			z-index: 1;
+		}
 	}
 
-	&__col > * {
+	&__img {
 		z-index: 2;
 	}
 	

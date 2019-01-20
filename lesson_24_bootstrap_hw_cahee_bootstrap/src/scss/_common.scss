@@ -82,7 +82,7 @@ ul {
 		opacity: 0.05;
 		transform: translateY(-76%);
 		left: initial;
-		width: auto;		
+		width: auto;
 	}
 
 	& * {
@@ -110,12 +110,12 @@ ul {
 
 	@include min768 {
 		padding: 0;
-		min-height: 350px;	
+		min-height: 350px;
 	}
 
 	@include min992 {
-		min-height: 470px;	
-	}	
+		min-height: 470px;
+	}
 }
 
 .menu-wrapper {
@@ -325,5 +325,44 @@ ul {
 		color: $pink-color;
 		font-weight: bold;
 		cursor: pointer;
+	}
+}
+
+#map {
+	min-height: 100vh;
+}
+
+.animate-label {
+	$size: 90px;
+	min-width: 320px;
+	background-color: rgba($white-color, .5);
+	position: fixed;
+	right: 0;
+	top: 20%;
+	display: flex;
+	cursor: pointer;
+	@include z-index(label);
+	transform: translateX(calc(100% - #{$size}));
+	will-change: transform;
+	transition: transform .4s ease;
+
+	&:hover {
+		transform: translateX(0);
+	}
+
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: $size;
+	}
+
+	.icon {
+		width: $size;
+		background-color: red;
+	}
+
+	.address {
+		width: calc(100% - #{$size});
 	}
 }

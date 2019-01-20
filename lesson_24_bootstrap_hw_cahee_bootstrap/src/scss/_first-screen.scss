@@ -182,6 +182,7 @@
 		}
 	}
 
+
 	.navbar-collapse {
 		position: fixed;
 		top: 0;
@@ -193,7 +194,6 @@
 		background-color: $black-color;
 		transition: transform .4s ease;
 		transform: translateX(100%);
-		
 		@include z-index(navbar);
 
 		@include min768 {

@@ -13,20 +13,17 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 	<section class="first-screen">
-		<div class="container first-screen__container laptop-content">
+		<div class="container first-screen__container laptop-content d-flex flex-column justify-content-center">
 			<div class="row justify-content-between align-items-center mh-120 mb-md-0">
 				<div class="col-12">
 					<nav class="navigation navbar navbar-expand-lg fixed-top">
 						<div class="container">
 							<div class="row justify-content-between f100 align-items-center">
 								<div class="col-2 col-md-1">
-									<div class="logo">
-										<a id="test" href="#">
-											<img src="img/logo.svg" alt="logo" class="logo__img">
-										</a>				
-									</div>
+									<a href="#" class="first-screen__logo-link">
+										<img src="img/logo.svg" alt="logo" class="logo__img">
+									</a>			
 								</div>
 								<div class="col-6 d-flex justify-content-between ml-30">
 									<button class="navbar-toggler" type="button">
@@ -64,8 +61,8 @@
 				</div>
 			</div>
 
-			<div class="row justify-content-center">
-				<div class="col-md-10 ">
+			<div class="row flex-grow justify-content-center">
+				<div class="col">
 					<div class="first-screen__title">
 						<h1>
 							Creative digital project
@@ -76,230 +73,209 @@
 				</div>
 			</div>					
 		</div>
-	</div>
-</div>
-</section>
+	</section>
+	<section class="about d-flex align-items-center">
+		<div class="container about__container">
+			<div class="row justify-content-between">
+				<div class="col-4">
+					<div class="about__img-wrapper">
+						<div class="section__title about__description">
+							<a href="" class="about__logo-link"><img class="about__logo" src="img/Icon-AboutUs.png" alt=""></a>
+							<h2>about us</h2>
 
-<section class="about d-flex align-items-center">
-	<div class="container about__container">
-		<div class="row justify-content-between">
-			<div class="col-4">
-				<div class="about__img-wrapper">
-					<div class="about__description">
-						<img class="about__logo" src="img/Icon-AboutUs.png" alt="">
+						</div>
+						<img class="about__img" src="img/aboutusimg.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-7 about__col-7">
+					<p class="about__text">Nullam quis risus eget urna <b class="about__bold">mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+						<br><br>
+						<b class="about__bold">Morbi leo risus</b>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.	
+					</p>
+					<div class="center d-flex justify-content-center">
+						<button class="button about__button">learn more</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services">
+		<div class="container services__container">
+			<div class="row services__row">
+				<div class="col-8">
+					<div class="row">
+						<div class="col services__col d-flex align-items-center justify-content-center grey">
+							<div class="services__links services__links--link-1">
+								<a href="#" class="services__logo-link services__logo-link-l1">
+									<img class="services__logo" src="img/services1.png" alt="">
+								</a>
+								<div class="services__items-title">
+									<h3>graphic design</h3>
+								</div>
+								<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
+							</div>
+						</div>
+						<div class="col services__col d-flex align-items-center justify-content-center">
+							<div class="services__links services__links--link-2">
+								<a href="#" class="services__logo-link services__logo-link-l1">
+
+									<img class="services__logo" src="img/services2.png" alt="">
+
+								</a>
+								<div class="services__items-title">
+									<h3>web development</h3>
+								</div>
+								<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col services__col d-flex align-items-center justify-content-center">
+							<div class="services__links services__links--link-3">
+								<a href="#" class="services__logo-link services__logo-link-l1">
+									<img class="services__logo" src="img/services3.png" alt="">
+								</a>
+								<div class="services__items-title">
+									<h3>seo & marketing</h3>
+								</div>
+								<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
+							</div>
+						</div>
+						<div class="col services__col d-flex align-items-center justify-content-center grey">
+							<div class="services__links services__links--link-4">
+								<a href="#" class="services__logo-link services__logo-link-l1">
+									<img class="services__logo" src="img/Icon-Mobile.png" alt="">
+								</a>
+								<div class="services__items-title">
+									<h3>mobile development</h3>
+								</div>
+								<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 services__col-4 d-flex flex-column align-items-center">
+					<div class="services__title d-flex align-items-center justify-content-center">
 						<div class="section__title">
-							<h2 class="about__title">about us</h2>
+							<a href="#" class="services__logo-link">
+								<img src="img/our-Services.png" alt="" class="services__logo">
+							</a>
+							<h2>our services</h2>
 						</div>
 					</div>
-					<img class="about__img" src="img/aboutusimg.jpg" alt="">
-				</div>
-			</div>
-			<div class="col-7 about__col-7">
-				<p class="about__text">Nullam quis risus eget urna <b class="about__bold">mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-					<br><br>
-					<b class="about__bold">Morbi leo risus</b>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.	
-				</p>
-				<div class="center d-flex justify-content-center">
-					<button class="button about__button">learn more</button>
-				</div>
+					<span class="services__text">“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”<br> <span class="services__text-bold">- Borat -</span>
+				</span>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section class="services">
-	<div class="container services__container">
-		<div class="row services__row">
-			<div class="col-8">
-				<div class="row">
-					<div class="col services__col d-flex align-items-center justify-content-center grey"><a href="" class="services__links services__links--link-1">
-						<img class="services__logo" src="img/services1.png" alt="">
-						<div class="services__items-title">
-							<h3>graphic design</h3>
-						</div>
-						<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
-					</a></div>
-					<div class="col services__col d-flex align-items-center justify-content-center"><a href="" class="services__links services__links--link-2">
-						<img class="services__logo" src="img/services2.png" alt="">
-						<div class="services__items-title">
-							<h3>web development</h3>
-						</div>
-						<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
-					</a></div>
-				</div>
-				<div class="row">
-					<div class="col services__col d-flex align-items-center justify-content-center"><a href="" class="services__links services__links--link-3">
-						<img class="services__logo" src="img/services3.png" alt="">
-						<div class="services__items-title">
-							<h3>seo & marketing</h3>
-						</div>
-						<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
-					</a></div>
-					<div class="col services__col d-flex align-items-center justify-content-center grey"><a href="" class="services__links services__links--link-4">
-						<img class="services__logo" src="img/Icon-Mobile.png" alt="">
-						<div class="services__items-title">
-							<h3>mobile development</h3>
-						</div>
-						<span class="services__items-text">Cras mattis consectetur purus sit amet fermentum.</span>
-					</a></div>
-				</div>
-			</div>
-			<div class="col-4 services__col-4 d-flex flex-column align-items-center">
-				<div class="services__title d-flex flex-column align-items-center justify-content-center">
-					<img src="img/our-Services.png" alt="" class="services__logo">
-					<div class="section__title mb-28">
-						<h2>our services</h2>
+	</section>
+	<section class="works">
+		<div class="container works__container">
+			<div class="row">
+				<div class="col works__col d-flex flex-column align-items-center justify-content-around">
+					<div class="section__title works__title">
+						<a href="" class="works__logo-link">
+							<img src="img/Icon-Works.png" alt="" class="works__logo">
+						</a>
+						<h2>recent works</h2>
 					</div>
-				</div>
-				<span class="services__text">“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”<br> <span class="services__text-bold">- Borat -</span>
-			</span>
-		</div>
-	</div>
-</div>
-</section>
 
-<section class="works">
-	<div class="container works__container">
-		<div class="row">
-			<div class="col works__col d-flex flex-column align-items-center justify-content-around">
-				<img src="img/Icon-Works.png" alt="" class="works__logo">
-				<div class="section__title works__title">
-					<h2>recent works</h2>
-				</div>
-
-				<div class="img__div">
-					<img src="img/meat2.jpg" alt="" class="works__img">
-				</div>
-				<ul class="works__list">
-					<li class="works__items"><a href="" class="works__links"><img src="img/circle.svg" alt=""></a></li>
-					<li class="works__items"><a href="" class="works__links"><img src="img/circle.svg" alt=""></a></li>
-					<li class="works__items"><a href="" class="works__links"><img src="img/circle_filled.svg" alt=""></a></li>
-					<li class="works__items"><a href="" class="works__links"><img src="img/circle.svg" alt=""></a></li>
-				</ul>
-
-				<button class="button works__button">view gallery</button>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="team">
-	<div class="container team__container d-flex flex-column justify-content-around">
-		<div class="row">
-			<div class="col team__col d-flex flex-column justify-content-between">
-				<div class="team__img-wrap">
-					<img src="img/Icon-Team.png" alt="" class="team__logo">
-				</div>
-				<div class="section__title team__title">
-					<h2>meet our team</h2>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col team__col">
-				<div class="team__people d-flex flex-column align-items-center justify-content-between">
-					<div class="team__wrap">
-					<!-- <div class="team__img-wrap-people"> -->
-						<img src="img/team1.png" alt="" class="team__photo">
-					<!-- </div> -->
+					<div class="img__div">
+						<img src="img/meat2.jpg" alt="" class="works__img">
 					</div>
-					<div class="team__about">
-						<span class="team__name">miguel obrien</span>
-						<span class="team__position">CEO & founder</span>
-					</div>
-				</div>
-				<footer class="team__footer">
-					<ul class="team__social-list">
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
+					<ul class="works__list">
+						<li class="works__items"><a href="" class="works__links"><img src="img/circle.svg" alt=""></a></li>
+						<li class="works__items"><a href="" class="works__links"><img src="img/circle.svg" alt=""></a></li>
+						<li class="works__items"><a href="" class="works__links"><img src="img/circle_filled.svg" alt=""></a></li>
+						<li class="works__items"><a href="" class="works__links"><img src="img/circle.svg" alt=""></a></li>
 					</ul>
-				</footer>
-			</div>
-			<div class="col team__col ">
-				<div class="team__people d-flex flex-column align-items-center justify-content-between">
-					<div class="team__wrap">
-					<!-- <div class="team__img-wrap-people"> -->
-						<img src="img/team2.png" alt="" class="team__photo">
-					<!-- </div> -->
+
+					<button class="button works__button">view gallery</button>
 				</div>
-					<div class="team__about">
-						<span class="team__name">jackie carroll</span>
-						<span class="team__position">art director</span>
-					</div>
-				</div>
-				<footer class="team__footer">
-					<ul class="team__social-list">
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-					</ul>
-				</footer>
-			</div>
-			<div class="col team__col">
-				<div class="team__people d-flex flex-column align-items-center justify-content-between">
-					<div class="team__wrap">
-					<!-- <div class="team__img-wrap-people"> -->
-						<img src="img/team3.png" alt="" class="team__photo">
-					<!-- </div> -->
-				</div>
-					<div class="team__about">
-						<span class="team__name">ida morrison</span>
-						<span class="team__position">designer</span>
-					</div>
-				</div>
-				<footer class="team__footer">
-					<ul class="team__social-list">
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-						<li class="team__social-items"><a href="" class="team__social-link"><img src="" alt="" class="team__social"></a></li>
-					</ul>
-				</footer>
 			</div>
 		</div>
-	</div>
-</div>
-</div>
-</section>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</section>
+	<section class="team">
+		<div class="container team__container d-flex flex-column justify-content-around">
+			<div class="row">
+				<div class="col team__col d-flex flex-column justify-content-between">
+					<div class="section__title team__title">
+						<a href="#" class="team__logo-link"><img src="img/Icon-Team.png" alt="" class="team__logo"></a>
+						<h2>meet our team</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row team-grow">
+				<div class="col team__col">
+					<div class="team__people d-flex flex-column align-items-center justify-content-between">
+						<div class="team__wrap">
+							<img src="img/team1.png" alt="" class="team__photo">
+						</div>
+						<div class="team__about">
+							<span class="team__name">miguel obrien</span>
+							<span class="team__position">CEO & founder</span>
+						</div>
+					</div>
+					<footer class="team__footer d-flex align-items-center justify-content-center">
+						<ul class="team__social-list">
+							<li class="team__social-items first"><a href="" class="team__social-link"><img src="img/linked-in.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items first"><a href="" class="team__social-link"><img src="img/google.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items first"><a href="" class="team__social-link"><img src="img/facebook.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/twitter.svg" alt="" class="team__social"></a></li>
+						</ul>
+					</footer>
+				</div>
+				<div class="col team__col ">
+					<div class="team__people d-flex flex-column align-items-center justify-content-between">
+						<div class="team__wrap">
+							<img src="img/team2.png" alt="" class="team__photo">
+						</div>
+						<div class="team__about">
+							<span class="team__name">jackie carroll</span>
+							<span class="team__position">art director</span>
+						</div>
+					</div>
+					<footer class="team__footer d-flex align-items-center justify-content-center">
+						<ul class="team__social-list">
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/behance.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/linked-in.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/google.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/facebook.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/twitter.svg" alt="" class="team__social"></a></li>
+						</ul>
+					</footer>
+				</div>
+				<div class="col team__col">
+					<div class="team__people d-flex flex-column align-items-center justify-content-between">
+						<div class="team__wrap">
+							<img src="img/team3.png" alt="" class="team__photo">
+						</div>
+						<div class="team__about">
+							<span class="team__name">ida morrison</span>
+							<span class="team__position">designer</span>
+						</div>
+					</div>
+					<footer class="team__footer d-flex align-items-center justify-content-center">
+						<ul class="team__social-list">
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/behance.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/linked-in.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/google.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/facebook.svg" alt="" class="team__social"></a></li>
+							<li class="team__social-items"><a href="" class="team__social-link"><img src="img/twitter.svg" alt="" class="team__social"></a></li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	section.contact>.containercontact__container>.row>.col-3>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js"></script> -->
+
 
 </body>
 </html>
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" width="10.094" height="10" viewBox="0 0 10.094 10">
-				<defs>
-					<style>
-					.cls-1 {
-						fill: #000000;
-						fill-rule: evenodd;
-						/* z-index: 2; */
-					}
-				</style>
-			</defs>
-			<path id="circlle.svg" class="cls-1" d="M781.087,3504a5.044,5.044,0,1,1-5.043-5A5.023,5.023,0,0,1,781.087,3504Zm-5.043-3.25a3.25,3.25,0,1,0,3.278,3.25A3.261,3.261,0,0,0,776.044,3500.75Z" transform="translate(-771 -3499)"/>
-		</svg> -->
-<!-- <ul class="services__list">
-					<li class="services__items">
-						
-					</li>
-					<li class="services__items">
-						
-					</li>
-					<li class="services__items">
-						
-					</li>
-					<li class="services__items">
-						
-					</li>
-				</ul> -->

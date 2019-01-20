@@ -20,11 +20,12 @@
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 2;
-		text-align: center;
+		// text-align: center;
 	}
 
-	&__logo {
-		margin-bottom: 40px;
+	&__logo-link {
+		width: 50px;
+		height: 54px;
 	}
 
 	&__img {
