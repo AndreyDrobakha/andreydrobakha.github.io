@@ -1,0 +1,118 @@
+@mixin overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+@mixin centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@function rem($target, $context: $base-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0rem;
+}
+
+
+@mixin decor($font-size, $line-height: 1.2){
+	display: none;
+	content: '';
+	z-index: 1;
+	width: 90px;
+	border-top: 1px solid $white-color;
+	position: absolute;
+	transform: translate(-150%, $font-size * $line-height / 2);
+
+	@media screen and (min-height: 1367px){
+		transform: translate(-180%, $font-size * $line-height / 2);
+	}
+
+	@include min992 {
+		display: block;
+	}
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+}
+
+@mixin min1367 {
+	@media all and (min-width: 1367px) {
+		@content;
+	}
+}
+
+@mixin max1366 {
+	@media all and (max-width: 1366px) {
+		@content;
+	}
+}
+
+@mixin min992 {
+	@media all and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin max991 {
+	@media all and (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin min768 {
+	@media all and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin max767 {
+	@media all and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin min576 {
+	@media all and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin max575 {
+	@media all and (max-width: 575px) {
+		@content;
+	}
+}
+
+$z-index: (
+	content: 2,
+	up: 100,
+	navbar: 101,
+	modal: 102,
+	label: 103
+);
+
+@function z-index-func($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index-func($key);
+}

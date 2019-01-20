@@ -1,0 +1,81 @@
+.speech {
+
+	@include min992 {
+		padding-top: rem(235px);
+	}
+
+	.section-title {
+		z-index: -1;
+		transform: translateY(-10%);
+	}
+
+	&__content {
+		position: relative;
+		padding-left: 15px;
+		padding-right: 15px;
+		// overflow: hidden;
+	}
+
+	&__height {
+		min-height: 445px;
+	}
+
+	&__img {
+		transform: translate(-15px, -10%);
+		max-width: 100%;
+		position: absolute;
+	}
+
+	&__text {
+		@extend .about__text;
+		font-style: italic;
+		z-index: 2;
+
+		&::before {
+			@include decor(16px);
+			width: 90px;
+		}		
+	}
+
+	.quotes {
+		font-size: 150px;
+		font-weight: 900;
+		position: absolute;
+		color: #da3e2d;
+		z-index: -1;
+		line-height: .6;
+		transform: translateX(-35%);
+	}
+
+	&__author {
+		text-transform: capitalize;
+		font-weight: bold;
+	}
+
+	.carousel-controls {
+		$position: 6rem;
+		position: relative;
+		bottom: $position;
+		right: $position;
+	}
+
+
+	.carousel-control-prev,
+	.carousel-control-next {
+		max-width: 20px;
+		z-index: 3;
+	}
+
+	.carousel-control-prev {
+		right: 20px;
+		left: initial;
+	}
+
+	.about__row {
+		background-color: $pink-color;
+	}
+
+	.carousel-item {
+		padding: 55px 0;
+	}
+}

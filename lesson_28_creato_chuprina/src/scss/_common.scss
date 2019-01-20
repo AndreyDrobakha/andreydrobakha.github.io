@@ -1,0 +1,368 @@
+body {
+	font-family: $main-font;
+	font-size: $base-size;
+	color: $white-color;
+	background-color: $dark-color;
+}
+
+a {
+	color: $white-color;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		color: $pink-color;
+	}
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+
+	li {
+		list-style: none;
+
+		a {
+			display: block;
+		}
+	}
+}
+
+.arrow-link {
+	font-size: rem(18px);
+	letter-spacing: 1px;
+	font-weight: bold;
+
+	@include max767 {
+		display: block;
+		text-align: right;
+	}
+
+	&::after {
+		content: '';
+	}
+}
+
+.arrow {
+	$size: 15px;
+	$border: 2px solid currentcolor;
+
+	display: inline-block;
+	width: $size;
+	border-top: $border;
+	position: relative;
+	vertical-align: middle;
+	margin-left: .5em;
+
+	&::before {
+		$divider: 2.5;
+		content: "";
+		display: block;
+		position: absolute;
+		top: -1px;
+		right: -2px;
+		width: $size / $divider;
+		height: $size / $divider;
+		transform-origin: top right;
+		border-top: $border;
+		border-right: $border;
+		transform: rotate(45deg);
+	}
+}
+
+.section-title {
+	position: absolute;
+	top: 0;
+	transform: translateY(-150%);
+	opacity: 0.3;
+	left: 0;
+	width: 100%;
+
+	@include min768 {
+		opacity: 0.05;
+		transform: translateY(-76%);
+		left: initial;
+		width: auto;
+	}
+
+	& * {
+		font-size: rem(48px);
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0;
+		text-align: center;
+
+		@include min768 {
+			font-size: rem(91px);
+			text-align: initial;
+		}
+	}
+}
+
+
+.section__height {
+	padding: 15px 15px 0;
+
+	@include min576 {
+		padding: 0 15px 0;
+	}
+
+	@include min768 {
+		padding: 0;
+		min-height: 350px;
+	}
+
+	@include min992 {
+		min-height: 470px;
+	}
+}
+
+.menu-wrapper {
+	display: flex;
+	$size: 20px;
+	width: $size;
+	height: $size;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.mobile-menu {
+	$size: 20px;
+	width: $size;
+	height: 2px;
+	background-color: $white-color;
+	position: relative;
+	display: block;
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		width: $size;
+		height: 2px;
+		background-color: $white-color;
+		position: absolute;
+		transform-origin: center;
+	}
+
+	$distance: 6px;
+
+	&::before {
+		top: -$distance;
+	}
+
+	&::after {
+		top: $distance;
+	}
+
+	&.opened {
+		background-color: transparent;
+
+		&::before,
+		&::after {
+			top: 0;
+		}
+
+		&::after {
+			transform: rotate(45deg)
+		}
+
+		&::before {
+			transform: rotate(-45deg)
+		}
+	}
+
+
+	@media all and (min-width: 992px) {
+		display: none;
+	}
+
+
+
+	&.opened {
+
+	}
+}
+
+.form {
+	padding: 100px 0;
+	form {
+		input,
+		textarea {
+			display: block;
+		}
+	}
+}
+
+
+.navbar-toggler {
+	&[aria-expanded="true"]{
+		.fa-bars {
+			display: none;
+		}
+		.fa-times {
+			display: block;
+		}
+	}
+
+	&[aria-expanded="false"]	{
+		.fa-bars {
+			display: block;
+		}
+		.fa-times {
+			display: none;
+		}
+	}
+
+	.navbar-toggler-icon {
+		font-size: 2rem;
+		color: $white-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+.f100 {
+	flex: 100%;
+}
+
+.laptop-content {
+	justify-content: center!important;
+
+	@include min1367 {
+		justify-content: space-between!important;
+	}
+
+	.row:last-child {
+
+		@include max1366 {
+			flex-grow: 2;
+			align-items: center;
+		}
+	}
+}
+
+.section {
+	margin-bottom: 6rem;
+	position: relative;
+	z-index: 1;
+
+	@include min992 {
+		margin-bottom: 0;
+	}
+}
+
+.up {
+	$size: 50px;
+	width: $size;
+	height: $size;
+	font-size: 1.5rem;
+	opacity: .2;
+	position: fixed;
+	right: 10%;
+	bottom: 10%;
+	border-radius: 15px;
+	background-color: $white-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $black-color;
+	cursor: pointer;
+	transition: opacity .1s ease;
+	@include z-index(up);
+}
+
+
+#progressbar {
+	width: 100%;
+	height: 2px;
+	background-color: $pink-color;
+	position: fixed;
+	top: 0;
+	@include z-index(navbar);
+	transform: translateX(-100%);
+}
+
+.modal {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	@include overlay
+	@include z-index(modal);
+	position: fixed;
+	background-color: rgba($dark-color, .5);
+
+	&.open {
+		display: flex;
+	}
+
+	&__content {
+		background-color: $blue-color;
+		padding: 2%;
+		border-radius: 15px;
+		width: 30%;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	&__header {
+		font-weight: bold;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid $white-color;
+	}
+
+	&__body {
+		margin-bottom: 2.5rem;
+	}
+
+	&__close {
+		background: none;
+		border: none;
+		color: $pink-color;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+#map {
+	min-height: 100vh;
+}
+
+.animate-label {
+	$size: 90px;
+	min-width: 320px;
+	background-color: rgba($white-color, .5);
+	position: fixed;
+	right: 0;
+	top: 20%;
+	display: flex;
+	cursor: pointer;
+	@include z-index(label);
+	transform: translateX(calc(100% - #{$size}));
+	will-change: transform;
+	transition: transform .4s ease;
+
+	&:hover {
+		transform: translateX(0);
+	}
+
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: $size;
+	}
+
+	.icon {
+		width: $size;
+		background-color: red;
+	}
+
+	.address {
+		width: calc(100% - #{$size});
+	}
+}

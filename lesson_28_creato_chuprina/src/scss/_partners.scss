@@ -1,0 +1,22 @@
+.partners {
+
+	&__list{
+		min-height: 285px;
+		align-items: center;
+		display: flex;
+	}
+
+	&__link{
+		text-align: center;
+	}
+
+	&__logo {
+		opacity: .5;
+	}
+}
+
+
+.slick-slide img {
+	display: inline;
+}
+
