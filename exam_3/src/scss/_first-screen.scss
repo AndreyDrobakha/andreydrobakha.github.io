@@ -41,6 +41,7 @@
 			width: 54px;
 			height: 72px;
 		}
+
 		.flex-grow {
 			flex-grow: .3;
 		}
@@ -103,14 +104,16 @@
 		& > .container {
 			padding-left: 0;
 			padding-right: 0;
+			// margin: 0 rem(15px);
 		}
 
 		&.fixed-top {
-			background-color: rgba(black, .5);
+			// background-color: rgba(black, .5);
 
 			& > .container {
 				padding-left: 15px;
 				padding-right: 15px;
+				margin: 0 rem(15px);
 			}
 		}
 

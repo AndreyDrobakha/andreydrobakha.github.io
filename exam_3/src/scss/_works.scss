@@ -3,24 +3,43 @@
 	background-image: url($img-path + 'glasses2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	min-height: 1000px;
+	height: 100%;
+	
+	&__container {
+		padding: 0 0 rem(60px);
+	}
 
 	&__col {
-		min-height: 100vh;
-
+		min-height: 940px;
+		height: 100%;
+		
 		& > * {
 			z-index: 1;
 		}
 	}
 
+	&__img-item {
+		position: relative;
+		width: 730px;
+		max-width: 730px;
+		padding-top: 75%;
+	}
+
 	&__img {
-		z-index: 2;
+		max-width: 730px;
+		@include overlay;
+		z-index: 1;
 	}
 	
 	&::before {
 		content: "";
 		@include overlay;
 		background-color: rgba($light-violet-color, .95);
+	}
+
+	&__list {
+		flex-shrink: .2;
 	}
 
 	&__items {
@@ -37,5 +56,6 @@
 		color: $body-color;
 		border: 1px solid $body-color;
 		background: transparent;
+		max-height: 50px;
 	}
 }

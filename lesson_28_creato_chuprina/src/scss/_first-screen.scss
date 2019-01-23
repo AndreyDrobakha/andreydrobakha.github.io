@@ -42,7 +42,7 @@
 			.fa-play {
 				@include centered;
 				z-index: 1;
-				color: $pink-color;
+				color: $white-color;
 				font-size: rem(24px)
 			}
 
@@ -162,7 +162,7 @@
 		&__item {
 			&.active {
 				.navigation__link {
-					color: $pink-color;
+					color: $white-color;
 				}
 			}
 		}
@@ -177,7 +177,7 @@
 			font-size: rem(14px);
 
 			&:hover {
-				color: $pink-color;
+				color: $white-color;
 			}
 		}
 	}

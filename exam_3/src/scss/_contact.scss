@@ -1,3 +1,110 @@
 .contact {
+	background-color: rgba($violet-color, .5);
+	padding-bottom: 50px;
+	position: relative;
+
+	&__col {
+		min-height: 850px;
+		height: 100%;
+		position: relative;
+	}
 	
+	&__title {
+		padding-top: 55px;
+	}
+
+	&__form-block {
+		max-width: 860px;
+		width: 100%; 
+	}
+
+	&__form {
+		margin-bottom: 55px;
+	}
+
+	&__form-group {
+		margin-bottom: 25px;
+	}
+
+	.input1 {
+		margin-right: 30px;
+
+	}
+
+	&__form-group2 {
+		display: block;
+		
+	}
+
+	.form__col	{
+		padding: 0 58px;
+	}
+
+	&__form-group {
+		position: relative;
+		display: inline-block;
+		width: 48%;
+	}
+
+	&__form-group2 {
+		position: relative;
+		max-width: 860px;
+		min-height: 195px;
+		width: 100%;
+	}
+
+	&__input,
+	&__textarea {
+		width: 100%;
+		height: 100%;
+		color: $white-color;
+		font-family: $third-font;
+		padding: rem(15px) rem(25px);
+		background-color: rgba($body-color, .5);
+		border-color: transparent;
+		border-radius: 3px;
+
+		&:focus,
+		&:valid {
+
+			+ label {
+				display: none;
+			}
+		}
+	}
+
+	&__textarea {
+		min-height: 195px;
+		
+	}
+
+	label {
+		position: absolute;
+		left: 27px;
+		top: 18px;
+		// pointer-events: none;
+		color: $white-color;
+		font-family: $third-font;
+		text-transform: capitalize;	
+
+		.star {
+			color: $violet-color;
+			font-weight: 700;
+		}
+	}
+
+	&__button {
+		min-width: 290px;
+		min-height: 70px;
+		color: $white-color;
+		background-color: $violet-color;
+		font-family: $secondary-font;
+		border-color: transparent;
+		border-radius: 3px;
+		box-shadow: 0 4px $dark-violet-color;
+
+		&:hover {
+			background-color: $body-color;
+		}
+	}
 }

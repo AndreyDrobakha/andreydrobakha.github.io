@@ -1,3 +1,21 @@
 .footer {
-	
+	background-color: $violet-color;
+
+	&__container {
+			min-height: 185px;
+	}
+
+	&__row {
+		width: 100%;
+	}
+
+	&__col {
+		text-align: right;
+	}
+
+	&__text {
+		font-size: rem(18px);
+		font-family: $fourth-font;
+		letter-spacing: .02rem;
+	}
 }

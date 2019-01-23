@@ -9,13 +9,24 @@
 
 	&__row {
 
-		& > * {
-			margin-left: -15px;
-		}
+		// & > * {
+		// 	margin-left: -15px;
+		// }
 	}
+
+	// &__col-8
+	// &__col-4 
+	// {
+	// 	margin-left: -15px;
+	// }
+
+		&__col-8 {
+			max-width: 760px;
+		}
 
 	&__col {
 		min-height: 400px;
+		// margin-left: -15px;
 	}
 
 	&__title {
@@ -85,7 +96,7 @@
 		position: relative;
 		background-image: url($img-path + 'phone_on_table2.jpg');
 		background-position: -87% 0;
-		min-width: 410px;
+		// min-width: 410px;
 		width: 100%;
 
 		& > * {

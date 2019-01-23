@@ -103,7 +103,10 @@
 
 $z-index: (
 	content: 2,
-	navbar: 150000
+	up: 100,
+	navbar: 101,
+	modal: 102,
+	label: 103
 );
 
 @function z-index-func($key) {
