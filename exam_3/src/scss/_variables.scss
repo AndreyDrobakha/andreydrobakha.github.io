@@ -11,9 +11,6 @@ $dark-color: #665f60;
 $grey-color: #7d7a7c;
 $light-grey-color: #dbdbdb;
 
-
-
-
 @font-face {
  font-family: "Proxima Nova semi-bold";
  src: url("../fonts/ProximaNova-Semibold.ttf")
@@ -38,11 +35,6 @@ $light-grey-color: #dbdbdb;
  font-family: "PTSans bold";
  src: url("../fonts/PTS75F.ttf")
 }
-
-// @font-face {
-//  font-family: "PTSans bold";
-//  src: url("../fonts/HelveticaLTStd-Bold.otf")
-// }
 
 $main-font: "Proxima Nova semi-bold", sans-serif;
 $secondary-font: "Proxima Nova bold", sans-serif;

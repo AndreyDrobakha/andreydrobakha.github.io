@@ -31,7 +31,7 @@
 				z-index: 2;
 				display: flex;
 				flex-direction: column;
-				justify-content: center;	
+				justify-content: space-between;	
 				min-height: calc(100vh - 120px);	
 			}
 		}
@@ -96,10 +96,11 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: center;
+		// justify-content: flex-end;
 		padding-right: 0;
 		padding-left: 0;
-		position: fixed;
+		// position: fixed;
 
 		& > .container {
 			padding-left: 0;
@@ -108,7 +109,7 @@
 		}
 
 		&.fixed-top {
-			// background-color: rgba(black, .5);
+			background-color: rgba(black, .5);
 
 			& > .container {
 				padding-left: 15px;
@@ -247,6 +248,10 @@
 			// width: 0;
 		}		
 	}
+}
+
+.flex-gr {
+	flex-grow: .6;
 }
 
 .ml-30 {

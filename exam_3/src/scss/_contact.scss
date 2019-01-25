@@ -1,16 +1,34 @@
 .contact {
-	background-color: rgba($violet-color, .5);
+	background-image: url($img-path+'map_google.jpg');
 	padding-bottom: 50px;
 	position: relative;
+
+	&::before {
+		content: "";
+		@include overlay;
+		background-color: rgba($violet-color, .5);
+		// background-image: url($img-path + 'pin.svg');
+		// background-repeat: no-repeat;
+		// background-position: 63% 29%;
+	}
 
 	&__col {
 		min-height: 850px;
 		height: 100%;
 		position: relative;
+		@include z-index(main-content);
 	}
 	
 	&__title {
 		padding-top: 55px;
+	}
+
+	&__pin {
+		position: absolute;
+		width: 31px;
+		top: 29%;
+		right: 32%;
+		box-shadow: 0 2px #b0acbf;
 	}
 
 	&__form-block {
@@ -51,6 +69,18 @@
 		max-width: 860px;
 		min-height: 195px;
 		width: 100%;
+
+		&:after {
+			content:"";
+			position: absolute;
+			background-image: url($img-path + 'arrow.svg');
+			width: 11px;
+			height: 11px;
+			right: 0px;
+			bottom: 5px;
+			cursor: pointer;
+			pointer-events: none;
+		}
 	}
 
 	&__input,
@@ -75,14 +105,13 @@
 
 	&__textarea {
 		min-height: 195px;
-		
-	}
+		resize: none;
+	}	
 
 	label {
 		position: absolute;
 		left: 27px;
 		top: 18px;
-		// pointer-events: none;
 		color: $white-color;
 		font-family: $third-font;
 		text-transform: capitalize;	

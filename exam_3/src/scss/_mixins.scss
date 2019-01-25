@@ -102,11 +102,11 @@
 }
 
 $z-index: (
-	content: 2,
+	img: 1,
+	main-content: 2,
 	up: 100,
 	navbar: 101,
-	modal: 102,
-	label: 103
+	label: 102
 );
 
 @function z-index-func($key) {

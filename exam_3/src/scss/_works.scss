@@ -5,6 +5,12 @@
 	background-repeat: no-repeat;
 	min-height: 1000px;
 	height: 100%;
+
+	&::before {
+		content: "";
+		@include overlay;
+		background-color: rgba($light-violet-color, .95);
+	}
 	
 	&__container {
 		padding: 0 0 rem(60px);
@@ -13,30 +19,73 @@
 	&__col {
 		min-height: 940px;
 		height: 100%;
-		
-		& > * {
-			z-index: 1;
-		}
+		@include z-index(main-content);
 	}
 
 	&__img-item {
 		position: relative;
-		width: 730px;
-		max-width: 730px;
+		min-width: 730px;
 		padding-top: 75%;
 	}
 
 	&__img {
-		max-width: 730px;
 		@include overlay;
 		z-index: 1;
 	}
-	
-	&::before {
-		content: "";
-		@include overlay;
-		background-color: rgba($light-violet-color, .95);
+
+	.carousel {
+		min-height: 620px;
+		max-width: 730px;
+		// @include z-index(img);
 	}
+
+	.carousel-item-next,
+	.carousel-item-left {
+		padding-bottom: 0;
+	}
+
+	.carousel-controls {
+		$position: -21rem;
+		position: relative;
+		min-height: 40px;
+		top: $position;
+	}
+
+	.carousel-control-prev {
+		left: rem(-280px);
+		width: 30px;
+		height: 52px;
+	}
+
+	.carousel-control-next {
+		right: rem(-280px);
+		width: 30px;
+		height: 52px;
+	}
+
+	.carousel-control-prev-img,
+	.carousel-control-next-img {
+		min-width: 30px;
+		min-height: 40px;
+		@include z-index(main-content);
+	}
+
+
+	.carousel-indicators {
+		margin: 0;
+	}
+
+	.carousel-indicators li {
+		width: 10px;
+		height: 10px;
+		// color: $white-color;
+		// opacity: .5;
+		// color: transparent;
+		// background-image: url($img-path + 'circle.svg');
+		border: 1px solid $white-color;
+		border-radius: 50%;
+	}
+
 
 	&__list {
 		flex-shrink: .2;
