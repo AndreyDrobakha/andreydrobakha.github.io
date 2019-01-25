@@ -7,9 +7,6 @@
 		content: "";
 		@include overlay;
 		background-color: rgba($violet-color, .5);
-		// background-image: url($img-path + 'pin.svg');
-		// background-repeat: no-repeat;
-		// background-position: 63% 29%;
 	}
 
 	&__col {
