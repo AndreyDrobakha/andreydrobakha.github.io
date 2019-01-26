@@ -5,16 +5,17 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Creative solutions</title>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="shortcut icon" type="image/x-icon" href="img/beetroot_favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="first-screen">
+	<section id="home" class="first-screen">
 		<div class="container first-screen__container d-flex flex-column justify-content-between">
-			<div class="row justify-content-between align-items-center mh-120 mb-md-0">
+			<div class="row justify-content-between align-items-center mb-4 mb-md-0">
 				<div class="col-12">
-					<nav class="navigation navbar navbar-expand-lg fixed-top">
+					<nav class="navigation navbar navbar-expand-lg">
 						<div class="container">
 							<div class="row justify-content-between f100 align-items-center">
 								<div class="col-2 col-md-1">
@@ -26,28 +27,27 @@
 									<button class="navbar-toggler" type="button">
 										<span class="navbar-toggler-icon">
 											<i class="fas fa-bars"></i>
-
 										</span>
 									</button>						
-									<div class="navbar-collapse open" id="navbar">
+									<div class="navbar-collapse" id="navbar">
 										<ul class="navigation__list navbar-nav">
 											<li class="navigation__close navbar-toggler">
 												<i class="fas fa-times"></i>
 											</li>
 											<li class="navigation__item nav-item">
-												<a href="#" class="nav-item nav-link navigation__link">home</a>
+												<a href="#home" class="nav-item nav-link navigation__link">home</a>
 											</li>
 											<li class="navigation__item nav-item">
-												<a href="#" class="nav-link navigation__link">about</a>
+												<a href="#about" class="nav-link navigation__link">about</a>
 											</li>
 											<li class="navigation__item nav-item">
-												<a href="#" class="nav-link navigation__link">services</a>
+												<a href="#services" class="nav-link navigation__link">services</a>
 											</li>
 											<li class="navigation__item nav-item">
-												<a href="#" class="nav-link navigation__link">works</a>
+												<a href="#works" class="nav-link navigation__link">works</a>
 											</li>
 											<li class="navigation__item nav-item">
-												<a href="#" class="nav-link navigation__link">contact</a>
+												<a href="#contact" class="nav-link navigation__link">contact</a>
 											</li>
 										</ul>
 									</div>
@@ -60,7 +60,7 @@
 
 			<div class="row flex-gr justify-content-center">
 				<div class="col">
-					<div class="first-screen__title">
+					<div class="first-screen__title d-flex justify-content-center">
 						<h1>
 							Creative digital project
 						</h1>
@@ -70,11 +70,11 @@
 				</div>
 			</div>					
 		</div>
-		<div class="home d-flex">
+		<!-- <div class="home d-flex">
 			<div class="home-icon d-flex justify-content-center align-items-center">
 				<img src="img/home.png" alt="" class="home-img">
 			</div>
-			<div class="home-address d-flex justify-content-center align-items-center">ikan piranha atas 220C <br> malang - east java <br> indonesia
+			<div class="home-address d-flex justify-content-center align-items-center">lkan piranha atas 220C <br> malang - east java <br> indonesia
 			</div>
 		</div>
 		<div class="mobile d-flex">
@@ -86,22 +86,22 @@
 		</div>
 		<div class="arrow-up">
 			<img src="img/interface-arrow-top.svg" alt="">
-		</div>
+		</div> -->
 	</section>
-	<section class="about d-flex align-items-center">
+	<section id="about" class="about d-flex align-items-center">
 		<div class="container about__container">
-			<div class="row justify-content-between">
-				<div class="col-4 about__col-4">
-					<div class="about__img-wrapper">
-						<div class="section__title about__description">
-							<a href="" class="about__logo-link"><img class="about__logo" src="img/Icon-AboutUs.png" alt=""></a>
+			<div class="row about__row">
+				<div class="col col-md-5 col-lg-4 about__col-4">
+						<div class="section__title about__title">
+							<a href="#" class="about__logo-link">
+								<img class="about__logo" src="img/Icon-AboutUs.png" alt="">
+							</a>
 							<h2>about us</h2>
 
 						</div>
 						<img class="about__img" src="img/aboutusimg.jpg" alt="">
-					</div>
 				</div>
-				<div class="col-7 about__col-7">
+				<div class="col col-md-7 col-lg-7 about__col-7">
 					<p class="about__text">Nullam quis risus eget urna <b class="about__bold">mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 						<br><br>
 						<b class="about__bold">Morbi leo risus</b>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.	
@@ -113,7 +113,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section id="services" class="services">
 		<div class="container services__container">
 			<div class="row services__row">
 				<div class="col-8 services__col-8">
@@ -182,9 +182,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="works">
+	<section id="works" class="works">
 		<div class="container works__container">
-			<div class="row">
+			<div class="row works__row">
 				<div class="col works__col d-flex flex-column align-items-center justify-content-between">
 					<div class="section__title works__title">
 						<a href="" class="works__logo-link">
@@ -202,16 +202,16 @@
 						</ol>
 						<div class="carousel-inner works__img-list">
 							<div class="carousel-item works__img-item">
-								<img src="https://via.placeholder.com/730x547/68C5B8/616867" class="d-block works__img img-fluid" alt="...">
+								<img src="https://via.placeholder.com/730x547/68C5B8/616867" class=" works__img img-fluid" alt="...">
 							</div>
 							<div class="carousel-item works__img-item">
-								<img src="https://via.placeholder.com/730x547/6652AD/616867" class="d-block works__img img-fluid" alt="...">
+								<img src="https://via.placeholder.com/730x547/6652AD/616867" class=" works__img img-fluid" alt="...">
 							</div>
 							<div class="carousel-item active works__img-item">
-								<img src="img/meat.jpg" class="d-block works__img img-fluid" alt="...">
+								<img src="img/meat.jpg" class="works__img img-fluid" alt="...">
 							</div>
 							<div class="carousel-item works__img-item">
-								<img src="img/meat2.jpg" class="d-block works__img img-fluid" alt="...">
+								<img src="img/meat2.jpg" class="works__img img-fluid" alt="...">
 							</div>
 							
 						</div>
@@ -226,36 +226,12 @@
 							</a>
 						</div>
 					</div>
-					
-					<!-- <ul class="works__list">
-						<li class="works__items">
-							<a href="" class="works__links">
-								<img src="img/circle.svg" alt="">
-							</a>
-						</li>
-						<li class="works__items">
-							<a href="" class="works__links">
-								<img src="img/circle.svg" alt="">
-							</a>
-						</li>
-						<li class="works__items">
-							<a href="" class="works__links">
-								<img src="img/circle_filled.svg" alt="">
-							</a>
-						</li>
-						<li class="works__items">
-							<a href="" class="works__links">
-								<img src="img/circle.svg" alt="">
-							</a>
-						</li>
-					</ul> -->
-
 					<button class="button works__button">view gallery</button>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="team">
+	<section id="team" class="team">
 		<div class="container team__container d-flex flex-column justify-content-between">
 			<div class="row">
 				<div class="col team__col d-flex flex-column justify-content-between">
@@ -460,7 +436,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact">
+	<section id="contact" class="contact">
+		<div id="map"></div>
 		<div class="container contact__container">
 			<div class="row">
 				<div class="col contact__col d-flex flex-column justify-content-between align-items-center">
@@ -469,9 +446,6 @@
 							<img src="img/pin_white.png" alt="" class="team__logo">
 						</a>
 						<h2>get in touch</h2>
-					</div>
-					<div class="contact__pin">
-						<img src="img/pin.svg" alt="" class="contact__pin-img">
 					</div>
 					<div class="contact__form-block">
 						<form action="" class="contact__form">
@@ -540,14 +514,14 @@
 		</div>
 	</footer>
 
-	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
-	
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="js/slick.min.js"></script> 
+	<script src="js/slick.min.js"></script>
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvDFOpZx6DhWTRDGwCnkqv7HnnXMqzZXs&language=en">
+	</script> 
 	<script type="text/javascript" src="js/viewport.jquery.js"></script>
 	<script src="js/script.js"></script>
 </body>

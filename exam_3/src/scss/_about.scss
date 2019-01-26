@@ -6,23 +6,49 @@
 		min-height: 555px;
 	}
 
+	&__row {
+		flex-direction: column;
+		align-items: center;
+
+		@include min576 {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
 	&__col-4 {
-		margin-left: -15px;
-	}
-
-	&__img-wrapper {
 		position: relative;
-		width: 380px;
-		padding-top: 154%;
-		line-height: 0;
+
+		@include min576 {
+			margin-left: -15px;
+		}
+
+		@include max575 {
+			padding-top: rem(30px);
+		}
 	}
 
-	&__description {
+	&__title {
 		position: absolute;
-		top: 75px;
+		top: 13.5%;
 		left: 50%;
 		transform: translateX(-50%);
-		z-index: 2;
+		@include z-index(first);
+		padding-top: 0;
+		max-height: 175px;
+		
+		@include max991 {
+			max-height: 135px;
+		}
+
+		@include max575 {
+			min-height: 135px;
+
+			& > * {
+				font-size: rem(36px);
+			}
+		}
+
 	}
 
 	&__logo-link {
@@ -31,19 +57,39 @@
 	}
 
 	&__img {
-		@include overlay;
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 	}
 
 	&__text {
 		font-family: $fourth-font;
 		color: $dark-color;
-		font-size: rem(20px);
 		line-height: 1;
-		margin-bottom: 90px;
+		margin-bottom: rem(30px);
+		
+		@include min768 {
+			font-size: rem(18px);
+			margin-bottom: rem(50px);
+		}
+
+		@include min992 {
+			font-size: rem(20px);
+			margin-bottom: rem(90px);
+		}
 	}
 
 	&__col-7 {
-		padding: rem(70px) rem(15px) rem(100px) rem(15px);
+		padding: rem(30px) rem(15px);
+
+		@include min992 {
+			padding-top: rem(70px);
+			padding-bottom: rem(100px);
+		}
+
+		@include min576 {
+
+		}
 	}
 }

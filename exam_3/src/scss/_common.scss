@@ -1,3 +1,7 @@
+// * {
+// 	@include z-index(cont);
+// }
+
 body {
 	font-family: $main-font;
 	font-size: $base-size;
@@ -36,20 +40,50 @@ ul {
 }
 
 .section__title {
-	min-height: 175px;
-	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	text-transform: uppercase;
 	font-family: $secondary-font;
-	font-size: rem(36px);
-
+	
 	& > * {
 		margin-bottom: 0;
 		text-align: center;
+		font-size: rem(24px);
+
+		@include min576 {
+			font-size: rem(26px);
+		}
+
+		@include min768 {
+			font-size: rem(30px);
+		}
+
+		@include min992 {
+			font-size: rem(36px);
+		}
 	}
+
+	@include min992 {
+		min-height: 175px;
+		height: 100%;
+		padding-top: rem(50px);
+	}
+
+	@include min768 {
+		min-height: 155px;
+		height: 100%;
+		padding-top: rem(50px);
+	}
+
+	@include min576 {
+		min-height: 135px;
+		height: 100%;
+		padding-top: rem(50px);
+	}
+
+	
 }
 
 .button {

@@ -19,7 +19,7 @@
 	&__col {
 		min-height: 940px;
 		height: 100%;
-		@include z-index(main-content);
+		@include z-index(cont);
 	}
 
 	&__img-item {
@@ -29,8 +29,7 @@
 	}
 
 	&__img {
-		@include overlay;
-		z-index: 1;
+		@include overlay;		
 	}
 
 	.carousel {

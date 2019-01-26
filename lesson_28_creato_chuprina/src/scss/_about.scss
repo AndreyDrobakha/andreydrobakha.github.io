@@ -46,8 +46,6 @@
 		}
 	}
 
-	
-
 	&__text-content {
 
 		@include min768 {
@@ -73,7 +71,5 @@
 			@include decor($base-size, $line-height);
 			width: 37px;
 		}
-	}
-
-	
+	}	
 }

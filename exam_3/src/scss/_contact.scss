@@ -1,7 +1,6 @@
 .contact {
-	background-image: url($img-path+'map_google.jpg');
 	padding-bottom: 50px;
-	position: relative;
+	position: relative;	
 
 	&::before {
 		content: "";
@@ -13,20 +12,13 @@
 		min-height: 850px;
 		height: 100%;
 		position: relative;
-		@include z-index(main-content);
+		@include z-index(first);
 	}
 	
 	&__title {
 		padding-top: 55px;
 	}
 
-	&__pin {
-		position: absolute;
-		width: 31px;
-		top: 29%;
-		right: 32%;
-		box-shadow: 0 2px #b0acbf;
-	}
 
 	&__form-block {
 		max-width: 860px;
@@ -133,4 +125,11 @@
 			background-color: $body-color;
 		}
 	}
+}
+
+#map {
+	min-height: 900px;
+	width: 100%;
+	@include overlay;
+	z-index: 0;
 }

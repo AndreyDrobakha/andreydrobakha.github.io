@@ -8,9 +8,10 @@
 		window.msRequestAnimationFrame;
 		window.requestAnimationFrame = requestAnimationFrame;
 
-		$('.carousel').carousel({
-			interval: 3000,
-		})
+		// $('.carousel').carousel({
+		// 	interval: 3000,
+
+		// })
 		
 		$('.team__row').slick({
 			autoplay: true,
@@ -18,7 +19,7 @@
 			autoplaySpeed: 3000,
 		});
 
-	
+
 
 		const getUserData = () => {
 			const userData = {};
@@ -100,3 +101,26 @@ function enableScroll() {
 	window.ontouchmove = null;
 	document.onkeydown = null;
 }
+
+;(function($) {
+	'use strict';
+	$(window).on('load', function() {
+		var map;
+		var mapContainer = $('#map')[0];
+		var mapCenter = {lat: -7.9377956, lng: 112.6274228};
+		var markerPosition = {lat: -7.9307459, lng: 112.6355576};
+
+		map = new google.maps.Map(mapContainer, {
+			center: mapCenter,
+			zoom: 15,
+			disableDefaultUI: true, 
+		});
+
+		var marker = new google.maps.Marker({
+			position: markerPosition, 
+			map: map,
+			title: 'Hello',
+			icon: 'img/pin.svg',
+		});
+	});
+})(jQuery);

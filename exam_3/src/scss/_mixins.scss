@@ -77,6 +77,12 @@
 	}
 }
 
+@mixin max1090 {
+	@media all and (max-width: 1090px) {
+		@content;
+	}
+}
+
 @mixin min768 {
 	@media all and (min-width: 768px) {
 		@content;
@@ -102,8 +108,8 @@
 }
 
 $z-index: (
-	img: 1,
-	main-content: 2,
+	cont: 1,
+	first: 2,
 	up: 100,
 	navbar: 101,
 	label: 102
