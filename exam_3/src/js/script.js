@@ -8,29 +8,40 @@
 		window.msRequestAnimationFrame;
 		window.requestAnimationFrame = requestAnimationFrame;
 
-		// $('.carousel').carousel({
-		// 	interval: 3000,
+		$('.carousel').carousel({
+			interval: 3000,
 
-		// })
+		})
 		
 		$('.team__row').slick({
-			autoplay: true,
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			// autoplay: true,
 			speed: 2000,
 			autoplaySpeed: 3000,
+
+			responsive: [
+			{
+				breakpoint: 920,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+				}
+			},
+
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			}
+			]
+
 		});
-
-
-
-		const getUserData = () => {
-			const userData = {};
-			Array.prototype.forEach.call(form[0].elements, (el) => {
-				if(!el.value) return;
-				userData[el.name] = el.value;
-				el.value = '';
-			})
-			console.log(userData);
-			return userData;
-		};
 
 		document.addEventListener('scroll', () => {
 			setMenuFixed();

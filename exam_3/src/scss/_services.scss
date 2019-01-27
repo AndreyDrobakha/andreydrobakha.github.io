@@ -2,28 +2,59 @@
 	position: relative;
 	min-height: 100vh;
 
-	// &__container {
-	// 	min-height: 800px;
-	// 	height: 100%;	
-	// }
-
 	&__row {
+		flex-direction: column-reverse;
+		align-items: center;
 
+		@include min1091 {
+			flex-direction: row;
+		}
 	}
 
-		&__col-8 {
-			max-width: 760px;
+	&__row2 {
+		flex-direction: column;
+		align-items: center;
+
+		@include min768 {
+			flex-direction: row;
 		}
+	}
+
+	&__col-8 {
+		min-width: 760px;
+	}
 
 	&__col {
 		min-height: 400px;
-		// margin-left: -15px;
+		margin: 0 rem(30px);
+
+		@include min576 {
+			margin: 0;
+		}
 	}
 
 	&__title {
-		min-height: 350px;
-		width: 100%;
-		// margin-left: -15px;
+		min-height: 200px;
+
+		@include min992 {
+			min-height: 350px;
+			width: 100%;
+		}
+		
+	}
+
+	&__title2 {
+		padding-top: 0;
+
+		@include min576 {
+			max-height: 115px;
+			height: 100%;
+		}
+
+		@include min768 {
+			min-height: 135px;
+			height: 100%;
+		}
 	}
 	
 	&__logo-link {
@@ -60,18 +91,26 @@
 	&__items-text {
 		font-family: $third-font;
 		font-size: rem(18px);
-		// line-height: 1.2;
 		flex-shrink: .5;
 	}
 
 	.grey {
 		background-color: $light-grey-color;
-	}
-	
+		margin-bottom: 15px;
+		min-height: 400px;
 
-	// &__logo {
-	// 	margin-bottom: rem(28px);
-	// }
+		@include min768 {
+			background-color: $body-color;
+			margin-bottom: 0;
+		}		
+	}
+
+	.grey1 {
+		@include min768 {
+			background-color: $light-grey-color;
+		}
+	}	
+
 
 	&__text {
 		text-align: center;
@@ -84,17 +123,22 @@
 	}
 
 	&__col-4 {
-		position: relative;
 		background-image: url($img-path + 'phone_on_table2.jpg');
-		background-position: -87% 0;
-		// min-width: 410px;
-		width: 100%;
+		min-height: 400px;
+		width: 90%;
+		background-size: 100% 100%;
+		margin: 0 rem(30px) rem(30px) rem(30px);
+
+		@include min1091 {
+			position: relative;
+			background-position: -87% 0;
+			min-height: 800px;
+			margin: 0;
+		}
 
 		& > * {
-			z-index: 2;
+			@include z-index(first);
 			width: 100%;
-			// margin-left: -15px;
-			// position: absolute;
 		}
 
 		&::after {

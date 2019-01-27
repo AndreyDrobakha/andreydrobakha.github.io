@@ -40,15 +40,6 @@
 		@include max991 {
 			max-height: 135px;
 		}
-
-		@include max575 {
-			min-height: 135px;
-
-			& > * {
-				font-size: rem(36px);
-			}
-		}
-
 	}
 
 	&__logo-link {
@@ -57,10 +48,7 @@
 	}
 
 	&__img {
-		max-width: 100%;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		@include img;
 	}
 
 	&__text {

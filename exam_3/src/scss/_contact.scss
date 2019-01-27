@@ -21,21 +21,62 @@
 
 
 	&__form-block {
-		max-width: 860px;
-		width: 100%; 
+		width: 100%;
+
+		@include min576 {
+			max-width: 460px;
+		}
+
+		@include min768 {
+			max-width: 660px;
+		}
+
+		@include min992 {
+			max-width: 860px;
+		}
+
+		@include min1367 {
+			max-width: 1060px;
+		}
+		
+		 
 	}
 
 	&__form {
-		margin-bottom: 55px;
+		margin-bottom: rem(55px);
+
 	}
 
 	&__form-group {
-		margin-bottom: 25px;
+
+		margin-bottom: rem(25px);
 	}
 
 	.input1 {
-		margin-right: 30px;
+		margin-right: 3%;
 
+		@include min576 {
+			margin-right: 3%;
+		}
+
+		@include min768 {
+			margin-right: 3%;
+		}
+
+		@include min992 {
+			margin-right: 3.5%;
+		}
+	}
+
+	&__form-group {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		
+		@include min576 {
+			width: 48%;
+		}
+		
 	}
 
 	&__form-group2 {
@@ -46,18 +87,28 @@
 	.form__col	{
 		padding: 0 58px;
 	}
-
-	&__form-group {
-		position: relative;
-		display: inline-block;
-		width: 48%;
-	}
+	
 
 	&__form-group2 {
 		position: relative;
-		max-width: 860px;
 		min-height: 195px;
 		width: 100%;
+
+		@include min576 {
+			max-width: 460px;
+		}
+
+		@include min768 {
+			max-width: 660px;
+		}
+
+		@include min992 {
+			max-width: 860px;
+		}
+
+		@include min1367 {
+			max-width: 1060px;
+		}
 
 		&:after {
 			content:"";

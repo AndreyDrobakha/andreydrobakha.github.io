@@ -1,9 +1,5 @@
 .team {
 	padding-bottom: rem(100px);
-
-	// @include min768 {
-	// 	min-height: 100vh;
-	// }
 	
 	&__container {
 		min-height: 720px;
@@ -31,7 +27,6 @@
 	}
 	
 	&__people {
-		// min-height: 285px;
 		min-height: 410px;
 		position: relative;
 		background-color: $light-color;
@@ -121,7 +116,5 @@
 	
 	.first {
 		margin-right: 12px;
-	}
-
-	
+	}	
 } 

@@ -3,8 +3,23 @@
 	background-image: url($img-path + 'glasses2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 1000px;
 	height: 100%;
+
+	@include min576 {
+		min-height: 600px;
+	}
+
+	@include min768 {
+		min-height: 700px;
+	}
+
+	@include min992 {
+		min-height: 800px;
+	}
+
+	@include min1367 {
+		min-height: 1000px;
+	}
 
 	&::before {
 		content: "";
@@ -17,25 +32,55 @@
 	}
 
 	&__col {
-		min-height: 940px;
+		min-height: 600px;
 		height: 100%;
 		@include z-index(cont);
-	}
 
-	&__img-item {
-		position: relative;
-		min-width: 730px;
-		padding-top: 75%;
+		@include min576 {
+			min-height: 640px;
+		}
+
+		@include min768 {
+			min-height: 740px;
+		}
+
+		@include min992 {
+			min-height: 840px;
+		}
+
+		@include min1367 {
+			min-height: 940px;
+		}
 	}
 
 	&__img {
-		@include overlay;		
+		@include img;
 	}
 
 	.carousel {
-		min-height: 620px;
-		max-width: 730px;
-		@include z-index(img);
+		max-width: 350px;
+		min-height: 85%;
+
+		@include min576 {
+			max-width: 450px;	
+		}
+
+		@include min768 {
+			max-width: 600px;	
+		}
+
+		@include min992 {
+			max-width: 730px;
+			
+		}
+	}
+
+	.carousel-inner {
+		margin-bottom: rem(30px);
+
+		@include min576 {
+			margin-bottom: 0;
+		}
 	}
 
 	.carousel-item-next,
@@ -44,22 +89,75 @@
 	}
 
 	.carousel-controls {
-		$position: -21rem;
+		display: none;
 		position: relative;
 		min-height: 40px;
-		top: $position;
+
+		@include min576 {
+			display: inline-block;
+			top: -15rem;
+		}
+
+		@include min768 {
+			display: inline-block;
+			top: -18rem;
+		}
+
+		@include min992 {
+			display: inline-block;
+			top: -21rem;
+		}
 	}
 
 	.carousel-control-prev {
-		left: rem(-280px);
 		width: 30px;
 		height: 52px;
+
+		@include min576 {
+			left: rem(-50px);	
+		}
+
+		@include min768 {
+			left: rem(-80px);	
+		}
+		
+		@include min992 {
+			left: rem(-130px);	
+		}
+
+		@include min1091 {
+			left: rem(-180px);
+		}
+
+		@include min1367 {
+			left: rem(-280px);
+		}
 	}
 
 	.carousel-control-next {
-		right: rem(-280px);
 		width: 30px;
 		height: 52px;
+
+		@include min576 {
+			right: rem(-50px);	
+		}
+
+		@include min768 {
+			right: rem(-80px);	
+		}
+
+		@include min992 {
+			right: rem(-130px);	
+		}
+
+		@include min1091 {
+			right: rem(-180px);	
+		}
+
+		@include min1367 {
+			right: rem(-280px);
+		}
+
 	}
 
 	.carousel-control-prev-img,
@@ -83,22 +181,7 @@
 		// background-image: url($img-path + 'circle.svg');
 		border: 1px solid $white-color;
 		border-radius: 50%;
-	}
-
-
-	&__list {
-		flex-shrink: .2;
-	}
-
-	&__items {
-		display: inline-block;
-	}
-
-	&__links:hover {
-		background-image: url($img-path + 'circle_filled.svg');
-		background-repeat: no-repeat;
-		background-position: 0 60%;
-	}
+	}	
 
 	&__button {
 		color: $body-color;
@@ -107,3 +190,17 @@
 		max-height: 50px;
 	}
 }
+
+// &__list {
+	// 	flex-shrink: .2;
+	// }
+
+	// &__items {
+	// 	display: inline-block;
+	// }
+
+	// &__links:hover {
+	// 	background-image: url($img-path + 'circle_filled.svg');
+	// 	background-repeat: no-repeat;
+	// 	background-position: 0 60%;
+	// }

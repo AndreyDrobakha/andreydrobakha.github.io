@@ -46,7 +46,33 @@ ul {
 	justify-content: space-between;
 	text-transform: uppercase;
 	font-family: $secondary-font;
+	padding-top: rem(50px);
 	
+	@include min576 {
+		min-height: 145px;
+		height: 100%;
+		
+	}
+
+	@include min768 {
+		min-height: 155px;
+		height: 100%;
+		
+	}
+	
+	@include min992 {
+		min-height: 175px;
+		height: 100%;
+		
+	}
+
+	@include max575 {
+		min-height: 135px;
+		& > * {
+			font-size: rem(34px);
+		}
+	}
+
 	& > * {
 		margin-bottom: 0;
 		text-align: center;
@@ -64,26 +90,6 @@ ul {
 			font-size: rem(36px);
 		}
 	}
-
-	@include min992 {
-		min-height: 175px;
-		height: 100%;
-		padding-top: rem(50px);
-	}
-
-	@include min768 {
-		min-height: 155px;
-		height: 100%;
-		padding-top: rem(50px);
-	}
-
-	@include min576 {
-		min-height: 135px;
-		height: 100%;
-		padding-top: rem(50px);
-	}
-
-	
 }
 
 .button {
