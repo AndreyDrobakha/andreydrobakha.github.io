@@ -182,7 +182,7 @@ span {
 	width: $size;
 	height: $size;
 	position: fixed;
-	right: 7%;
+	right: 20%;
 	bottom: 14.5%;
 	transform: translateX(100%);
 	background-color: rgba($violet-color, .5);
@@ -193,6 +193,22 @@ span {
 	cursor: pointer;
 	transition: opacity .1s ease;
 	@include z-index(up);
+
+	@include min576 {
+		right: 17%;
+	}
+
+	@include min768 {
+		right: 14%;
+	}
+
+	@include min992 {
+		right: 11%;
+	}
+
+	@include min1367 {
+		right: 7%;
+	}
 }
 
 .section__height {
