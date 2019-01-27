@@ -6,6 +6,7 @@
 	background-size: cover;
 	@include z-index(first);
 	padding-top: 15px;
+	min-height: 100vh;
 
 	&::after {
 		content: "";
