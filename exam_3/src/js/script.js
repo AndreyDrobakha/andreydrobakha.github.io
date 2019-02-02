@@ -17,7 +17,7 @@
 			infinite: true,
 			slidesToShow: 3,
 			slidesToScroll: 3,
-			// autoplay: true,
+			autoplay: true,
 			speed: 2000,
 			autoplaySpeed: 3000,
 
@@ -60,6 +60,7 @@
 		const mobileMenu = $('#navbar');
 
 		mobileMenuButton.on('click', function() {
+			// this.style.display='none' 
 			mobileMenu.toggleClass('open');
 		});
 

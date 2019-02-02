@@ -107,7 +107,7 @@
 		}
 
 		&.fixed-top {
-			background-color: rgba(black, .5);
+			background-color: rgba($violet-color, .7);
 
 			& > .container {
 				padding-left: 15px;
@@ -135,7 +135,7 @@
 			}
 
 			@include max991 {
-				padding-top: rem(50px);
+				padding-top: rem(20px);
 			}
 
 			&.open {
@@ -167,7 +167,6 @@
 			@include min1367 {
 				font-size: rem(24px);
 			}
-			
 
 			&:hover {
 				color: $violet-color;
@@ -184,7 +183,7 @@
 	display: flex;
 	align-items: center;
 	min-width: 30%;
-	background-color: rgba($black-color, .5);
+	background-color: rgba($light-violet-color, .5);
 	transition: transform .4s ease;
 	transform: translateX(100%);
 	
@@ -202,6 +201,7 @@
 
 	&.open {
 		transform: translateX(0);
+		@include z-index(label);
 		
 		.navigation__item {
 			margin-bottom: .5rem;
@@ -214,7 +214,7 @@
 			top: 2.2%;
 			right: 15%;
 			font-size: 2.3rem;
-			display: list-item;
+			// display: list-item;
 
 			@include min576 {
 				right: initial;
@@ -256,14 +256,15 @@
 		background-color: transparent;
 		border: 1px solid transparent;
 		border-radius: .25rem;
+		text-align: right;
 	}
 
-	&-icon {
+	// &-icon {
 
-		@include max767 {
-			// width: 0;
-		}		
-	}
+	// 	@include max767 {
+	// 		// width: 0;
+	// 	}		
+	// }
 }
 
 .flex-gr {
@@ -279,7 +280,6 @@
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 1030;
 }
 
 .mh-120 {

@@ -144,9 +144,9 @@ span {
 	background-color: rgba($body-color, .5);
 	position: fixed;
 	right: 0;
-	top: 25%;
+	top: 40%;
 	cursor: pointer;
-	@include z-index(label);
+	// @include z-index(first);
 	transform: translateX(calc(100% - #{$size}));
 	will-change: transform;
 	transition: transform .4s ease;
@@ -174,7 +174,7 @@ span {
 }
 
 .mobile {
-	top: calc(25% - #{$size});;
+	top: calc(40% - #{$size});;
 }
 
 .arrow-up {
