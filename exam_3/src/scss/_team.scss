@@ -1,5 +1,6 @@
 .team {
 	padding-bottom: rem(100px);
+	overflow-x: hidden;
 	
 	&__container {
 		min-height: 720px;
@@ -9,14 +10,6 @@
 		color: $dark-color;
 		margin-bottom: 30px;
 	}
-
-	// &__row {
-	// 	height: 400px;
-	// }
-
-	// &__container-slick {
-	// 	min-height: 400px;
-	// }
 
 	&__col {
 		min-height: 125px;
@@ -61,7 +54,7 @@
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		position: absolute;
-		z-index: 2;
+		@include z-index(first);
 	}
 
 	.slick-prev:before {
@@ -99,6 +92,7 @@
 	&__footer {
 		background-color: $violet-color;
 		min-height: 70px;
+		
 	}
 
 	

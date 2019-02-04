@@ -4,6 +4,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
+	overflow-x: hidden;
 
 	@include min576 {
 		min-height: 600px;

@@ -4,6 +4,22 @@
 
 	&__container {
 		min-height: 555px;
+
+		@include min576 {
+			min-height: 450px;
+		}
+
+		@include min640 {
+			min-height: 530px;
+		}
+
+		@include min920 {
+			min-height: 565px;
+		}
+
+		@include min992 {
+			min-height: 555px;
+		}
 	}
 
 	&__row {
@@ -34,7 +50,6 @@
 		left: 50%;
 		transform: translateX(-50%);
 		@include z-index(first);
-		padding-top: 0;
 		max-height: 175px;
 		
 		@include max991 {

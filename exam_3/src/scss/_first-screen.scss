@@ -27,7 +27,7 @@
 
 		&__container {
 			position: relative;
-			@include z-index(first);
+			
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;	
@@ -201,7 +201,7 @@
 
 	&.open {
 		transform: translateX(0);
-		@include z-index(label);
+		@include z-index(navbar);
 		
 		.navigation__item {
 			margin-bottom: .5rem;
@@ -269,6 +269,7 @@
 
 .flex-gr {
 	flex-grow: .6;
+	@include z-index(first);
 }
 
 .ml-30 {
