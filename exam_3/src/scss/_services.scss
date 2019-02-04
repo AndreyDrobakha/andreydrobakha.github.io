@@ -7,7 +7,7 @@
 		flex-direction: column-reverse;
 		align-items: center;
 
-		@include min1091 {
+		@include min992 {
 			flex-direction: row;
 		}
 	}
@@ -23,7 +23,7 @@
 
 	&__col-8 {
 		
-		@include min1091 {
+		@include min1140 {
 			min-width: 760px;
 		}
 	}
@@ -55,7 +55,7 @@
 		}
 
 		@include min768 {
-			min-height: 135px;
+			min-height: 175px;
 			height: 100%;
 		}
 	}
@@ -114,7 +114,6 @@
 		}
 	}	
 
-
 	&__text {
 		text-align: center;
 		font-family: $third-font;
@@ -128,11 +127,10 @@
 	&__col-4 {
 		background-image: url($img-path + 'phone_on_table2.jpg');
 		min-height: 400px;
-		// width: 90%;
 		background-size: 100% 100%;
 		margin: 0 0 rem(30px);
 
-		@include min1091 {
+		@include min992 {
 			position: relative;
 			background-size: cover;
 			background-position: -87% 0;
