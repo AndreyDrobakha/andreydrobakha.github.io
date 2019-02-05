@@ -29,7 +29,6 @@ h1 {
 ul {
 	font-size: 0;
 	max-height: 468px;
-	/* height: 100%; */
 	padding-left: 0;
 	border: 4px #fff solid;
 	margin-bottom: 20px;
@@ -37,7 +36,6 @@ ul {
 
 li {
 	max-height: 115px;
-	/* height: 100%; */
 	display: inline-block;
 	border: 4px #fff solid;
 }
@@ -92,34 +90,33 @@ li:last-child a	{
 	background-color: #666699;
 }
 
-p {
+.cities {
 	margin: 0;
 	line-height: 1.2;
 }
 
-span {
-	opacity: .7;
-}
-
 a {
 	display: block;
-	max-height: 107px;
+	min-height: 107px;
 	font-size: 1.4rem;
 	text-align: center;
 	padding: 20px 0 20px;
-	line-height: 1.7
+	line-height: 1.7;
+}
+
+span {
+	display: block;
+	opacity: .7;
+}
+
+span:hover {
+	opacity: 1;
 }
 
 ul:hover li a:not(:hover) {
-	opacity: 0.5
+	opacity: 0.5;
 }
 
 footer {
 	font-size: 1.3em
 }	
-/* * li:not(:last-child) {
-	border-bottom: none
-}
-li:not(:first-child):not(:last-child):not(:nth-child(4)):not(:nth-child(8)) {
-	border-left: none;
-} */
