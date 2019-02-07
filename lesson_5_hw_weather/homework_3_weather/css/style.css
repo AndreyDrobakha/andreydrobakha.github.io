@@ -43,14 +43,14 @@ li {
 li:first-child {
 	width: 50%;
 }
-	
+
 li:nth-child(n+2) {
 	width: 25%;
 	
 }
 li:nth-last-child(3) {
 	width: 50%;
-	}
+}
 
 li:last-child {
 	width: 100%;
@@ -82,7 +82,7 @@ li:nth-child(8) a {
 }
 li:nth-last-child(3) a	{
 	background-color: #CC6699;
-	}
+}
 li:nth-child(10) a {
 	background-color: #339966;
 }
@@ -100,7 +100,7 @@ a {
 	min-height: 107px;
 	font-size: 1.4rem;
 	text-align: center;
-	padding: 20px 0 20px;
+	padding: 20px 0;
 	line-height: 1.7;
 }
 
@@ -118,5 +118,36 @@ ul:hover li a:not(:hover) {
 }
 
 footer {
-	font-size: 1.3em
-}	
+	font-size: 1.3rem
+}
+
+@media (max-width: 576px) {
+
+	a {
+		font-size: 1.1rem;
+		min-height: 92px;
+	}
+
+	h1 {
+		font-size: 1.4rem;
+	}
+
+	footer {
+		font-size: 1rem
+	}
+
+	ul {
+		max-height: 408px;
+	}
+
+	li {
+		max-height: 100px;
+	}
+}
+
+@media (max-width: 400px) {
+	a {
+		font-size: 0.8rem;
+		padding: 25px 0;
+	}
+}
