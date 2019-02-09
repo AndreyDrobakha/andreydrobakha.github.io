@@ -138,7 +138,7 @@ a:hover {
 	}
 
 	.img-wrap-1 {
-		margin-right: 10px;
+		margin-right: 15px;
 	}
 
 	h2 {
@@ -161,6 +161,10 @@ a:hover {
 
 	input[type="submit"] {
 		width: 8%;
+	}
+
+	.img-wrap-1 {
+		margin-right: 5px;
 	}
 
 	.section {
