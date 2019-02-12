@@ -231,24 +231,20 @@ h1 > * {
 }
 
 .section-2__cards:first-child,
+.section-2__cards:nth-child(3),
 .section-2__cards:nth-child(4) {
 	margin-right: 35px;
 }
 
-.section-2__cards:nth-child(3) {
-	margin-right: 35px;
-}
-
-.picture {
+.section-2__picture {
 	display: block;
 	position: relative;
 	overflow: hidden;
 	border-radius: 3px;
 }
 
-.picture:after {
+.section-2__picture:after {
 	content: "";
-	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -258,7 +254,7 @@ h1 > * {
 	border-radius: 3px;
 }
 
-.descript {
+.section-2__descript {
 	margin: 0;
 	max-width: 100%;
 	text-align: left;
@@ -272,20 +268,20 @@ h1 > * {
 	color: #fff;
 }
 
-.design {
+.section-2__design {
 	padding-bottom: 10px;
 	border-bottom: 5px solid #fff;
 	color: #fff;
 }
 
-.picture:after,
-.descript {
+.section-2__picture:after,
+.section-2__descript {
 	position: absolute;
 	opacity: 0;
 }
 
-.picture:hover:after, 
-.picture:hover .descript {
+.section-2__picture:hover:after, 
+.section-2__picture:hover .section-2__descript {
 	opacity: 1;
 	transition: all .3s ease;
 }
@@ -486,6 +482,55 @@ label {
 	color: black
 }
 
+@media (max-width: 992px) {
+	
+	.main-header__title {
+		font-size: 42px;
+		line-height: 1.2;
+	}
+
+	.main-header__list {
+		padding-left: 10px;
+	}
+
+	.main-header__list > .main-header__item {
+		margin-right: 20px;
+	}
+	
+	.main-header__item:last-child {
+		margin-right: 0;
+	}
+
+	.section-1 {
+		padding: 80px 0 60px;
+	}
+
+	.section-1__text {
+		max-width: 992px;
+		width: 100%;
+	}
+	
+	.section-1__text > * {
+		text-align: center;
+	}
+
+	h1 > * {
+		font-size: 100px;
+		word-spacing: 0;
+	}
+
+	.h1__span2 {
+		display: inline;
+	}
+
+	/*  */
+
+	.section-1__img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
 @media (max-width: 768px) {
 	
 	.main-header__title {
@@ -513,7 +558,7 @@ label {
 		max-width: 768px;
 		width: 100%;
 	}
-
+	
 	h1 > * {
 		font-size: 80px;
 		word-spacing: 0;
@@ -521,6 +566,10 @@ label {
 
 	.h1__span2 {
 		display: inline;
+	}
+
+	.section-1__content {
+		font-size: 20px;
 	}
 }
 
@@ -555,3 +604,4 @@ label {
 		font-size: 70px;
 	}
 }
+
