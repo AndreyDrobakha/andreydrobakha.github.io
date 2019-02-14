@@ -1,0 +1,93 @@
+.section-1 {
+	padding: 120px 0 100px;
+	margin: 0 auto;
+}
+
+.section-1__text {
+	max-width: 614px;
+	width: 100%;
+	margin: 0;
+}
+
+.section-1__img {
+	max-width: 582px;
+	width: 100%;
+}
+
+.section-1__img-link {
+	display: block;
+	position: relative;
+	padding-top: 85%;
+}
+
+.section-1__image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	max-width: 365px;
+	width: 100%;
+}	
+
+.section-1__switch {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 85px;
+	padding-left: 0;
+	font-size: 0;
+}
+
+h1 {
+	font-family: "Raleway", sans-serif;
+	font-size: 0;
+	font-weight: 900;
+	margin: 0 0 20px;
+}
+
+h1 > * {
+	font-size: 150px;
+	line-height: 0.9;
+}
+
+.h1__span2 {
+	display: block;
+	text-align: right;
+}
+
+.section-1__content {
+	font-family: "Roboto", sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0;
+	text-align: right;
+}
+
+.section-1__footer {
+	font-size: 24px;
+	font-family: "Roboto", sans-serif;
+	text-align: right;
+	margin: 0;
+	font-weight: 600;
+	padding-top: 20px
+}
+
+.section-1__ref {
+	color: red;
+}
+
+.section-1__tap {
+	font-size: 12px;
+	display: block;
+}
+
+.fas-fa-circle--active,
+.fa-circle:hover {
+	color: red;
+	transition: all .5s ease;
+}
+
+.section-1__button:nth-child(2) {
+	padding: 0 9px;
+}

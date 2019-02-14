@@ -1,0 +1,76 @@
+.section-3 {
+	font-family: "Raleway", sans-serif;
+	padding-top: 97px;
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section-3__title {
+	font-weight: 900;
+	font-size: 48px;
+	margin: 0 auto;
+}
+
+.section-3__content {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px 0
+}
+
+.section-3__form {
+	max-width: 700px;
+	background: #fff;
+	border-radius: 30px;
+	position: relative;
+	min-height: 57px;
+}
+
+.section-3__placeholder {
+	padding: 18px 0 18px 50px;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: italic;
+	height: 100%;
+	width: 485px;
+	background: #fff;
+	border-radius: 30px 0 0 30px;
+	border: none;
+	background-image: url("../img/envelope-regular.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	background-size: 18px;
+}
+
+.section-3__placeholder:active,
+.section-3__placeholder:visited {
+	background-image: none;
+}
+
+.section-3__submit {
+	height: 100%;
+	color: white;
+	background-color: red;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 3.5em;
+	border-radius: 0 30px 30px 0;
+	position: relative;
+	width: 209px;
+	border: none;
+	margin: 0;
+}
+
+label {
+	border: 6px solid transparent;
+	border-left-color: #fff;
+	position: absolute;
+	right: 38px;
+	top: 48%;
+	transform: translateY(-50%);
+}
+
+.section-3__submit:hover {
+	background-color: blue;
+	cursor: pointer;
+}

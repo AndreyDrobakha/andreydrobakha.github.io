@@ -1,0 +1,99 @@
+.section-2 {
+	padding: 116px 70px 35px 70px;
+	background: #fff;
+}
+
+.section-2__text {
+	font-family: "Raleway", sans-serif;
+	max-width: 585px;
+	text-align: center;
+	margin: 0 auto 78px;
+}
+
+.section-2__title {
+	font-size: 48px;
+	font-weight: 900;
+	margin: 0 0 10px 0;
+}
+
+.section-2__star {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	background-image: url("../img/underline.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.section-2__content,
+.section-3__content {
+	margin-top: 0;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+.section-2__imgs {
+	padding-left: 0;
+	margin: 0;
+	font-size: 0;
+}
+
+.section-2__cards:first-child,
+.section-2__cards:nth-child(2) {
+	margin-bottom: 35px;
+}
+
+.section-2__cards:first-child,
+.section-2__cards:nth-child(3),
+.section-2__cards:nth-child(4) {
+	margin-right: 35px;
+}
+
+.section-2__picture {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+.section-2__picture:after {
+	content: "";
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: red;
+	z-index: 1;
+	border-radius: 3px;
+}
+
+.section-2__descript {
+	margin: 0;
+	max-width: 100%;
+	text-align: left;
+	top: 70%;
+	left: 10%;
+	margin: 0;
+	z-index: 2;
+	font-size: 30px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	color: #fff;
+}
+
+.section-2__design {
+	padding-bottom: 10px;
+	border-bottom: 5px solid #fff;
+	color: #fff;
+}
+
+.section-2__picture:after,
+.section-2__descript {
+	position: absolute;
+	opacity: 0;
+}
+
+.section-2__picture:hover:after, 
+.section-2__picture:hover .section-2__descript {
+	opacity: 1;
+	transition: all .3s ease;
+}

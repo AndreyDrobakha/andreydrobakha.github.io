@@ -1,0 +1,41 @@
+.main-header {
+	padding-top: 50px;
+	vertical-align: middle;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-header__title {
+	font-size: 48px;
+	font-weight: 900;
+}
+
+.main-header__nav {
+	font-size: 18px;
+	float: right;
+	padding-top: 22px
+}
+
+.main-header__list {	
+	margin: 0
+}
+
+.main-header__item {
+	margin-right: 40px;
+}
+
+.main-header__item:first-child {
+	margin-right: 50px;
+}
+
+.main-header__item:last-child {
+	margin-right: 0;
+}
+
+.main-header__text:hover,
+.main-header__ref:hover,
+.fa-bars:hover {
+	cursor: pointer;
+	color: red;
+	text-decoration: underline;
+	transition: all .3s ease;
+}
