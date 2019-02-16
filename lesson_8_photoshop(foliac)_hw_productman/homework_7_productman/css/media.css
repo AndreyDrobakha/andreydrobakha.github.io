@@ -1,6 +1,8 @@
 @media (max-width: 1200px) {
-	.section-1__img {
-		max-width: 482px;
+	h1 > * {
+		font-size: 130px;
+		display: block;
+		text-align: right;
 	}
 }
 
@@ -24,36 +26,25 @@
 	}
 
 	.section-1 {
-		padding: 80px 0 60px;
+		padding: 60px 0 40px;
 	}
 
-	.section-1__text {
-		max-width: 992px;
-		width: 100%;
-	}
-	
-	.section-1__text > * {
+	h1 {
 		text-align: center;
 	}
 
 	h1 > * {
 		font-size: 100px;
-		word-spacing: 0;
+		display: inline;
 	}
 
 	.h1__span2 {
 		display: inline;
 	}
-
-	.section-1__img {
-		display: block;
-		margin: 0 auto;
-		max-width: 482px;
-	}
 }
 
 @media (max-width: 768px) {
-	
+
 	.main-header__title {
 		font-size: 42px;
 		line-height: 1.2;
@@ -66,22 +57,17 @@
 	.main-header__list > .main-header__item {
 		margin-right: 20px;
 	}
-	
+
 	.main-header__item:last-child {
 		margin-right: 0;
 	}
 
 	.section-1 {
-		padding: 80px 0 60px;
+		padding: 40px 0 20px;
 	}
 
-	.section-1__text {
-		max-width: 768px;
-		width: 100%;
-	}
-	
 	h1 > * {
-		font-size: 80px;
+		font-size: 70px;
 		word-spacing: 0;
 	}
 
@@ -90,7 +76,16 @@
 	}
 
 	.section-1__content {
-		font-size: 20px;
+		font-size: 18px;
+		text-align: right;
+	}
+
+	.section-1__image {
+		max-width: 260px;
+	}
+
+	.section-1__switch {
+		padding-top: 60px;
 	}
 }
 
@@ -114,20 +109,62 @@
 	.main-header__list > .main-header__item {
 		margin-right: 20px;
 	}
-	
+
 	.main-header__item:last-child {
 		margin-right: 0;
 	}
 
 	.section-1 {
-		padding: 40px 0 20px;
+		padding: 30px 0 20px;
 	}
 
 	h1 > * {
 		font-size: 70px;
 	}
 
+	.section-1__text {
+		display: block;
+		max-width: 100%;
+		padding-bottom: 20px;
+	}
+
+	.section-1__text > * {
+		text-align: center;
+	}
+
 	.section-1__content {
 		font-size: 18px;
+		padding-bottom: 10px;
+	}
+
+	.section-1__img {
+		display: block;
+		max-width: 100%;
+	}
+
+	.section-1__img-link {
+		display: block;
+		padding-top: 60%;
+	}
+
+	.section-1__image {
+		width: 100%;
+		height: 100%;
+	}
+
+	.section-1__footer {
+		padding-top: 0;
+	}
+
+	.section-1__switch {
+		padding-top: 30px;
+	}
+
+	.section-2 {
+		padding-top: 30px;
+	}
+
+	.section-2__text {
+		margin-bottom: 30px;
 	}
 }
