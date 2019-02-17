@@ -24,15 +24,16 @@
 	border-radius: 30px;
 	position: relative;
 	min-height: 57px;
+	font-size: 18px;
 }
 
-.section-3__placeholder {
+.section-3__input {
+	max-width: 485px;
+	width: 100%;
 	padding: 18px 0 18px 50px;
-	font-size: 18px;
 	font-weight: 600;
 	font-style: italic;
-	height: 100%;
-	width: 485px;
+	color: #949494;
 	background: #fff;
 	border-radius: 30px 0 0 30px;
 	border: none;
@@ -42,21 +43,20 @@
 	background-size: 18px;
 }
 
-.section-3__placeholder:active,
-.section-3__placeholder:visited {
+.section-3__input:active,
+.section-3__input:visited {
 	background-image: none;
 }
 
 .section-3__submit {
-	height: 100%;
+	max-width: 209px;
+	width: 100%;
+	min-height: 57px;
 	color: white;
 	background-color: red;
-	font-size: 18px;
 	font-weight: 600;
-	line-height: 3.5em;
 	border-radius: 0 30px 30px 0;
 	position: relative;
-	width: 209px;
 	border: none;
 	margin: 0;
 }
@@ -65,8 +65,8 @@ label {
 	border: 6px solid transparent;
 	border-left-color: #fff;
 	position: absolute;
-	right: 38px;
-	top: 48%;
+	right: 5.4%;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
