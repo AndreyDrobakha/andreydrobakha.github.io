@@ -1,20 +1,14 @@
 .main-footer {
-	min-height: 90px;
 	color: #afafaf;
 
-	&__col-5,
-	&__col-2 {
+	&__col {
 		min-height: 90px;
 		display: flex;
 		align-items: center;
 	}
 	
-	&__col-2 {
+	&__logo-col {
 		justify-content: center;
-	}
-	
-	&__col-5--love {
-		justify-content: right;
 	}
 
 	&__rights,
@@ -24,11 +18,9 @@
 	}
 
 	&__logo-link {
-		display: block;
 		font-family: $second-font;
 		font-size: 25px;
 		color: #afafaf;
-		text-align: center;
 
 		&:hover {
 			color: red;
@@ -39,12 +31,45 @@
 		width: 100%;
 		font-size: $text_sm;
 		text-align: right;
-		padding-right: 15px;
 
 		&-link {
 			color: red;
 		}
 	}
+}
+
+@include max767 {
+	.main-footer {
+		padding: 0 15px;
+
+		&__row {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__col {
+			min-height: 40px;
+			text-align: center;
+		}
+		
+		&__logo-link {
+			display: inline-block;
+		}
+		
+		&__rights,
+		&__love {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__logo-col {
+			display: inline-flex;
+			justify-content: center;
+		}
+	}
+	
 }
 
 

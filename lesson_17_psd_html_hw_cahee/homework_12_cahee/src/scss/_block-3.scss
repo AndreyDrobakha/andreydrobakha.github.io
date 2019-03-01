@@ -5,29 +5,28 @@
 	background-repeat: no-repeat;
 	background-position: 79% 50%;
 	display: flex;
+	color: $secondary_color;
+	font-family: $main-font;
 	
-	&__section {
-		font-family: $main_font;
+	&__row {
 		display: flex;
-		align-items: center;
+		justify-content: flex-end;
+		align-items: center;	
 		height: 100%;
-	}
-	
-	&__col {
-		display: flex;
 	}
 
 	&__list {
-		font-size: 0;
 		max-width: 400px;
 		width: 100%;
+		color: $main-color;
 	}
 
 	&__items {
-		margin: 0 0 20px 0;
+		margin: 0 0 20px;
 		width: 100%;
 		box-shadow: 0 5px 5px #45769e;
 		position: relative;
+		cursor: pointer;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -50,53 +49,103 @@
 		text-transform: capitalize;
 		text-align: center;
 		border: none;
-		line-height: 1;
-		cursor: pointer;
 		border-right: 2px solid #9d9d9d;
+
+		&:after {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			content: "";
+			float: right;
+			width: 25%;
+			height: 100px;
+			background-color: $secondary_color;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+		}
+
+		&--basket:after {
+			background-image: url($img_path + 'basket.svg');
+		}
+
+		&--hand:after {
+			background-image: url($img_path + 'hand.svg');
+		}
+
+		&--earth:after {
+			background-image: url($img_path + 'earth.svg');
+		}
+
+		&--carrot:after {
+			background-image: url($img_path + 'carrot.svg');
+		}
 	}
 
-	&__button:after {
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		content: "";
-		float: right;
-		width: 25%;
-		height: 100px;
-		background-color: $secondary_color;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		cursor: pointer;
-	}
-
-	&__title {
+	&__col {
 		display: flex;
 		justify-content: center;
 		align-items: center;	
 	}
 
-	&__text {
+	&__title {
 		width: 100%;
-		color: $secondary_color;
 		text-align: right;
 		margin: 0;
 	}
 
-	&__button--basket:after {
-		background-image: url($img_path + 'basket.svg');
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+@include max991 {
+	
+	.block-3 {
+		&__row {
+			flex-direction: column-reverse;
+			justify-content: space-around;
+		}
+
+		&__title {
+			text-align: center;
+		}
+
+		&__list {
+			max-width: 100%;
+		}
+		
 	}
 
-	&__button--hand:after {
-		background-image: url($img_path + 'hand.svg');
+	.mb-md-20 {
+		margin-bottom: 20px;
 	}
 
-	&__button--earth:after {
-		background-image: url($img_path + 'earth.svg');
+	.md-row {
+		display: inline-block;
+		width: 50%;
+		margin-bottom: 0;
+
+		&:first-child {
+			margin-right: 25px;
+		}
 	}
 
-	&__button--carrot:after {
-		background-image: url($img_path + 'carrot.svg');
+	.md-col {
+		padding-right: 0;
+		margin-bottom: 0;
+	}
+}
+
+@include max575 {
+
+	.md-row {
+		display: block;
+		width: calc(100% + 15px);
+	}
+
+	.button-row {
+		min-height: 150px;
 	}
 }
 

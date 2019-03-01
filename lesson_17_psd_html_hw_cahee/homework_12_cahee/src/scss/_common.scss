@@ -15,22 +15,46 @@ html, body {
 }
 
 .main {
-	// min-width: 1500px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-// .main-header {
-// 	display: none;
-// }
+h1,
+h2,
+h3 {
+	text-transform: capitalize;
+}
 
 h1 {
-	font-family: $main_font;
 	font-weight: $bold;
 	font-size: $text-mg;
-	text-align: center;
-	margin: 0 auto;
-	text-transform: capitalize;
+	margin: 0 auto 40px;
+
+	@include max767 {
+		font-size: $text-lgg;
+		margin-bottom: 20px;
+	}
+}
+
+h2 {
+	font-size: $text-lgg;
+	font-weight: $heavy;
+}
+
+h3 {
+	font-size: $text_llg;
+	font-weight: $bold;
+	font-family: $main-font;
+}
+
+h4 {
+	font-size: $text_lg;
+}
+
+p {
+	font-weight: $light;
+	font-size: $text_md;
+	line-height: 1.5;
 }
 
 .button {
@@ -41,9 +65,55 @@ h1 {
 	font-weight: $light;
 	cursor: pointer;
 	min-height: 55px;
+	width: 200px;
 	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 3px 5px #9a9a9c;
+
+	@include max575 {
+		font-size: $text_sm;
+	}
 }
 
 .button:hover {
 	opacity: .7;
+}
+
+.title-row {
+	min-height: 330px;
+	font-family: $main_font;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title-col {
+	padding-top: 50px;
+}
+
+.button-row {
+	min-height: 225px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@include max575 {
+		min-height: 150px;
+	}
+}
+
+.button-col {
+	flex-grow: .4;
+
+	@include max575 {
+		flex-grow: 0;
+	}
+}
+
+.mb-20 {
+	margin-bottom: 20px;
 }

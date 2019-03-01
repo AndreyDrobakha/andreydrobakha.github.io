@@ -4,41 +4,19 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	position: relative;
-	
-	&__container {
-		padding-top: 100px;
-		color: $main_color;
+	font-family: $main_font;
+	color: $main_color;
+
+	&__row {
+		min-height: 300px;
 	}
 
-	&__section {
-		font-family: $main_font;
-	}
-
-	&__col-4 {
-		height: 1px;
-	}
-
-	&__header {
-		text-align: center;
-		margin-bottom: 45px;
-	}
-
-	&__title {
-		margin: 0 auto 45px;
-	}
-
-	&__content {
-		font-size: $text_md;
-		font-weight: $light;
-		line-height: 1.5;
-	}
-
-	&__form {
-		padding-right: 70px;
+	&__form-area {
+		padding-right: 85px;
 	}
 
 	&__contacts {
-		padding-left: 70px;
+		padding-left: 85px;
 	}	
 
 	&__input {
@@ -78,21 +56,20 @@
 		margin-bottom: 15px;
 	}
 
-	&__label,
-	&__field {
+	&__item,
+	&__descript {
 		display: block;
 	}
 
-	&__label {
+	&__item {
 		font-weight: $bold;
+		line-height: 1.5;
 	}
 
-	&__field {
+	&__descript {
 		font-weight: $light;
 	}
 }
-
-
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder { 
@@ -100,4 +77,47 @@ textarea::-webkit-input-placeholder {
 	font-weight: $light;
 	font-size: $text_sm;
 	font-family: $main-font;
+}
+
+@include max991 {
+	.block-7 {
+
+		&__form-area {
+			padding-right: 50px;
+		}
+
+		&__contacts {
+			padding-left: 50px;
+		}	
+	}	
+}
+
+@include max767 {
+	.block-7 {
+
+		&__form-area {
+			padding-right: 30px;
+		}
+
+		&__contacts {
+			padding-left: 30px;
+		}	
+	}	
+}
+
+@include max575 {
+	.block-7 {
+		min-height: 830px;
+
+		&__form-area {
+			padding-right: 15px;
+			margin-bottom: 15px;
+		}
+
+		&__contacts {
+			padding-left: 15px;
+			text-align: center;
+		}	
+	}
+	
 }
