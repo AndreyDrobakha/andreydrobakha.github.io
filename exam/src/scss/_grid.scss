@@ -1,7 +1,6 @@
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
-	// padding: 0 30px;
 }
 
 .row {
@@ -15,13 +14,16 @@
 		display: block;
 		clear: both;
 	}
-
+	
+	@include max575 {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 %col- {
 	float: left;
 	padding: 0 15px;
-	min-height: 1px;
 }
 
 @for $i from 1 through 12 {	
@@ -30,4 +32,61 @@
 		width: 100%*$i/12;
 	}
 }
+
+@include max1199 {
+	%col-xl- {
+		float: left;
+		padding: 0 15px;
+	}
+
+	@for $i from 1 through 12 {	
+		.col-xl-#{$i} {
+			@extend %col-xl-;
+			width: 100%*$i/12;
+		}
+	}
+}
+
+@include max991 {
+	%col-md- {
+		float: left;
+		padding: 0 15px;
+	}
+
+	@for $i from 1 through 12 {	
+		.col-md-#{$i} {
+			@extend %col-md-;
+			width: 100%*$i/12;
+		}
+	}
+}
+
+@include max767 {
+	%col-sm- {
+		float: left;
+		padding: 0 15px;
+	}
+
+	@for $i from 1 through 12 {	
+		.col-sm-#{$i} {
+			@extend %col-sm-;
+			width: 100%*$i/12;
+		}
+	}
+}
+
+@include max575 {
+	%col-xs- {
+		float: left;
+		padding: 0 15px;
+	}
+
+	@for $i from 1 through 12 {	
+		.col-xs-#{$i} {
+			@extend %col-xs-;
+			width: 100%*$i/12;
+		}
+	}
+}
+
 

@@ -1,8 +1,6 @@
 .main-footer {
-	min-height: 268px;
+	min-height: 270px;
 	background-color: #232323;
-	// background-color: grey;
-	// background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -25,20 +23,39 @@
 		text-transform: capitalize;
 		letter-spacing: .04em;
 		font-family: $secondary-font;
-		// text-align: justify;
 	}
 
 	&__list {
 		display: flex;
-		// flex-direction: row;
 		justify-content: space-between;
 	}
 
-	&__link {
-		display: block;
+	&__link:hover {
+		color: #5474fd;
+	}
+}
 
-		&:hover {
-			color: #5474fd;
+@include max1199 {
+	.main-footer {
+		min-height: 200px;
+		padding-bottom: 30px;
+	}
+}
+
+@include max991 {
+	.main-footer {
+		min-height: 170px;
+	}
+}
+
+@include max575 {
+	.main-footer {
+		min-height: 130px;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+
+		&__text {
+			margin-bottom: 15px;
 		}
 	}
 }

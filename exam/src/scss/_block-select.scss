@@ -1,5 +1,5 @@
 .block-select {
-	background-color:  #333333; 
+	background-color: #333333; 
 
 	&__container {
 		min-height: 340px;
@@ -26,24 +26,13 @@
 			background-repeat: no-repeat;
 			background-position: 48% 212%;
 		}
-
-		// &:after {
-		// 	content: "";
-		// 	position: absolute;
-		// 	width: 40%;
-		// 	height: 100%;
-		// 	top: 0;
-		// 	left: 45%;
-		// 	transform: translateY(-80%);
-		// 	background-image: url($img-path + "wave.svg");
-		// 	background-repeat: no-repeat;
-		// 	background-position: 80% 0;
-		// 	z-index: 1;
-		// }
 	}
 
 	&__items {
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 		z-index: 2;
 	}
 
@@ -62,5 +51,41 @@
 		display: block;
 		text-transform: capitalize;
 		font-size: 36px;
+	}
+}
+
+@include max991 {
+	.block-select {
+		&__container {
+			min-height: 300px;
+		}
+
+		&__list:before {
+			display: none;
+		}
+	}
+	
+}
+
+@include max767 {
+	.block-select {
+
+		&__container {
+			min-height: 200px;
+		}
+
+		&__text {
+			font-size: 28px;
+		}
+	}
+}
+
+@include max575 {
+	.block-select {
+
+		&__text {
+			font-size: 20px;
+			text-align: center;
+		}
 	}
 }

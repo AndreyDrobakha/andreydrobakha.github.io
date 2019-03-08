@@ -11,28 +11,34 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header cover">
 		<div class="main-header__container container">
-			<div class="main-header__title">
-				<h1 class="main-header__title-text">bhroamon</h1>
-				<h2 class="main-header__title-descript">safe travel anywhere</h2>
-			</div>
-			<form action="" class="main-header__form"><input type="text" class="main-header__form-input" required="" placeholder="search your travel destination"><button class="main-header__form-button button">Search</button></form>
-			<div class="main-header__scroll">
-				<a href="#menu" class="main-header__scroll-link">
+			<div class="main-header__row row">
+				<div class="main-header__title">
+					<h1 class="title">bhroamon</h1>
+					<span class="main-header__descript">safe travel anywhere</span>
+				</div>
+				<div class="col-7 col-md-9 col-sm-11 col-xs-12 form-col">
+					<form action="" class="main-header__form">
+						<input type="text" class="main-header__input" required="" placeholder="search your travel destination">
+						<button class="main-header__button button">Search</button>				
+					</form>
+				</div>
+				<a href="#menu" class="main-header__scroll">
 					<span class="main-header__scroll-text">Scroll Down</span>
-
-					<img src="img/scroll.svg" alt="" class="main-header__scroll-img">
+					<img class="real-img" src="img/scroll.svg" alt="scroll">
 				</a>
 			</div>
 		</div>
 	</header>
 	<!-- header -->
 	<div class="block-menu">
-		<div id="menu" class="block-menu__container container">
-			<div class="block-menu__row row">
-				<div class="block-menu__col-6 col-6"><a href="" class="block-menu__logo logo">bhroamon</a></div>
-				<div class="block-menu__col-6 col-6">
+		<div id="menu" class="container">
+			<div class="row">
+				<div class="block-menu__col link-col col-6 col-md-4 col-xs-12">
+					<a href="#" class="block-menu__logo logo">bhroamon</a>
+				</div>
+				<div class="block-menu__col col-6 col-md-8 col-xs-12">
 					<nav class="block-menu__nav">
 						<ul class="block-menu__list">
 							<li class="block-menu__items">
@@ -54,154 +60,151 @@
 		</div>
 	</div>
 	<!-- block-menu -->
-	<div class="block-places">
+	<div class="block-places cover">
 		<div class="block-places__container container">
-			<div class="block-places__row row">
-				<div class="block-places__col-6 col-6">
-					<div class="block-places__content">
-						<div class="block-places__title">
-							<h3>why choose us</h3>
-						</div>
-						<div class="block-places__text content">
-							<!-- <p class="block-places__text1"> -->Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee <br>
-								<br>
-							<!-- </p>
-								<p class="block-places__text2"> -->
-								Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
-							</div>
-							<button class="block-places__button button">explore places</button>
-						</div>
+			<div class="row">
+				<div class="block-places__col col-6 col-xs-12 text-col">
+					<div class="block-places__title">
+						<h3>why choose us</h3>
 					</div>
-					<div class="block-places__col-6 col-6">
-						<div class="block-places__img">
-							<div class="block-places__wrap1">
-								<div class="block-places__wrap">
-									<img src="img/choose-1.jpg" alt="nature1" class="block-places__figure">
-								</div>
-							</div>
-							<div class="block-places__wrap2">
-								<div class="block-places__wrap">
-									<img src="img/choose-2.jpg" alt="nature2" class="block-places__figure">
-								</div>
-							</div>
+					<p class="block-places__text content">
+						Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+					</p>
+					<p class="block-places__text content content2">
+						Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
+					</p>
+					<button class="block-places__button button">explore places</button>
+				</div>
+				<div class="block-places__col img-col col-6 col-xs-12">
+					<div class="block-places__img">
+						<div class="block-places__wrap wrap1">
+							<img src="img/choose-1.jpg" alt="nature1" class="block-places__figure real-img">
+						</div>
+						<div class="block-places__wrap">
+							<img src="img/choose-2.jpg" alt="nature2" class="block-places__figure real-img">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- block-places -->
-		<div class="block-select">
-			<div class="block-select__container container">
-				<ul class="block-select__list">
-					<li class="block-select__items">
-						<a href="" class="block-select__link">
-							<img src="img/search-icon2.svg" alt="choose" class="block-select__img">
-						</a>
-						<span class="block-select__text">search places</span>
-					</li>
-					<li class="block-select__items">
-						<a href="" class="block-select__link block-select__link-select">
-							<img src="img/select.svg" alt="choose" class="block-select__img">
-						</a>
-						<span class="block-select__text">select places</span>
-					</li>
-					<li class="block-select__items">
-						<a href="" class="block-select__link">
-							<img src="img/finger.svg" alt="choose" class="block-select__img">
-						</a>
-						<span class="block-select__text">book & enjoy</span>
-					</li>
-				</ul>
-			</div>
+	</div>
+	<!-- block-places -->
+	<div class="block-select">
+		<div class="block-select__container container">
+			<ul class="block-select__list">
+				<li class="block-select__items">
+					<a href="" class="block-select__link">
+						<img src="img/search-icon2.svg" alt="choose" class="block-select__img real-img">
+					</a>
+					<span class="block-select__text">search places</span>
+				</li>
+				<li class="block-select__items">
+					<a href="" class="block-select__link block-select__link-select">
+						<img src="img/select.svg" alt="choose" class="block-select__img real-img">
+					</a>
+					<span class="block-select__text">select places</span>
+				</li>
+				<li class="block-select__items">
+					<a href="" class="block-select__link">
+						<img src="img/finger.svg" alt="choose" class="block-select__img real-img">
+					</a>
+					<span class="block-select__text">book & enjoy</span>
+				</li>
+			</ul>
 		</div>
-		<!-- block-select -->
-		<div class="block-house">
-			<div class="block-house__container container">
-				<div class="block-house__row row">
-					<div class="block-house__col-6 col-6">
-						<div class="block-house__content">
-							<span class="block-house__country">Spain</span>
-							<h4>grand spain madrid</h4>
-							<p class="block-house__text content">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-							<div class="block-house__button button">book now</div>
-						</div>
-					</div>
-					<div class="block-house__col-6 col-6"></div>
-				</div>
-			</div>
-		</div>
-		<!-- block-house -->
-		<div class="block-house-2">
-			<div class="block-house-2__container container">
-				<div class="block-house-2__row row">
-					<div class="block-house-2__col-6 col-6"></div>
-					<div class="block-house-2__col-6 col-6">
-						<div class="block-house__content">
-							<span class="block-house-2__country">Spain</span>
-							<h4>grand spain madrid</h4>
-							<p class="block-house-2__text content">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-							<div class="block-house-2__button button">book now</div>
-						</div>
+	</div>
+	<!-- block-select -->
+	<div class="block-house cover">
+		<div class="container">
+			<div class="block-house__row row">
+				<div class="block-house__col col-6 col-md-8 col-sm-10 col-xs-11">
+					<div class="block-house__content">
+						<span class="block-house__country">Spain</span>
+						<h4>grand spain madrid</h4>
+						<p class="content">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+						<div class="button">book now</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- block-house-2 -->
-		<div class="block-tourist">
-			<div class="block-tourist__container container">
-				<div class="block-tourist__title">
+	</div>
+	<!-- block-house -->
+	<div class="block-house-2 cover">
+		<div class="container">
+			<div class="block-house-2__row row">
+				<div class="block-house__col col-6 col-md-8 col-sm-10 col-xs-11">
+					<div class="block-house__content">
+						<span class="block-house__country">Spain</span>
+						<h4>grand spain madrid</h4>
+						<p class="content">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+						<div class="button">book now</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- block-house-2 -->
+	<div class="block-tourist cover">
+		<div class="block-tourist__container container">
+			<div class="row">
+				<div class="block-tourist__title col-12">
 					<h3>what our tourist say</h3>
 				</div>
-				<div class="block-tourist__row row">
-					<div class="block-tourist__col-5 col-5">
-						<div class="block-tourist__img"><img src="img/testimonials.jpg" alt="tourist" class="block-tourist__figure"></div>
-					</div>
-					<div class="block-tourist__col-7 col-7">
-						<div class="block-tourist__content">
-							<div class="block-tourist__title2">
-								<h4>sam sumon</h4>
+			</div>
+			<div class="grow-row row">
+				<div class="col-12">
+					<div class="block-tourist__row row">
+						<div class="block-tourist__col-5 col-5 col-xl-6 col-sm-8 col-xs-12">
+							<div class="block-tourist__img"><img src="img/testimonials.jpg" alt="tourist" class="block-tourist__figure real-img"></div>
+						</div>
+						<div class="block-tourist__col-7 col-7 col-xl-6 col-md-10 col-sm-12">
+							<div class="block-tourist__content">
+								<div class="block-tourist__title2">
+									<h4>sam sumon</h4>
+								</div>
+								<p class="block-tourist__text content">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
 							</div>
-							<p class="block-tourist__text content">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- /.block-tourist -->
-		<footer class="main-footer">
-			<div class="main-footer__content">
-				<a class="main-footer__logo logo">bhroamon</a>
-				<span class="main-footer__text">safe travel anywhere</span>
-				<nav class="main-footer__nav">
-					<ul class="main-footer__list">
-						<li class="main-footer__items">
-							<a href="#" class="main-footer__link items-link">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-						<li class="main-footer__items">
-							<a href="#" class="main-footer__link items-link">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-						<li class="main-footer__items">
-							<a href="#" class="main-footer__link items-link">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-						</li>
-						<li class="main-footer__items">
-							<a href="#" class="main-footer__link items-link">
-								<i class="fab fa-youtube"></i>
-							</a>
-						</li>
-						<li class="main-footer__items">
-							<a href="#" class="main-footer__link items-link">
-								<i class="fab fa-pinterest"></i>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</footer>
-	</body>
-	</html>
+	</div>
+	<!-- /.block-tourist -->
+	<footer class="main-footer">
+		<div class="main-footer__content">
+			<a class="main-footer__logo logo">bhroamon</a>
+			<span class="main-footer__text">safe travel anywhere</span>
+			<nav>
+				<ul class="main-footer__list">
+					<li>
+						<a href="#" class="main-footer__link items-link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="main-footer__link items-link">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="main-footer__link items-link">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="main-footer__link items-link">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="main-footer__link items-link">
+							<i class="fab fa-pinterest"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>

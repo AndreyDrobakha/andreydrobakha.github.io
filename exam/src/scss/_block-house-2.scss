@@ -1,32 +1,25 @@
 .block-house-2 {
-	min-height: 100vh;
 	background-image: url($img_path + 'rocks.jpg');
-	background-size: cover; 
 
-	&__col-6 {
-		min-height: 100vh;
-		padding-top: 100px;
+	&__row {
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		justify-content: flex-end;
 	}
-	
-	&__content {
-		min-height: 370px;
-		background-color: rgba(#292423, .7);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
+}	
 
-	&__country {
-		font-family: $secondary-font;
-		font-size: 20px;
+@include max1199 {
+	.block-house__col {
+		padding-right: 30px;
 	}
+}
 
-	&__button {
-		display: flex;
-		align-items: center;
+@include max575 {
+	.block-house-2__row {
 		justify-content: center;
 	}
+
+	.block-house__col {
+		padding-right: 15px;
+		min-height: 600px;
+	}	
 }

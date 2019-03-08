@@ -1,101 +1,82 @@
 .main-header {
-	// width: 100%;
-	min-height: 100vh;
 	background-image: url($img_path + 'header-bg.jpg');
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
 
 	&__container {
-		min-height: 350px;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__row {
+		width: 100%;
+		min-height: 400px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	&__title {
-		max-width: 310px;
-		width: 100%;
 		font-family: $secondary-font;
-		text-align: justify;
+		text-align: center;
 
-		&-text {
-			text-transform: uppercase;
-			margin-bottom: 15px;
-			font-size: 48px;
-			font-weight: bold;
-		}
-
-		&-descript {
-			display: block;
-			width: 100%;
-			font-size: 22px;
-			text-transform: capitalize;
-			text-align: justify;
-			letter-spacing: .2em;
+		h1 {
+			margin-bottom: 10px;
+			letter-spacing: .05em;
 		}
 	}
 
-	&__form {
-		width: 650px;
+	&__descript {
+		font-size: 22px;
+		text-transform: capitalize;
+		text-align: center;
+		letter-spacing: .23em;
+	}
+
+	&__input {
+		width: 77%;
 		min-height: 60px;
 		background: $main-color;
-		// width: 100%;
-		// margin: 0 auto;
+		color: #a0a0a0;
+		text-align: center;
+		border: none;
 
-		&-input {
-			width: 77%;
-			min-height: 60px;
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			border: none;
-
-		}
-
-		&-button {
-			width: 23%;
-			float: right;
-			color: $main-color;
-			background: #5474fd;
-			position: relative;
-			font-size: 14px;
-			border: 2px solid $main-color;
-
-			&::after {
-				content: "";
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				background-image: url($img_path + 'search-icon.svg');
-				background-repeat: no-repeat;
-				top: 0;
-				left: 0;
-				background-position: 90% 50%;
-
-			}
-		}
-
-		&-input:hover {
-			lighten: (#5474fd, 10%);
-			opacity: .7
+		&:hover {
+			opacity: .7;
 		}
 	}
-	
+
+	&__button {
+		width: 23%;
+		float: right;
+		color: $main-color;
+		background: #5474fd;
+		position: relative;
+		font-size: $font-small;
+		letter-spacing: 0.05em;
+		padding-right: 3%;
+		border: 2px solid $main-color;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url($img_path + 'search-icon.svg');
+			background-repeat: no-repeat;
+			background-position: 90% 50%;
+		}
+	}
+
 	&__scroll {
 		min-height: 35px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
-
-		&-link {
-			text-align: center;
-		}
 
 		&-text {
 			display: block;
@@ -103,13 +84,46 @@
 			font-size: $font-small;
 		}
 	}
-	
 }
 
 input::-webkit-input-placeholder { 
 	color: #a0a0a0;
-	font-size: 14px;
+	font-size: $font-small;
 	font-family: $secondary-font;
 	text-transform: capitalize;
+	letter-spacing: .15rem;
+}
+
+@include max575 {
+	.main-header {
+
+		&__input {
+			width: 70%;
+		}
+
+		&__button {
+			width: 30%;
+			font-size: $font-xs;
+			padding-right: 7%;
+		}
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	input::-webkit-input-placeholder {
+		letter-spacing: 0;
+	}
+}
+
+@include min576 {
+	.form-col {
+		flex-grow: .3;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
 }
 

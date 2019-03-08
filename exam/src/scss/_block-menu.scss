@@ -1,29 +1,52 @@
 .block-menu {
-	// min-height: 80px;
 	background-color: #5474fd;
 
-	&__col-6 {
+	&__col {
 		min-height: 80px;
-		height: 100%;
-		display: flex;
+		display: flex;	
 		align-items: center;
-		// justify-content: center;
-		// flex-direction: column;
 	}
 
 	&__nav {
 		width: 100%;
-		height: 100%;
 	}
 
 	&__list {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
-
-	&__items {
 		font-size: $font-small;
 		text-transform: uppercase;
+	}
+}
+
+@include max1199 {
+	.block-menu__list {
+		justify-content: space-around;
+	}
+
+	.link-col {
+		padding-left: 50px;
+	}
+}
+
+@include max767 {
+	.block-menu__list {
+		font-size: $font-xs;
+	}
+	
+	.link-col {
+		padding-left: 30px;
+	}
+}
+
+@include max575 {
+	.block-menu__col {
+			min-height: 40px;
+		}
+
+	.link-col {
+		justify-content: center;
+		padding: 10px 15px 0;
 	}
 }
