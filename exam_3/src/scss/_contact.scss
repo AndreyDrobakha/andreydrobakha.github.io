@@ -37,18 +37,14 @@
 
 		@include min1367 {
 			max-width: 1060px;
-		}
-		
-		 
+		}	 
 	}
 
 	&__form {
 		margin-bottom: rem(55px);
-
 	}
 
 	&__form-group {
-
 		margin-bottom: rem(25px);
 	}
 
@@ -75,13 +71,11 @@
 		
 		@include min576 {
 			width: 48%;
-		}
-		
+		}	
 	}
 
 	&__form-group2 {
 		display: block;
-		
 	}
 
 	.form__col	{
@@ -179,8 +173,6 @@
 }
 
 #map {
-	min-height: 900px;
-	width: 100%;
 	@include overlay;
 	z-index: 0;
 }

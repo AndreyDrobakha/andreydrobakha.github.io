@@ -1,6 +1,5 @@
 .team {
 	padding-bottom: rem(100px);
-	overflow-x: hidden;
 	
 	&__container {
 		min-height: 720px;
@@ -94,19 +93,6 @@
 		min-height: 70px;
 		
 	}
-
-	
-	// &__social-items {
-	// 	display: inline-block;
-
-	// 	&:not(:last-child) {
-	// 		margin-right: 23px;
-	// 	}
-
-	// 	&:hover {
-	// 		opacity: .5;
-	// 	}
-	// }
 	
 	.first {
 		margin-right: 12px;

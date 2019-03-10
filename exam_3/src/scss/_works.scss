@@ -56,6 +56,7 @@
 
 	&__img {
 		@include img;
+		max-height: 448px;
 	}
 
 	.carousel {
@@ -168,7 +169,6 @@
 		@include z-index(main-content);
 	}
 
-
 	.carousel-indicators {
 		margin: 0;
 	}
@@ -176,10 +176,6 @@
 	.carousel-indicators li {
 		width: 10px;
 		height: 10px;
-		// color: $white-color;
-		// opacity: .5;
-		// color: transparent;
-		// background-image: url($img-path + 'circle.svg');
 		border: 1px solid $white-color;
 		border-radius: 50%;
 	}	
@@ -191,17 +187,3 @@
 		max-height: 50px;
 	}
 }
-
-// &__list {
-	// 	flex-shrink: .2;
-	// }
-
-	// &__items {
-	// 	display: inline-block;
-	// }
-
-	// &__links:hover {
-	// 	background-image: url($img-path + 'circle_filled.svg');
-	// 	background-repeat: no-repeat;
-	// 	background-position: 0 60%;
-	// }

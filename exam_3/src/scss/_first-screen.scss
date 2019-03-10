@@ -15,95 +15,76 @@
 		@include overlay;
 	}
 
-	// @include min768 {
-	// 	padding-top: 40px;
-	// 	min-height: 100vh;	
-	// }
+	&__container {
+		position: relative;
 
-	/* $paddingTop: 80px;	
-	@include min992 {
-		padding-top: $paddingTop;
-		}	 */
-
-		&__container {
-			position: relative;
-			
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;	
-			min-height: calc(100vh - 120px);	
-		}
-
-		&__logo-link {
-			margin-left: 15px;
-			width: 54px;
-			height: 72px;
-		}
-
-		.flex-grow {
-			flex-grow: .3;
-		}
-
-		&__title {
-			margin: 0 -15px rem(16px);
-
-			@include min768 {
-				margin-bottom: rem(20px);			
-			}
-
-			& > * {
-				font-family: $secondary-font;
-				text-transform: uppercase;
-				font-weight: 300;
-				margin-bottom: 0;
-				font-size: rem(40px);
-				text-align: center;
-
-				@include min576 {
-					$font-size: rem(50px);
-				}
-
-				@include min768 {
-					font-size: rem(72px);
-				}
-			}
-		}
-
-		&__text {
-			font-family: $third-font;
-			font-weight: 200;
-			line-height: 1.2;
-			font-size: rem(20px);
-			text-align: center;
-			color: $body-color;
-			letter-spacing: 1px;
-
-			@include min768 {
-				font-size: rem(30px);			
-			}
-
-		// @include min992 {
-		// 	max-width: 90%;	
-		// }
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;	
+		min-height: calc(100vh - 120px);	
 	}
 
+	&__logo-link {
+		margin-left: 15px;
+		width: 54px;
+		height: 72px;
+	}
 
-// Old
+	.flex-grow {
+		flex-grow: .3;
+	}
 
+	&__title {
+		margin: 0 -15px rem(16px);
 
-.navigation {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-right: 0;
-	padding-left: 0;
-	@include z-index(navbar);
+		@include min768 {
+			margin-bottom: rem(20px);			
+		}
 
-	& > .container {
-		padding-left: 0;
+		& > * {
+			font-family: $secondary-font;
+			text-transform: uppercase;
+			font-weight: 300;
+			margin-bottom: 0;
+			font-size: rem(40px);
+			text-align: center;
+
+			@include min576 {
+				$font-size: rem(50px);
+			}
+
+			@include min768 {
+				font-size: rem(72px);
+			}
+		}
+	}
+
+	&__text {
+		font-family: $third-font;
+		font-weight: 200;
+		line-height: 1.2;
+		font-size: rem(20px);
+		text-align: center;
+		color: $body-color;
+		letter-spacing: 1px;
+
+		@include min768 {
+			font-size: rem(30px);			
+		}
+	}
+
+	.navigation {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		padding-right: 0;
-			// margin: 0 rem(15px);
+		padding-left: 0;
+		@include z-index(navbar);
+
+		& > .container {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 		&.fixed-top {
@@ -138,6 +119,10 @@
 				padding-top: rem(20px);
 			}
 
+			@include max575 {
+				align-items: flex-start;
+			}
+
 			&.open {
 				display: flex;
 
@@ -151,15 +136,19 @@
 
 			&.active {
 				.navigation__link {
-					color: $violet-color;	
+					color: $violet-color;
 				}
+			}
+
+			@include max575 {
+				max-width: 70%;
 			}
 		}
 
 		&__link {
 			text-transform: uppercase;
 			font-weight: bold;
-			
+
 			@include min992 {
 				font-size: rem(23px);
 			}
@@ -175,6 +164,9 @@
 	}
 }
 
+.active {
+	color: $violet-color;
+}
 .navbar-collapse {
 	position: fixed;
 	top: 0;
@@ -183,7 +175,7 @@
 	display: flex;
 	align-items: center;
 	min-width: 30%;
-	background-color: rgba($light-violet-color, .5);
+	background-color: rgba($light-violet-color, 1);
 	transition: transform .4s ease;
 	transform: translateX(100%);
 	
@@ -199,6 +191,10 @@
 		background-color: initial;
 	}
 
+	@include max575 {
+		align-items: flex-start;
+	}
+
 	&.open {
 		transform: translateX(0);
 		@include z-index(navbar);
@@ -212,13 +208,12 @@
 		.navigation__close {
 			position: absolute;
 			top: 2.2%;
-			right: 15%;
+			right: 5%;
 			font-size: 2.3rem;
-			// display: list-item;
 
 			@include min576 {
 				right: initial;
-				left: 15%;
+				left: 5%;
 			}
 
 			@include min768 {
@@ -258,13 +253,6 @@
 		border-radius: .25rem;
 		text-align: right;
 	}
-
-	// &-icon {
-
-	// 	@include max767 {
-	// 		// width: 0;
-	// 	}		
-	// }
 }
 
 .flex-gr {
@@ -286,6 +274,3 @@
 .mh-120 {
 	min-height: 120px;
 }
-
-
-// New

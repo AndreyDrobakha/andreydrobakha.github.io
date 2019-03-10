@@ -1,0 +1,21 @@
+body {
+  background-color: #fff; }
+
+.container {
+  max-width: 1170px; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.75rem;
+  color: #ffcc00;
+  line-height: 1.1; }
+
+.main-header__col {
+  text-align: center;
+  text-transform: uppercase; }
+
+.main-header__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  color: #898f8f;
+  line-height: 1.35; }

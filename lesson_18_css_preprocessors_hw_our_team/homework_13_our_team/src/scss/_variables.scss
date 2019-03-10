@@ -1,11 +1,17 @@
-$pink-color: #ef4836;
-$blue-color: #2364bb;
-$dark-color: #010307;
-$white-color: #fff;
-$gray-color: #aaa;
-
-$light-color: #fcfcfc;
+$grey-color: #666666;
+$main-color: $grey-color;
+$yellow-color: #ffcc00;
+$secondary-color: $yellow-color;
+$dark-grey-color: #333333;
+$third-color: $dark-grey-color;
+$light-grey-color: #898f8f;
+$fourth-color: $light-grey-color;
 
 $main-font: "Raleway", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+$third-font: "Open Sans", sans-serif;
+
 
 $img-path: "../img/";
+
+$base-size: 16px;
