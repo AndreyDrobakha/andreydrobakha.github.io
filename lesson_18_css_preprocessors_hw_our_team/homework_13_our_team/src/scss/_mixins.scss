@@ -2,3 +2,25 @@
 	@if $target == 0 { @return 0 };
 	@return $target / $context + 0rem;
 }
+
+$z-index: (
+	content: 2,
+	up: 100,
+	navbar: 101,
+	modal: 102,
+	label: 103
+);
+
+@function z-index-func($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index-func($key);
+}
+
+@for $i from 1 through 6 {	
+	h#{$i} {
+		margin-bottom: 0;
+	}
+}

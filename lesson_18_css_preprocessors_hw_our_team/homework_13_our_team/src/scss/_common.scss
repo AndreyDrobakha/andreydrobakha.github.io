@@ -1,8 +1,14 @@
-body {
-	background-color: #fff;
+.block {
+	min-height: 1000px;
+	padding: 95px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
+
 .container {
 	max-width: 1170px;
+	width: 100%;
 }
 
 h1 {
@@ -10,4 +16,32 @@ h1 {
 	font-size: rem(60px);
 	color: $secondary-color;
 	line-height: 1.1;
+}
+
+h2,
+h3 {
+	text-transform: capitalize;
+	letter-spacing: .02em;
+}
+
+h2 {
+	font-size: rem(36px);
+	font-family: $secondary-font;
+	line-height: 1;
+}
+
+h3 {
+	font-size: rem(24px);
+	line-height: 1.2;
+}
+img {
+	display: none;
+}
+
+.real-img {
+	display: block;
+}
+
+.main {
+	min-height: 795px;
 }
