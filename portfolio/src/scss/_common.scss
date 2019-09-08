@@ -121,10 +121,6 @@ body {
 		background-color: green;
 		flex-wrap: wrap;
 
-		&:hover {
-			background-color: white;
-		}
-
 		@media (max-width: $pad-screen) {
 			max-width: 200px;
 		}
@@ -150,6 +146,7 @@ body {
 
 
 		&:hover {
+			background-color: white;
 			text-decoration: none;
 			color: rgba(0, 0, 0, 1);
 			font-weight: bold;
