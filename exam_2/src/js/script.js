@@ -1,29 +1,26 @@
-'use strict';
-/*const form = $('#contactForm');
-form.on('submit', (e) => {
-	e.preventDefault();
-});
+;'use strict';
 
-const servicesTexts = $('.grid-item__text');
+  $('.directory__col').slick({
+    infinite: true,
+	slidesToShow: 1,
+	// autoplay: true,
+	speed: 2000,
+	autoplaySpeed: 3000,
+	dots: true,
 
-console.log(servicesTexts);
+	responsive: [
+	{
+		breakpoint: 767,
+		settings: {
+			arrows: false
+		}
+	},
 
-
-
-servicesTexts.map = [].map;
-servicesTexts.forEach = [].forEach;
-
-const arr = servicesTexts.map(el => {
-	let a = el.innerText.split('');
-	if(a.length < 85) return el.innerText;
-	let newA = a.slice(0, 85);
-	let index = newA.lastIndexOf(' ');
-	return newA.slice(0, index).join('') + '...';
-	
-})
-
-
-
-servicesTexts.forEach((el, idx) => {
-	el.innerText = arr[idx];
-});*/
+	{
+		breakpoint: 576,
+		settings: {
+			arrows: false
+		}
+	}
+	]
+  });

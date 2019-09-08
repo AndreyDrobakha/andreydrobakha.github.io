@@ -3,13 +3,15 @@
 @import 'common';
 @import 'main-header';
 @import 'first-screen';
-@import 'about';
-@import 'services';
+@import 'second-screen';
+@import 'third-screen';
 @import 'works';
 @import 'speech';
 @import 'partners';
 @import 'contact';
 @import 'footer';
+@import "slick";
+@import "slick-theme";
 
 
 /////////////// REMOVE BEFORE PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -20,17 +22,12 @@
 	}
 }
 
-.bad {
-	font-size: 2rem;
-}
-
+.main-header,
 // .first-screen,	
-// .about,
-// .services,
-.works,
-.speech,
-.partners,
-.contact,
+// .second-screen,
+// .third-screen,
+.fourth-screen,
+.fifth-screen,
 .footer {
 	display: none!important;
 }

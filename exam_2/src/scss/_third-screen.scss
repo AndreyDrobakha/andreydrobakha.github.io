@@ -1,0 +1,19 @@
+.about {
+	min-height: 640px;
+	background-image: url($img-path + 'Photo2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+
+	&__title {
+		position: absolute;
+		top: -25%;
+		color: #f7f7f7;
+		font-size: 184px;
+		font-weight: 700;
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		letter-spacing: 1.25rem;
+	}
+
+} 
