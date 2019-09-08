@@ -7,12 +7,6 @@ html {
 .blue {
 	min-height: 150px;
 	background-color: blue;
-
-	// // &:first-child {
-	// // 	@media (max-width: 767px) {
-	// // 		margin-bottom: 30px;		
-	// // 	}
-	// }
 }
 
 .red {
@@ -40,12 +34,7 @@ html {
 	background-color: black;
 }
 
-// %mb-30 {
-// 	margin-bottom: 30px;
-// }
-
 .row:not(:last-child) {
-	// margin-bottom: 30px;
 }
 
  .mb-30:not(:last-child) {
@@ -53,14 +42,4 @@ html {
 	& > * {
 			margin-bottom: 30px;	
 	}
-
-	// & > [class*="sm-12"]:not(:last-child) {
-	// 	@media (max-width: 991px) {
-	// 		margin-bottom: 30px;
-	// 	}
-	// }
 } 
-
-/* .mb-30 {
- 	margin-bottom: 30px;
- } */ 

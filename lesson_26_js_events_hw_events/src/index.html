@@ -10,18 +10,16 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- <div id="view">1</div>
-	<textarea id="area"></textarea>	
-	<script defer src="js/script.js"></script> -->
 	<textarea id="area"></textarea>
 	<div id="view">Текст</div>
-	<script defer src="js/script.js"></script>
+	<script src="js/script.js"></script>
 
 	<script>
 		document.onkeydown = function(e) {
       if (e.keyCode == 13) { // escape
       	cancel();
-      	return false;
+        console.log("Отмена!")
+        return false;
       }
 
       if ((e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) && !area.offsetHeight) {
@@ -32,28 +30,42 @@
 
       if ((e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) && area.offsetHeight) {
       	save();
-      	return false;
+        console.log("Сохранено!")
+        return false;
       }
-  }
+    }
 
-  function cancel() {
-  	area.style.display = 'none';
-  	view.style.display = 'block';
-  	view.value = view.innerHTML;
-  }
+    // const area = document.getElementById('area');
+    document.onclick = function() {
+      if (!area.offsetHeight) {
+        edit();
+        console.log("Продолжаем!")
+        return false;
+      }
+    }
 
-  function edit() {
-  	view.style.display = 'none';
-  	area.value = view.innerHTML;
-  	area.style.display = 'block';
-  	area.focus();
-  }
+    // document.addEventListener('click', function (e) {
+    //   area.style.outline = "solid yellow 1px";
+    // });  
 
-  function save() {
-  	area.style.display = 'none';
-  	view.innerHTML = area.value;
-  	view.style.display = 'block';
-  }
+    function cancel() {
+     area.style.display = 'none';
+     view.style.display = 'block';
+     view.value = view.innerHTML;
+   }
+
+   function edit() {
+     view.style.display = 'none';
+     area.value = view.innerHTML;
+     area.style.display = 'block';
+     area.focus();
+   }
+
+   function save() {
+     area.style.display = 'none';
+     view.innerHTML = area.value;
+     view.style.display = 'block';
+   }
 
  /*document.onkeydown = function(e) {
       if ((e.shiftKey && e.keyCode == 'M'.charCodeAt(0)) && !area.offsetHeight) {
@@ -68,6 +80,9 @@
         console.log("Продолжаем!");
     }
   })*/
+  // $('body').click(function(){
+  //   console.log('clicked');
+  // });
 </script>
 </body>
 </html>
@@ -75,8 +90,8 @@
 <!-- 1. Решение работает только, если код js вписан в script непосредственно в HTML.
 2. addeventlistener не работает с комбинацией клавиш. Пробовал выводить 2 раза if (для случая нажатия каждой клавиши) и оператор &&.
 3. Комбинация клавиш работает только при вызове onkeydown.
-4. При вызове двух клавиш текста/цифр их комбин на работает в onkeydown.
-5. Клавиша esc не работает, вместо нее вызвал enter
+4. При вызове двух клавиш текста/цифр их комбин не работает в onkeydown.
+5. Клавиша esc не работает (на моем ноутбуке), вместо нее вызвал enter
 6.В примере выше, offsetHeight используется для того, чтобы проверить, отображается элемент или нет. Это очень надежный способ для всех элементов, кроме <tr> в некоторых старых браузерах.
 В отличии от простой проверки display=='none', этот способ работает с элементом, спрятанным с помощью стилей, а так же для элементов, у которых скрыты родители.
 7. Решение https://learn.javascript.ru/task/hotkeys  -->

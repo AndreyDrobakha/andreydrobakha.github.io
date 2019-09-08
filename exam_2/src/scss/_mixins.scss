@@ -103,7 +103,8 @@
 
 $z-index: (
 	content: 2,
-	navbar: 150000
+	overlay: 3,
+	navbar: 10
 );
 
 @function z-index-func($key) {

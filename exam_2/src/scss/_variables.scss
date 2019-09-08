@@ -2,20 +2,22 @@ $img-path: '../img/';
 
 
 $black-color: #000000;
-$dark-color: #282828;
-$pink-color: #ef4836;
-$blue-color: #2364bb;
 $white-color: #ffffff;
+$blue-color: #00afff;
+$dark-color: #282828;
+$light-grey-color: #787878;
+$pink-color: #ef4836;
+$border-grey-color: #cccccc;
+
 $black-color: #000000;
 $light-color: #fcfcfc;
+
 $grey-color: #aaaaaa;
 $border-color: #ababab;
 $top-gradient-color: #021833;
 $contact-bg-color: #131313;
 $form-color: #525252;
 $form-hover: #2866bd;
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400i|Raleway:400,600,700|Roboto+Condensed:700');
 
 @font-face {
  font-family: "HelveticaBold";
@@ -29,7 +31,7 @@ $form-hover: #2866bd;
 
 $main-font: "Raleway", sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
-$third-font: 'Playfair Display', sans-serif;
+$third-font: 'Playfair Display', serif;
 $fourth-font: 'Roboto Condensed', sans-serif;
 $fifth-font: 'HelveticaLBold', sans-serif;
 $sixth-font: 'HelveticaLRoman', sans-serif;

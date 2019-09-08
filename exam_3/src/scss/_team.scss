@@ -45,6 +45,18 @@
 		border-radius: 50%;
 	}
 
+	.slick-prev, 
+	.slick-next,
+	.slick-arrow,
+	.slick-prev:before, 
+	.slick-next:before {
+		@include max1090 {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+	}
+	
 	.slick-prev:before, 
 	.slick-next:before {
 		width: 23px;
@@ -54,16 +66,25 @@
 		background-repeat: no-repeat;
 		position: absolute;
 		@include z-index(first);
+
 	}
 
 	.slick-prev:before {
 		background-image: url($img-path+'interface-arrow-left.svg');
-		left: -30px;
+
+		@include min1367 {
+			left: -30px;
+		}
+		
 	}
 
 	.slick-next:before {
 		background-image: url($img-path+'interface-arrow-right.svg');
-		right: -30px;
+
+		@include min1367 {
+			right: -30px;
+		}
+		
 	}
 
 	&__about {
